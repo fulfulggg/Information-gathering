@@ -41,7 +41,7 @@ class PaperScraper:
                     'title': entry.title,
                     'summary': entry.summary,
                     'link': entry.link,
-                    'published': entry.published,
+                    'published': entry.updated, #published特性がないためupdatedに変更
                     'github_urls': github_urls,
                     'huggingface_urls': huggingface_urls,
                     'source': 'arXiv'
