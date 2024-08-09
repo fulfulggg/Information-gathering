@@ -36,8 +36,8 @@ jobs:
       - name: 変更の確認とコミット
         id: check_changes
         run: |
-          git config --local user.email "yukihiko.fuyuki@gmail.com"
-          git config --local user.name "yukihiko-fuyuki"
+          git config --local user.email "hiroshi.nakamura@fulgram.com"
+          git config --local user.name "hiroshi-nakamura"
           git add papers.json
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
