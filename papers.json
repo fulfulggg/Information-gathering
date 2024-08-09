@@ -1,5 +1,17 @@
 [
   {
+    "title": "WalledEval: A Comprehensive Safety Evaluation Toolkit for Large Language Models",
+    "summary": "WalledEval is a comprehensive AI safety testing toolkit designed to evaluate large language models (LLMs). It accommodates a diverse range of models, including both open-weight and API-based ones, and features over 35 safety benchmarks covering areas such as multilingual safety, exaggerated safety, and prompt injections. The framework supports both LLM and judge benchmarking, and incorporates custom mutators to test safety against various text-style mutations such as future tense and paraphrasing. Additionally, WalledEval introduces WalledGuard, a new, small and performant content moderation tool, and SGXSTest, a benchmark for assessing exaggerated safety in cultural contexts. We make WalledEval publicly available at https://github.com/walledai/walledevalA.",
+    "link": "https://arxiv.org/abs/2408.03837",
+    "published": "Thu, 08 Aug 2024 07:35:27 GMT",
+    "authors": "Prannaya Gupta, Le Qi Yau, Hao Han Low, I-Shiang Lee, Hugo Maximus Lim, Yu Xin Teoh, Jia Hng Koh, Dar Win Liew, Rishabh Bhardwaj, Rajat Bhardwaj, Soujanya Poria",
+    "github_urls": [
+      "https://github.com/walledai/walledevalA."
+    ],
+    "huggingface_urls": [],
+    "source": "Hugging Face"
+  },
+  {
     "title": "Facing the Music: Tackling Singing Voice Separation in Cinematic Audio Source Separation",
     "summary": "Cinematic audio source separation (CASS) is a fairly new subtask of audio source separation. A typical setup of CASS is a three-stem problem, with the aim of separating the mixture into the dialogue stem (DX), music stem (MX), and effects stem (FX). In practice, however, several edge cases exist as some sound sources do not fit neatly in either of these three stems, necessitating the use of additional auxiliary stems in production. One very common edge case is the singing voice in film audio, which may belong in either the DX or MX, depending heavily on the cinematic context. In this work, we demonstrate a very straightforward extension of the dedicated-decoder Bandit and query-based single-decoder Banquet models to a four-stem problem, treating non-musical dialogue, instrumental music, singing voice, and effects as separate stems. Interestingly, the query-based Banquet model outperformed the dedicated-decoder Bandit model. We hypothesized that this is due to a better feature alignment at the bottleneck as enforced by the band-agnostic FiLM layer. Dataset and model implementation will be made available at https://github.com/kwatcharasupat/source-separation-landing.",
     "link": "https://arxiv.org/abs/2408.03588",
