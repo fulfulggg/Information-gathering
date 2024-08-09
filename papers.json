@@ -1,5 +1,335 @@
 [
   {
+    "title": "FacialPulse: An Efficient RNN-based Depression Detection via Temporal Facial Landmarks",
+    "summary": "arXiv:2408.03499v1 Announce Type: new \nAbstract: Depression is a prevalent mental health disorder that significantly impacts individuals' lives and well-being. Early detection and intervention are crucial for effective treatment and management of depression. Recently, there are many end-to-end deep learning methods leveraging the facial expression features for automatic depression detection. However, most current methods overlook the temporal dynamics of facial expressions. Although very recent 3DCNN methods remedy this gap, they introduce more computational cost due to the selection of CNN-based backbones and redundant facial features.\n  To address the above limitations, by considering the timing correlation of facial expressions, we propose a novel framework called FacialPulse, which recognizes depression with high accuracy and speed. By harnessing the bidirectional nature and proficiently addressing long-term dependencies, the Facial Motion Modeling Module (FMMM) is designed in FacialPulse to fully capture temporal features. Since the proposed FMMM has parallel processing capabilities and has the gate mechanism to mitigate gradient vanishing, this module can also significantly boost the training speed.\n  Besides, to effectively use facial landmarks to replace original images to decrease information redundancy, a Facial Landmark Calibration Module (FLCM) is designed to eliminate facial landmark errors to further improve recognition accuracy. Extensive experiments on the AVEC2014 dataset and MMDA dataset (a depression dataset) demonstrate the superiority of FacialPulse on recognition accuracy and speed, with the average MAE (Mean Absolute Error) decreased by 21% compared to baselines, and the recognition speed increased by 100% compared to state-of-the-art methods. Codes are released at https://github.com/volatileee/FacialPulse.",
+    "link": "https://arxiv.org/abs/2408.03499",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/volatileee/FacialPulse."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "e-Health CSIRO at RRG24: Entropy-Augmented Self-Critical Sequence Training for Radiology Report Generation",
+    "summary": "arXiv:2408.03500v1 Announce Type: new \nAbstract: The Shared Task on Large-Scale Radiology Report Generation (RRG24) aims to expedite the development of assistive systems for interpreting and reporting on chest X-ray (CXR) images. This task challenges participants to develop models that generate the findings and impression sections of radiology reports from CXRs from a patient's study, using five different datasets. This paper outlines the e-Health CSIRO team's approach, which achieved multiple first-place finishes in RRG24. The core novelty of our approach lies in the addition of entropy regularisation to self-critical sequence training, to maintain a higher entropy in the token distribution. This prevents overfitting to common phrases and ensures a broader exploration of the vocabulary during training, essential for handling the diversity of the radiology reports in the RRG24 datasets. Our model is available on Hugging Face https://huggingface.co/aehrc/cxrmate-rrg24.",
+    "link": "https://arxiv.org/abs/2408.03500",
+    "published": "No date available",
+    "github_urls": [],
+    "huggingface_urls": [
+      "https://huggingface.co/aehrc/cxrmate-rrg24."
+    ],
+    "source": "arXiv"
+  },
+  {
+    "title": "MoExtend: Tuning New Experts for Modality and Task Extension",
+    "summary": "arXiv:2408.03511v1 Announce Type: new \nAbstract: Large language models (LLMs) excel in various tasks but are primarily trained on text data, limiting their application scope. Expanding LLM capabilities to include vision-language understanding is vital, yet training them on multimodal data from scratch is challenging and costly. Existing instruction tuning methods, e.g., LLAVA, often connects a pretrained CLIP vision encoder and LLMs via fully fine-tuning LLMs to bridge the modality gap. However, full fine-tuning is plagued by catastrophic forgetting, i.e., forgetting previous knowledge, and high training costs particularly in the era of increasing tasks and modalities. To solve this issue, we introduce MoExtend, an effective framework designed to streamline the modality adaptation and extension of Mixture-of-Experts (MoE) models. MoExtend seamlessly integrates new experts into pre-trained MoE models, endowing them with novel knowledge without the need to tune pretrained models such as MoE and vision encoders. This approach enables rapid adaptation and extension to new modal data or tasks, effectively addressing the challenge of accommodating new modalities within LLMs. Furthermore, MoExtend avoids tuning pretrained models, thus mitigating the risk of catastrophic forgetting. Experimental results demonstrate the efficacy and efficiency of MoExtend in enhancing the multimodal capabilities of LLMs, contributing to advancements in multimodal AI research. Code: https://github.com/zhongshsh/MoExtend.",
+    "link": "https://arxiv.org/abs/2408.03511",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/zhongshsh/MoExtend."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "D2Styler: Advancing Arbitrary Style Transfer with Discrete Diffusion Methods",
+    "summary": "arXiv:2408.03558v1 Announce Type: new \nAbstract: In image processing, one of the most challenging tasks is to render an image's semantic meaning using a variety of artistic approaches. Existing techniques for arbitrary style transfer (AST) frequently experience mode-collapse, over-stylization, or under-stylization due to a disparity between the style and content images. We propose a novel framework called D$^2$Styler (Discrete Diffusion Styler) that leverages the discrete representational capability of VQ-GANs and the advantages of discrete diffusion, including stable training and avoidance of mode collapse. Our method uses Adaptive Instance Normalization (AdaIN) features as a context guide for the reverse diffusion process. This makes it easy to move features from the style image to the content image without bias. The proposed method substantially enhances the visual quality of style-transferred images, allowing the combination of content and style in a visually appealing manner. We take style images from the WikiArt dataset and content images from the COCO dataset. Experimental results demonstrate that D$^2$Styler produces high-quality style-transferred images and outperforms twelve existing methods on nearly all the metrics. The qualitative results and ablation studies provide further insights into the efficacy of our technique. The code is available at https://github.com/Onkarsus13/D2Styler.",
+    "link": "https://arxiv.org/abs/2408.03558",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Onkarsus13/D2Styler."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Teach CLIP to Develop a Number Sense for Ordinal Regression",
+    "summary": "arXiv:2408.03574v1 Announce Type: new \nAbstract: Ordinal regression is a fundamental problem within the field of computer vision, with customised well-trained models on specific tasks. While pre-trained vision-language models (VLMs) have exhibited impressive performance on various vision tasks, their potential for ordinal regression has received less exploration. In this study, we first investigate CLIP's potential for ordinal regression, from which we expect the model could generalise to different ordinal regression tasks and scenarios. Unfortunately, vanilla CLIP fails on this task, since current VLMs have a well-documented limitation of encapsulating compositional concepts such as number sense. We propose a simple yet effective method called NumCLIP to improve the quantitative understanding of VLMs. We disassemble the exact image to number-specific text matching problem into coarse classification and fine prediction stages. We discretize and phrase each numerical bin with common language concept to better leverage the available pre-trained alignment in CLIP. To consider the inherent continuous property of ordinal regression, we propose a novel fine-grained cross-modal ranking-based regularisation loss specifically designed to keep both semantic and ordinal alignment in CLIP's feature space. Experimental results on three general ordinal regression tasks demonstrate the effectiveness of NumCLIP, with 10% and 3.83% accuracy improvement on historical image dating and image aesthetics assessment task, respectively. Code is publicly available at https://github.com/xmed-lab/NumCLIP.",
+    "link": "https://arxiv.org/abs/2408.03574",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/xmed-lab/NumCLIP."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "PRISM: PRogressive dependency maxImization for Scale-invariant image Matching",
+    "summary": "arXiv:2408.03598v1 Announce Type: new \nAbstract: Image matching aims at identifying corresponding points between a pair of images. Currently, detector-free methods have shown impressive performance in challenging scenarios, thanks to their capability of generating dense matches and global receptive field. However, performing feature interaction and proposing matches across the entire image is unnecessary, because not all image regions contribute to the matching process. Interacting and matching in unmatchable areas can introduce errors, reducing matching accuracy and efficiency. Meanwhile, the scale discrepancy issue still troubles existing methods. To address above issues, we propose PRogressive dependency maxImization for Scale-invariant image Matching (PRISM), which jointly prunes irrelevant patch features and tackles the scale discrepancy. To do this, we firstly present a Multi-scale Pruning Module (MPM) to adaptively prune irrelevant features by maximizing the dependency between the two feature sets. Moreover, we design the Scale-Aware Dynamic Pruning Attention (SADPA) to aggregate information from different scales via a hierarchical design. Our method's superior matching performance and generalization capability are confirmed by leading accuracy across various evaluation benchmarks and downstream tasks. The code is publicly available at https://github.com/Master-cai/PRISM.",
+    "link": "https://arxiv.org/abs/2408.03598",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Master-cai/PRISM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Weakly Contrastive Learning via Batch Instance Discrimination and Feature Clustering for Small Sample SAR ATR",
+    "summary": "arXiv:2408.03627v1 Announce Type: new \nAbstract: In recent years, impressive performance of deep learning technology has been recognized in Synthetic Aperture Radar (SAR) Automatic Target Recognition (ATR). Since a large amount of annotated data is required in this technique, it poses a trenchant challenge to the issue of obtaining a high recognition rate through less labeled data. To overcome this problem, inspired by the contrastive learning, we proposed a novel framework named Batch Instance Discrimination and Feature Clustering (BIDFC). In this framework, different from that of the objective of general contrastive learning methods, embedding distance between samples should be moderate because of the high similarity between samples in the SAR images. Consequently, our flexible framework is equipped with adjustable distance between embedding, which we term as weakly contrastive learning. Technically, instance labels are assigned to the unlabeled data in per batch and random augmentation and training are performed few times on these augmented data. Meanwhile, a novel Dynamic-Weighted Variance loss (DWV loss) function is also posed to cluster the embedding of enhanced versions for each sample. Experimental results on the moving and stationary target acquisition and recognition (MSTAR) database indicate a 91.25% classification accuracy of our method fine-tuned on only 3.13% training data. Even though a linear evaluation is performed on the same training data, the accuracy can still reach 90.13%. We also verified the effectiveness of BIDFC in OpenSarShip database, indicating that our method can be generalized to other datasets. Our code is avaliable at: https://github.com/Wenlve-Zhou/BIDFC-master.",
+    "link": "https://arxiv.org/abs/2408.03627",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Wenlve-Zhou/BIDFC-master."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Concept Conductor: Orchestrating Multiple Personalized Concepts in Text-to-Image Synthesis",
+    "summary": "arXiv:2408.03632v1 Announce Type: new \nAbstract: The customization of text-to-image models has seen significant advancements, yet generating multiple personalized concepts remains a challenging task. Current methods struggle with attribute leakage and layout confusion when handling multiple concepts, leading to reduced concept fidelity and semantic consistency. In this work, we introduce a novel training-free framework, Concept Conductor, designed to ensure visual fidelity and correct layout in multi-concept customization. Concept Conductor isolates the sampling processes of multiple custom models to prevent attribute leakage between different concepts and corrects erroneous layouts through self-attention-based spatial guidance. Additionally, we present a concept injection technique that employs shape-aware masks to specify the generation area for each concept. This technique injects the structure and appearance of personalized concepts through feature fusion in the attention layers, ensuring harmony in the final image. Extensive qualitative and quantitative experiments demonstrate that Concept Conductor can consistently generate composite images with accurate layouts while preserving the visual details of each concept. Compared to existing baselines, Concept Conductor shows significant performance improvements. Our method supports the combination of any number of concepts and maintains high fidelity even when dealing with visually similar concepts. The code and models are available at https://github.com/Nihukat/Concept-Conductor.",
+    "link": "https://arxiv.org/abs/2408.03632",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Nihukat/Concept-Conductor."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CAS-ViT: Convolutional Additive Self-attention Vision Transformers for Efficient Mobile Applications",
+    "summary": "arXiv:2408.03703v1 Announce Type: new \nAbstract: Vision Transformers (ViTs) mark a revolutionary advance in neural networks with their token mixer's powerful global context capability. However, the pairwise token affinity and complex matrix operations limit its deployment on resource-constrained scenarios and real-time applications, such as mobile devices, although considerable efforts have been made in previous works. In this paper, we introduce CAS-ViT: Convolutional Additive Self-attention Vision Transformers, to achieve a balance between efficiency and performance in mobile applications. Firstly, we argue that the capability of token mixers to obtain global contextual information hinges on multiple information interactions, such as spatial and channel domains. Subsequently, we construct a novel additive similarity function following this paradigm and present an efficient implementation named Convolutional Additive Token Mixer (CATM). This simplification leads to a significant reduction in computational overhead. We evaluate CAS-ViT across a variety of vision tasks, including image classification, object detection, instance segmentation, and semantic segmentation. Our experiments, conducted on GPUs, ONNX, and iPhones, demonstrate that CAS-ViT achieves a competitive performance when compared to other state-of-the-art backbones, establishing it as a viable option for efficient mobile vision applications. Our code and model are available at: \\url{https://github.com/Tianfang-Zhang/CAS-ViT}",
+    "link": "https://arxiv.org/abs/2408.03703",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Tianfang-Zhang/CAS-ViT}"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Pick of the Bunch: Detecting Infrared Small Targets Beyond Hit-Miss Trade-Offs via Selective Rank-Aware Attention",
+    "summary": "arXiv:2408.03717v1 Announce Type: new \nAbstract: Infrared small target detection faces the inherent challenge of precisely localizing dim targets amidst complex background clutter. Traditional approaches struggle to balance detection precision and false alarm rates. To break this dilemma, we propose SeRankDet, a deep network that achieves high accuracy beyond the conventional hit-miss trade-off, by following the ``Pick of the Bunch'' principle. At its core lies our Selective Rank-Aware Attention (SeRank) module, employing a non-linear Top-K selection process that preserves the most salient responses, preventing target signal dilution while maintaining constant complexity. Furthermore, we replace the static concatenation typical in U-Net structures with our Large Selective Feature Fusion (LSFF) module, a dynamic fusion strategy that empowers SeRankDet with adaptive feature integration, enhancing its ability to discriminate true targets from false alarms. The network's discernment is further refined by our Dilated Difference Convolution (DDC) module, which merges differential convolution aimed at amplifying subtle target characteristics with dilated convolution to expand the receptive field, thereby substantially improving target-background separation. Despite its lightweight architecture, the proposed SeRankDet sets new benchmarks in state-of-the-art performance across multiple public datasets. The code is available at https://github.com/GrokCV/SeRankDet.",
+    "link": "https://arxiv.org/abs/2408.03717",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/GrokCV/SeRankDet."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Advancing Multimodal Large Language Models with Quantization-Aware Scale Learning for Efficient Adaptation",
+    "summary": "arXiv:2408.03735v1 Announce Type: new \nAbstract: This paper presents the first study to explore the potential of parameter quantization for multimodal large language models to alleviate the significant resource constraint encountered during vision-language instruction tuning. We introduce a Quantization-aware Scale LeArning method based on multimodal Warmup, termed QSLAW. This method is grounded in two key innovations: (1) The learning of group-wise scale factors for quantized LLM weights to mitigate the quantization error arising from activation outliers and achieve more effective vision-language instruction tuning; (2) The implementation of a multimodal warmup that progressively integrates linguistic and multimodal training samples, thereby preventing overfitting of the quantized model to multimodal data while ensuring stable adaptation of multimodal large language models to downstream vision-language tasks. Extensive experiments demonstrate that models quantized by QSLAW perform on par with, or even surpass, their full-precision counterparts, while facilitating up to 1.4 times reduction in VL tuning time and GPU consumption. Our code is released at https://github.com/xjjxmu/QSLAW.",
+    "link": "https://arxiv.org/abs/2408.03735",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/xjjxmu/QSLAW."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Surgformer: Surgical Transformer with Hierarchical Temporal Attention for Surgical Phase Recognition",
+    "summary": "arXiv:2408.03867v1 Announce Type: new \nAbstract: Existing state-of-the-art methods for surgical phase recognition either rely on the extraction of spatial-temporal features at a short-range temporal resolution or adopt the sequential extraction of the spatial and temporal features across the entire temporal resolution. However, these methods have limitations in modeling spatial-temporal dependency and addressing spatial-temporal redundancy: 1) These methods fail to effectively model spatial-temporal dependency, due to the lack of long-range information or joint spatial-temporal modeling. 2) These methods utilize dense spatial features across the entire temporal resolution, resulting in significant spatial-temporal redundancy. In this paper, we propose the Surgical Transformer (Surgformer) to address the issues of spatial-temporal modeling and redundancy in an end-to-end manner, which employs divided spatial-temporal attention and takes a limited set of sparse frames as input. Moreover, we propose a novel Hierarchical Temporal Attention (HTA) to capture both global and local information within varied temporal resolutions from a target frame-centric perspective. Distinct from conventional temporal attention that primarily emphasizes dense long-range similarity, HTA not only captures long-term information but also considers local latent consistency among informative frames. HTA then employs pyramid feature aggregation to effectively utilize temporal information across diverse temporal resolutions, thereby enhancing the overall temporal representation. Extensive experiments on two challenging benchmark datasets verify that our proposed Surgformer performs favorably against the state-of-the-art methods. The code is released at https://github.com/isyangshu/Surgformer.",
+    "link": "https://arxiv.org/abs/2408.03867",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/isyangshu/Surgformer."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Global-Local Progressive Integration Network for Blind Image Quality Assessment",
+    "summary": "arXiv:2408.03885v1 Announce Type: new \nAbstract: Vision transformers (ViTs) excel in computer vision for modeling long-term dependencies, yet face two key challenges for image quality assessment (IQA): discarding fine details during patch embedding, and requiring extensive training data due to lack of inductive biases. In this study, we propose a Global-Local progressive INTegration network for IQA, called GlintIQA, to address these issues through three key components: 1) Hybrid feature extraction combines ViT-based global feature extractor (VGFE) and convolutional neural networks (CNNs)-based local feature extractor (CLFE) to capture global coarse-grained features and local fine-grained features, respectively. The incorporation of CNNs mitigates the patch-level information loss and inductive bias constraints inherent to ViT architectures. 2) Progressive feature integration leverages diverse kernel sizes in embedding to spatially align coarse- and fine-grained features, and progressively aggregate these features by interactively stacking channel-wise attention and spatial enhancement modules to build effective quality-aware representations. 3) Content similarity-based labeling approach is proposed that automatically assigns quality labels to images with diverse content based on subjective quality scores. This addresses the scarcity of labeled training data in synthetic datasets and bolsters model generalization. The experimental results demonstrate the efficacy of our approach, yielding 5.04% average SROCC gains on cross-authentic dataset evaluations. Moreover, our model and its counterpart pre-trained on the proposed dataset respectively exhibited 5.40% and 13.23% improvements on across-synthetic datasets evaluation. The codes and proposed dataset will be released at https://github.com/XiaoqiWang/GlintIQA.",
+    "link": "https://arxiv.org/abs/2408.03885",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/XiaoqiWang/GlintIQA."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Distillation Learning Guided by Image Reconstruction for One-Shot Medical Image Segmentation",
+    "summary": "arXiv:2408.03616v1 Announce Type: cross \nAbstract: Traditional one-shot medical image segmentation (MIS) methods use registration networks to propagate labels from a reference atlas or rely on comprehensive sampling strategies to generate synthetic labeled data for training. However, these methods often struggle with registration errors and low-quality synthetic images, leading to poor performance and generalization. To overcome this, we introduce a novel one-shot MIS framework based on knowledge distillation, which allows the network to directly 'see' real images through a distillation process guided by image reconstruction. It focuses on anatomical structures in a single labeled image and a few unlabeled ones. A registration-based data augmentation network creates realistic, labeled samples, while a feature distillation module helps the student network learn segmentation from these samples, guided by the teacher network. During inference, the streamlined student network accurately segments new images. Evaluations on three public datasets (OASIS for T1 brain MRI, BCV for abdomen CT, and VerSe for vertebrae CT) show superior segmentation performance and generalization across different medical image datasets and modalities compared to leading methods. Our code is available at https://github.com/NoviceFodder/OS-MedSeg.",
+    "link": "https://arxiv.org/abs/2408.03616",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/NoviceFodder/OS-MedSeg."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "SAM2-PATH: A better segment anything model for semantic segmentation in digital pathology",
+    "summary": "arXiv:2408.03651v1 Announce Type: cross \nAbstract: The semantic segmentation task in pathology plays an indispensable role in assisting physicians in determining the condition of tissue lesions. Foundation models, such as the SAM (Segment Anything Model) and SAM2, exhibit exceptional performance in instance segmentation within everyday natural scenes. SAM-PATH has also achieved impressive results in semantic segmentation within the field of pathology. However, in computational pathology, the models mentioned above still have the following limitations. The pre-trained encoder models suffer from a scarcity of pathology image data; SAM and SAM2 are not suitable for semantic segmentation. In this paper, we have designed a trainable Kolmogorov-Arnold Networks(KAN) classification module within the SAM2 workflow, and we have introduced the largest pretrained vision encoder for histopathology (UNI) to date. Our proposed framework, SAM2-PATH, augments SAM2's capability to perform semantic segmentation in digital pathology autonomously, eliminating the need for human provided input prompts. The experimental results demonstrate that, after fine-tuning the KAN classification module and decoder, Our dataset has achieved competitive results on publicly available pathology data. The code has been open-sourced and can be found at the following address: https://github.com/simzhangbest/SAM2PATH.",
+    "link": "https://arxiv.org/abs/2408.03651",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/simzhangbest/SAM2PATH."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "RCA: Region Conditioned Adaptation for Visual Abductive Reasoning",
+    "summary": "arXiv:2303.10428v5 Announce Type: replace \nAbstract: Visual abductive reasoning aims to make likely explanations for visual observations. We propose a simple yet effective Region Conditioned Adaptation, a hybrid parameter-efficient fine-tuning method that equips the frozen CLIP with the ability to infer explanations from local visual cues. We encode ``local hints'' and ``global contexts'' into visual prompts of the CLIP model separately at fine and coarse-grained levels. Adapters are used for fine-tuning CLIP models for downstream tasks and we design a new attention adapter, that directly steers the focus of the attention map with trainable query and key projections of a frozen CLIP model. Finally, we train our new model with a modified contrastive loss to regress the visual feature simultaneously toward features of literal description and plausible explanations. The loss enables CLIP to maintain both perception and reasoning abilities. Experiments on the Sherlock visual abductive reasoning benchmark show that the RCA significantly outstands previous SOTAs, ranking the \\nth{1} on the leaderboards (e.g., Human Acc: RCA 31.74 \\textit{vs} CPT-CLIP 29.58, higher =better). We also validate the RCA is generalizable to local perception benchmarks like RefCOCO. We open-source our project at \\textit{\\color{magenta}{\\url{https://github.com/LUNAProject22/RPA}}}.",
+    "link": "https://arxiv.org/abs/2303.10428",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/LUNAProject22/RPA}}}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Subjective-Aligned Dataset and Metric for Text-to-Video Quality Assessment",
+    "summary": "arXiv:2403.11956v5 Announce Type: replace \nAbstract: With the rapid development of generative models, Artificial Intelligence-Generated Contents (AIGC) have exponentially increased in daily lives. Among them, Text-to-Video (T2V) generation has received widespread attention. Though many T2V models have been released for generating high perceptual quality videos, there is still lack of a method to evaluate the quality of these videos quantitatively. To solve this issue, we establish the largest-scale Text-to-Video Quality Assessment DataBase (T2VQA-DB) to date. The dataset is composed of 10,000 videos generated by 9 different T2V models. We also conduct a subjective study to obtain each video's corresponding mean opinion score. Based on T2VQA-DB, we propose a novel transformer-based model for subjective-aligned Text-to-Video Quality Assessment (T2VQA). The model extracts features from text-video alignment and video fidelity perspectives, then it leverages the ability of a large language model to give the prediction score. Experimental results show that T2VQA outperforms existing T2V metrics and SOTA video quality assessment models. Quantitative analysis indicates that T2VQA is capable of giving subjective-align predictions, validating its effectiveness. The dataset and code will be released at https://github.com/QMME/T2VQA.",
+    "link": "https://arxiv.org/abs/2403.11956",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/QMME/T2VQA."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction",
+    "summary": "arXiv:2403.15098v3 Announce Type: replace \nAbstract: Vehicle trajectory prediction has increasingly relied on data-driven solutions, but their ability to scale to different data domains and the impact of larger dataset sizes on their generalization remain under-explored. While these questions can be studied by employing multiple datasets, it is challenging due to several discrepancies, e.g., in data formats, map resolution, and semantic annotation types. To address these challenges, we introduce UniTraj, a comprehensive framework that unifies various datasets, models, and evaluation criteria, presenting new opportunities for the vehicle trajectory prediction field. In particular, using UniTraj, we conduct extensive experiments and find that model performance significantly drops when transferred to other datasets. However, enlarging data size and diversity can substantially improve performance, leading to a new state-of-the-art result for the nuScenes dataset. We provide insights into dataset characteristics to explain these findings. The code can be found here: https://github.com/vita-epfl/UniTraj",
+    "link": "https://arxiv.org/abs/2403.15098",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/vita-epfl/UniTraj"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs",
+    "summary": "arXiv:2403.19588v2 Announce Type: replace \nAbstract: This paper revives Densely Connected Convolutional Networks (DenseNets) and reveals the underrated effectiveness over predominant ResNet-style architectures. We believe DenseNets' potential was overlooked due to untouched training methods and traditional design elements not fully revealing their capabilities. Our pilot study shows dense connections through concatenation are strong, demonstrating that DenseNets can be revitalized to compete with modern architectures. We methodically refine suboptimal components - architectural adjustments, block redesign, and improved training recipes towards widening DenseNets and boosting memory efficiency while keeping concatenation shortcuts. Our models, employing simple architectural elements, ultimately surpass Swin Transformer, ConvNeXt, and DeiT-III - key architectures in the residual learning lineage. Furthermore, our models exhibit near state-of-the-art performance on ImageNet-1K, competing with the very recent models and downstream tasks, ADE20k semantic segmentation, and COCO object detection/instance segmentation. Finally, we provide empirical analyses that uncover the merits of the concatenation over additive shortcuts, steering a renewed preference towards DenseNet-style designs. Our code is available at https://github.com/naver-ai/rdnet.",
+    "link": "https://arxiv.org/abs/2403.19588",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/naver-ai/rdnet."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "RoadBEV: Road Surface Reconstruction in Bird's Eye View",
+    "summary": "arXiv:2404.06605v3 Announce Type: replace \nAbstract: Road surface conditions, especially geometry profiles, enormously affect driving performance of autonomous vehicles. Vision-based online road reconstruction promisingly captures road information in advance. Existing solutions like monocular depth estimation and stereo matching suffer from modest performance. The recent technique of Bird's-Eye-View (BEV) perception provides immense potential to more reliable and accurate reconstruction. This paper uniformly proposes two simple yet effective models for road elevation reconstruction in BEV named RoadBEV-mono and RoadBEV-stereo, which estimate road elevation with monocular and stereo images, respectively. The former directly fits elevation values based on voxel features queried from image view, while the latter efficiently recognizes road elevation patterns based on BEV volume representing correlation between left and right voxel features. Insightful analyses reveal their consistence and difference with the perspective view. Experiments on real-world dataset verify the models' effectiveness and superiority. Elevation errors of RoadBEV-mono and RoadBEV-stereo achieve 1.83 cm and 0.50 cm, respectively. Our models are promising for practical road preview, providing essential information for promoting safety and comfort of autonomous vehicles. The code is released at https://github.com/ztsrxh/RoadBEV",
+    "link": "https://arxiv.org/abs/2404.06605",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/ztsrxh/RoadBEV"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Improving Composed Image Retrieval via Contrastive Learning with Scaling Positives and Negatives",
+    "summary": "arXiv:2404.11317v2 Announce Type: replace \nAbstract: The Composed Image Retrieval (CIR) task aims to retrieve target images using a composed query consisting of a reference image and a modified text. Advanced methods often utilize contrastive learning as the optimization objective, which benefits from adequate positive and negative examples. However, the triplet for CIR incurs high manual annotation costs, resulting in limited positive examples. Furthermore, existing methods commonly use in-batch negative sampling, which reduces the negative number available for the model. To address the problem of lack of positives, we propose a data generation method by leveraging a multi-modal large language model to construct triplets for CIR. To introduce more negatives during fine-tuning, we design a two-stage fine-tuning framework for CIR, whose second stage introduces plenty of static representations of negatives to optimize the representation space rapidly. The above two improvements can be effectively stacked and designed to be plug-and-play, easily applied to existing CIR models without changing their original architectures. Extensive experiments and ablation analysis demonstrate that our method effectively scales positives and negatives and achieves state-of-the-art results on both FashionIQ and CIRR datasets. In addition, our method also performs well in zero-shot composed image retrieval, providing a new CIR solution for the low-resources scenario. Our code and data are released at https://github.com/BUAADreamer/SPN4CIR.",
+    "link": "https://arxiv.org/abs/2404.11317",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/BUAADreamer/SPN4CIR."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CrossMatch: Enhance Semi-Supervised Medical Image Segmentation with Perturbation Strategies and Knowledge Distillation",
+    "summary": "arXiv:2405.00354v2 Announce Type: replace \nAbstract: Semi-supervised learning for medical image segmentation presents a unique challenge of efficiently using limited labeled data while leveraging abundant unlabeled data. Despite advancements, existing methods often do not fully exploit the potential of the unlabeled data for enhancing model robustness and accuracy. In this paper, we introduce CrossMatch, a novel framework that integrates knowledge distillation with dual perturbation strategies-image-level and feature-level-to improve the model's learning from both labeled and unlabeled data. CrossMatch employs multiple encoders and decoders to generate diverse data streams, which undergo self-knowledge distillation to enhance consistency and reliability of predictions across varied perturbations. Our method significantly surpasses other state-of-the-art techniques in standard benchmarks by effectively minimizing the gap between training on labeled and unlabeled data and improving edge accuracy and generalization in medical image segmentation. The efficacy of CrossMatch is demonstrated through extensive experimental validations, showing remarkable performance improvements without increasing computational costs. Code for this implementation is made available at https://github.com/AiEson/CrossMatch.git.",
+    "link": "https://arxiv.org/abs/2405.00354",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/AiEson/CrossMatch.git."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "FA-Depth: Toward Fast and Accurate Self-supervised Monocular Depth Estimation",
+    "summary": "arXiv:2405.10885v2 Announce Type: replace \nAbstract: Most existing methods often rely on complex models to predict scene depth with high accuracy, resulting in slow inference that is not conducive to deployment. To better balance precision and speed, we first designed SmallDepth based on sparsity. Second, to enhance the feature representation ability of SmallDepth during training under the condition of equal complexity during inference, we propose an equivalent transformation module(ETM). Third, to improve the ability of each layer in the case of a fixed SmallDepth to perceive different context information and improve the robustness of SmallDepth to the left-right direction and illumination changes, we propose pyramid loss. Fourth, to further improve the accuracy of SmallDepth, we utilized the proposed function approximation loss (APX) to transfer knowledge in the pretrained HQDecv2, obtained by optimizing the previous HQDec to address grid artifacts in some regions, to SmallDepth. Extensive experiments demonstrate that each proposed component improves the precision of SmallDepth without changing the complexity of SmallDepth during inference, and the developed approach achieves state-of-the-art results on KITTI at an inference speed of more than 500 frames per second and with approximately 2 M parameters. The code and models will be publicly available at https://github.com/fwucas/FA-Depth.",
+    "link": "https://arxiv.org/abs/2405.10885",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/fwucas/FA-Depth."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Capsule Network Projectors are Equivariant and Invariant Learners",
+    "summary": "arXiv:2405.14386v2 Announce Type: replace \nAbstract: Learning invariant representations has been the longstanding approach to self-supervised learning. However, recently progress has been made in preserving equivariant properties in representations, yet do so with highly prescribed architectures. In this work, we propose an invariant-equivariant self-supervised architecture that employs Capsule Networks (CapsNets) which have been shown to capture equivariance with respect to novel viewpoints. We demonstrate that the use of CapsNets in equivariant self-supervised architectures achieves improved downstream performance on equivariant tasks with higher efficiency and fewer network parameters. To accommodate the architectural changes of CapsNets, we introduce a new objective function based on entropy minimisation. This approach which we name CapsIE (Capsule Invariant Equivariant Network) achieves state-of-the-art performance across invariant and equivariant tasks on the 3DIEBench dataset compared to prior equivariant SSL methods, while outperforming supervised baselines. Our results demonstrate the ability of CapsNets to learn complex and generalised representations for large-scale, multi-task datasets compared to previous CapsNet benchmarks. Code is available at https://github.com/AberdeenML/CapsIE.",
+    "link": "https://arxiv.org/abs/2405.14386",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/AberdeenML/CapsIE."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Investigating and Defending Shortcut Learning in Personalized Diffusion Models",
+    "summary": "arXiv:2406.18944v3 Announce Type: replace \nAbstract: Personalized diffusion models have gained popularity for adapting pre-trained text-to-image models to generate images of specific topics with minimal training data. However, these models are vulnerable to minor adversarial perturbations, leading to degraded performance on corrupted datasets. Such vulnerabilities are further exploited to craft protective perturbations on sensitive images like portraits that prevent unauthorized generation. In response, diffusion-based purification methods have been proposed to remove these perturbations and retain generation performance. However, existing works turn to over-purifying the images, which causes information loss. In this paper, we take a closer look at the fine-tuning process of personalized diffusion models through the lens of shortcut learning. And we propose a hypothesis explaining the manipulation mechanisms of existing perturbation methods, demonstrating that perturbed images significantly deviate from their original prompts in the CLIP-based latent space. This misalignment during fine-tuning causes models to associate noisy patterns with identifiers, resulting in performance degradation. Based on these insights, we introduce a systematic approach to maintain training performance through purification. Our method first purifies the images to realign them with their original semantic meanings in latent space. Then, we introduce contrastive learning with negative tokens to decouple the learning of clean identities from noisy patterns, which shows a strong potential capacity against adaptive perturbation. Our study uncovers shortcut learning vulnerabilities in personalized diffusion models and provides a firm evaluation framework for future protective perturbation research. Code is available at https://github.com/liuyixin-louis/DiffShortcut.",
+    "link": "https://arxiv.org/abs/2406.18944",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/liuyixin-louis/DiffShortcut."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "HyperKAN: Kolmogorov-Arnold Networks make Hyperspectral Image Classificators Smarter",
+    "summary": "arXiv:2407.05278v2 Announce Type: replace \nAbstract: In traditional neural network architectures, a multilayer perceptron (MLP) is typically employed as a classification block following the feature extraction stage. However, the Kolmogorov-Arnold Network (KAN) presents a promising alternative to MLP, offering the potential to enhance prediction accuracy. In this paper, we propose the replacement of linear and convolutional layers of traditional networks with KAN-based counterparts. These modifications allowed us to significantly increase the per-pixel classification accuracy for hyperspectral remote-sensing images. We modified seven different neural network architectures for hyperspectral image classification and observed a substantial improvement in the classification accuracy across all the networks. The architectures considered in the paper include baseline MLP, state-of-the-art 1D (1DCNN) and 3D convolutional (two different 3DCNN, NM3DCNN), and transformer (SSFTT) architectures, as well as newly proposed M1DCNN. The greatest effect was achieved for convolutional networks working exclusively on spectral data, and the best classification quality was achieved using a KAN-based transformer architecture. All the experiments were conducted using seven openly available hyperspectral datasets. Our code is available at https://github.com/f-neumann77/HyperKAN.",
+    "link": "https://arxiv.org/abs/2407.05278",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/f-neumann77/HyperKAN."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CLIP with Generative Latent Replay: a Strong Baseline for Incremental Learning",
+    "summary": "arXiv:2407.15793v2 Announce Type: replace \nAbstract: With the emergence of Transformers and Vision-Language Models (VLMs) such as CLIP, large pre-trained models have become a common strategy to enhance performance in Continual Learning scenarios. This led to the development of numerous prompting strategies to effectively fine-tune transformer-based models without succumbing to catastrophic forgetting. However, these methods struggle to specialize the model on domains significantly deviating from the pre-training and preserving its zero-shot capabilities. In this work, we propose Continual Generative training for Incremental prompt-Learning, a novel approach to mitigate forgetting while adapting a VLM, which exploits generative replay to align prompts to tasks. We also introduce a new metric to evaluate zero-shot capabilities within CL benchmarks. Through extensive experiments on different domains, we demonstrate the effectiveness of our framework in adapting to new tasks while improving zero-shot capabilities. Further analysis reveals that our approach can bridge the gap with joint prompt tuning. The codebase is available at https://github.com/aimagelab/mammoth.",
+    "link": "https://arxiv.org/abs/2407.15793",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/aimagelab/mammoth."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MMInstruct: A High-Quality Multi-Modal Instruction Tuning Dataset with Extensive Diversity",
+    "summary": "arXiv:2407.15838v2 Announce Type: replace \nAbstract: Despite the effectiveness of vision-language supervised fine-tuning in enhancing the performance of Vision Large Language Models (VLLMs). However, existing visual instruction tuning datasets include the following limitations: (1) Instruction annotation quality: despite existing VLLMs exhibiting strong performance, instructions generated by those advanced VLLMs may still suffer from inaccuracies, such as hallucinations. (2) Instructions and image diversity: the limited range of instruction types and the lack of diversity in image data may impact the model's ability to generate diversified and closer to real-world scenarios outputs. To address these challenges, we construct a high-quality, diverse visual instruction tuning dataset MMInstruct, which consists of 973K instructions from 24 domains. There are four instruction types: Judgement, Multiple-Choice, Long Visual Question Answering and Short Visual Question Answering. To construct MMInstruct, we propose an instruction generation data engine that leverages GPT-4V, GPT-3.5, and manual correction. Our instruction generation engine enables semi-automatic, low-cost, and multi-domain instruction generation at 1/6 the cost of manual construction. Through extensive experiment validation and ablation experiments, we demonstrate that MMInstruct could significantly improve the performance of VLLMs, e.g., the model fine-tuning on MMInstruct achieves new state-of-the-art performance on 10 out of 12 benchmarks. The code and data shall be available at https://github.com/yuecao0119/MMInstruct.",
+    "link": "https://arxiv.org/abs/2407.15838",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/yuecao0119/MMInstruct."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Text-Region Matching for Multi-Label Image Recognition with Missing Labels",
+    "summary": "arXiv:2407.18520v2 Announce Type: replace \nAbstract: Recently, large-scale visual language pre-trained (VLP) models have demonstrated impressive performance across various downstream tasks. Motivated by these advancements, pioneering efforts have emerged in multi-label image recognition with missing labels, leveraging VLP prompt-tuning technology. However, they usually cannot match text and vision features well, due to complicated semantics gaps and missing labels in a multi-label image. To tackle this challenge, we propose \\textbf{T}ext-\\textbf{R}egion \\textbf{M}atching for optimizing \\textbf{M}ulti-\\textbf{L}abel prompt tuning, namely TRM-ML, a novel method for enhancing meaningful cross-modal matching. Compared to existing methods, we advocate exploring the information of category-aware regions rather than the entire image or pixels, which contributes to bridging the semantic gap between textual and visual representations in a one-to-one matching manner. Concurrently, we further introduce multimodal contrastive learning to narrow the semantic gap between textual and visual modalities and establish intra-class and inter-class relationships. Additionally, to deal with missing labels, we propose a multimodal category prototype that leverages intra- and inter-category semantic relationships to estimate unknown labels, facilitating pseudo-label generation. Extensive experiments on the MS-COCO, PASCAL VOC, Visual Genome, NUS-WIDE, and CUB-200-211 benchmark datasets demonstrate that our proposed framework outperforms the state-of-the-art methods by a significant margin. Our code is available here\\href{https://github.com/yu-gi-oh-leilei/TRM-ML}{\\raisebox{-1pt}{\\faGithub}}.",
+    "link": "https://arxiv.org/abs/2407.18520",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/yu-gi-oh-leilei/TRM-ML}{\\raisebox{-1pt}{\\faGithub}}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Unleashing the Power of Data Tsunami: A Comprehensive Survey on Data Assessment and Selection for Instruction Tuning of Language Models",
+    "summary": "arXiv:2408.02085v3 Announce Type: replace \nAbstract: Instruction tuning plays a critical role in aligning large language models (LLMs) with human preference. Despite the vast amount of open instruction datasets, naively training a LLM on all existing instructions may not be optimal and practical. To pinpoint the most beneficial datapoints, data assessment and selection methods have been proposed in the fields of natural language processing (NLP) and deep learning. However, under the context of instruction tuning, there still exists a gap in knowledge on what kind of data evaluation metrics can be employed and how they can be integrated into the selection mechanism. To bridge this gap, we present a comprehensive review on existing literature of data assessment and selection especially for instruction tuning of LLMs. We systematically categorize all applicable methods into quality-based, diversity-based, and importance-based ones where a unified, fine-grained taxonomy is structured. For each category, representative methods are elaborated to describe the landscape of relevant research. In addition, comparison between latest methods is conducted on their officially reported results to provide in-depth discussions on their limitations. Finally, we summarize the open challenges and propose the promosing avenues for future studies. All related contents are available at https://github.com/yuleiqin/fantastic-data-engineering.",
+    "link": "https://arxiv.org/abs/2408.02085",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/yuleiqin/fantastic-data-engineering."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
     "title": "WalledEval: A Comprehensive Safety Evaluation Toolkit for Large Language Models",
     "summary": "WalledEval is a comprehensive AI safety testing toolkit designed to evaluate large language models (LLMs). It accommodates a diverse range of models, including both open-weight and API-based ones, and features over 35 safety benchmarks covering areas such as multilingual safety, exaggerated safety, and prompt injections. The framework supports both LLM and judge benchmarking, and incorporates custom mutators to test safety against various text-style mutations such as future tense and paraphrasing. Additionally, WalledEval introduces WalledGuard, a new, small and performant content moderation tool, and SGXSTest, a benchmark for assessing exaggerated safety in cultural contexts. We make WalledEval publicly available at https://github.com/walledai/walledevalA.",
     "link": "https://arxiv.org/abs/2408.03837",
