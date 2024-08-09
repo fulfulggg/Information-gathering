@@ -103,7 +103,7 @@ class PaperScraper:
         huggingface_papers = self.scrape_huggingface()
 
         all_papers = arxiv_papers + huggingface_papers
-        all_papers = huggingface_papers
+        # all_papers = huggingface_papers
 
         with open(self.output_path, 'w', encoding='utf-8') as f:
             json.dump(all_papers, f, ensure_ascii=False, indent=2)
