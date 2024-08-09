@@ -95,7 +95,7 @@ class PaperScraper:
     def scrape(self):
         tprint(">>  PaperScraper", font="rnd-large")
         logger.info("論文スクレイピングを開始します")
-        # arxiv_papers = self.scrape_arxiv()
+        arxiv_papers = self.scrape_arxiv()
         huggingface_papers = self.scrape_huggingface()
 
         # all_papers = arxiv_papers + huggingface_papers
