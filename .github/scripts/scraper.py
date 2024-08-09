@@ -34,23 +34,27 @@ class PaperScraper:
 
         papers = []
         for entry in feed.entries:
-            full_text = entry.title + ' ' + entry.summary
-            github_urls, huggingface_urls = self.extract_urls(full_text)
-            if github_urls or huggingface_urls:
-                paper = {
-                    'title': entry.title,
-                    'summary': entry.summary,
-                    'link': entry.link,
-                    'published': entry.updated, #published特性がないためupdatedに変更
-                    'github_urls': github_urls,
-                    'huggingface_urls': huggingface_urls,
-                    'source': 'arXiv'
-                }
-                papers.append(paper)
-                logger.debug(f"論文を追加しました: {entry.title}")
-
-            if len(papers) >= 30:
-                break
+            try:
+                full_text = entry.title + ' ' + entry.summary
+                github_urls, huggingface_urls = self.extract_urls(full_text)
+                if github_urls or huggingface_urls:
+                    paper = {
+                        'title': entry.title,
+                        'summary': entry.summary,
+                        'link': entry.link,
+                        'published': getattr(entry, 'published', 'No date available'),  # デフォルト値を設定
+                        'github_urls': github_urls,
+                        'huggingface_urls': huggingface_urls,
+                        'source': 'arXiv'
+                    }
+                    papers.append(paper)
+                    logger.debug(f"論文を追加しました: {entry.title}")
+    
+                if len(papers) >= 30:
+                    break
+            except AttributeError as e:
+                logger.error(f"エントリーの処理中にエラーが発生しました: {str(e)}")
+                continue
 
         logger.success(f"arXivから{len(papers)}件の論文を取得しました")
         return papers
