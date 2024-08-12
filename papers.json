@@ -1,1 +1,189 @@
-[]
+[
+  {
+    "title": "BRAT: Bonus oRthogonAl Token for Architecture Agnostic Textual Inversion",
+    "summary": "arXiv:2408.04785v1 Announce Type: new \nAbstract: Textual Inversion remains a popular method for personalizing diffusion models, in order to teach models new subjects and styles. We note that textual inversion has been underexplored using alternatives to the UNet, and experiment with textual inversion with a vision transformer. We also seek to optimize textual inversion using a strategy that does not require explicit use of the UNet and its idiosyncratic layers, so we add bonus tokens and enforce orthogonality. We find the use of the bonus token improves adherence to the source images and the use of the vision transformer improves adherence to the prompt. Code is available at https://github.com/jamesBaker361/tex_inv_plus.",
+    "link": "https://arxiv.org/abs/2408.04785",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/jamesBaker361/tex_inv_plus."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Avoid Wasted Annotation Costs in Open-set Active Learning with Pre-trained Vision-Language Model",
+    "summary": "arXiv:2408.04917v1 Announce Type: new \nAbstract: Active learning (AL) aims to enhance model performance by selectively collecting highly informative data, thereby minimizing annotation costs. However, in practical scenarios, unlabeled data may contain out-of-distribution (OOD) samples, leading to wasted annotation costs if data is incorrectly selected. Recent research has explored methods to apply AL to open-set data, but these methods often require or incur unavoidable cost losses to minimize them. To address these challenges, we propose a novel selection strategy, CLIPN for AL (CLIPNAL), which minimizes cost losses without requiring OOD samples. CLIPNAL sequentially evaluates the purity and informativeness of data. First, it utilizes a pre-trained vision-language model to detect and exclude OOD data by leveraging linguistic and visual information of in-distribution (ID) data without additional training. Second, it selects highly informative data from the remaining ID data, and then the selected samples are annotated by human experts. Experimental results on datasets with various open-set conditions demonstrate that CLIPNAL achieves the lowest cost loss and highest performance across all scenarios. Code is available at https://github.com/DSBA-Lab/OpenAL.",
+    "link": "https://arxiv.org/abs/2408.04917",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/DSBA-Lab/OpenAL."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DeepInteraction++: Multi-Modality Interaction for Autonomous Driving",
+    "summary": "arXiv:2408.05075v1 Announce Type: new \nAbstract: Existing top-performance autonomous driving systems typically rely on the multi-modal fusion strategy for reliable scene understanding. This design is however fundamentally restricted due to overlooking the modality-specific strengths and finally hampering the model performance. To address this limitation, in this work, we introduce a novel modality interaction strategy that allows individual per-modality representations to be learned and maintained throughout, enabling their unique characteristics to be exploited during the whole perception pipeline. To demonstrate the effectiveness of the proposed strategy, we design DeepInteraction++, a multi-modal interaction framework characterized by a multi-modal representational interaction encoder and a multi-modal predictive interaction decoder. Specifically, the encoder is implemented as a dual-stream Transformer with specialized attention operation for information exchange and integration between separate modality-specific representations. Our multi-modal representational learning incorporates both object-centric, precise sampling-based feature alignment and global dense information spreading, essential for the more challenging planning task. The decoder is designed to iteratively refine the predictions by alternately aggregating information from separate representations in a unified modality-agnostic manner, realizing multi-modal predictive interaction. Extensive experiments demonstrate the superior performance of the proposed framework on both 3D object detection and end-to-end autonomous driving tasks. Our code is available at https://github.com/fudan-zvg/DeepInteraction.",
+    "link": "https://arxiv.org/abs/2408.05075",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/fudan-zvg/DeepInteraction."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CROCODILE: Causality aids RObustness via COntrastive DIsentangled LEarning",
+    "summary": "arXiv:2408.04949v1 Announce Type: cross \nAbstract: Due to domain shift, deep learning image classifiers perform poorly when applied to a domain different from the training one. For instance, a classifier trained on chest X-ray (CXR) images from one hospital may not generalize to images from another hospital due to variations in scanner settings or patient characteristics. In this paper, we introduce our CROCODILE framework, showing how tools from causality can foster a model's robustness to domain shift via feature disentanglement, contrastive learning losses, and the injection of prior knowledge. This way, the model relies less on spurious correlations, learns the mechanism bringing from images to prediction better, and outperforms baselines on out-of-distribution (OOD) data. We apply our method to multi-label lung disease classification from CXRs, utilizing over 750000 images from four datasets. Our bias-mitigation method improves domain generalization and fairness, broadening the applicability and reliability of deep learning models for a safer medical image analysis. Find our code at: https://github.com/gianlucarloni/crocodile.",
+    "link": "https://arxiv.org/abs/2408.04949",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/gianlucarloni/crocodile."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Pair then Relation: Pair-Net for Panoptic Scene Graph Generation",
+    "summary": "arXiv:2307.08699v3 Announce Type: replace \nAbstract: Panoptic Scene Graph (PSG) is a challenging task in Scene Graph Generation (SGG) that aims to create a more comprehensive scene graph representation using panoptic segmentation instead of boxes. Compared to SGG, PSG has several challenging problems: pixel-level segment outputs and full relationship exploration (It also considers thing and stuff relation). Thus, current PSG methods have limited performance, which hinders downstream tasks or applications. The goal of this work aims to design a novel and strong baseline for PSG. To achieve that, we first conduct an in-depth analysis to identify the bottleneck of the current PSG models, finding that inter-object pair-wise recall is a crucial factor that was ignored by previous PSG methods. Based on this and the recent query-based frameworks, we present a novel framework: Pair then Relation (Pair-Net), which uses a Pair Proposal Network (PPN) to learn and filter sparse pair-wise relationships between subjects and objects. Moreover, we also observed the sparse nature of object pairs for both Motivated by this, we design a lightweight Matrix Learner within the PPN, which directly learns pair-wised relationships for pair proposal generation. Through extensive ablation and analysis, our approach significantly improves upon leveraging the segmenter solid baseline. Notably, our method achieves over 10\\% absolute gains compared to our baseline, PSGFormer. The code of this paper is publicly available at https://github.com/king159/Pair-Net.",
+    "link": "https://arxiv.org/abs/2307.08699",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/king159/Pair-Net."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MVMR: A New Framework for Evaluating Faithfulness of Video Moment Retrieval against Multiple Distractors",
+    "summary": "arXiv:2309.16701v4 Announce Type: replace \nAbstract: With the explosion of multimedia content, video moment retrieval (VMR), which aims to detect a video moment that matches a given text query from a video, has been studied intensively as a critical problem. However, the existing VMR framework evaluates video moment retrieval performance, assuming that a video is given, which may not reveal whether the models exhibit overconfidence in the falsely given video. In this paper, we propose the MVMR (Massive Videos Moment Retrieval for Faithfulness Evaluation) task that aims to retrieve video moments within a massive video set, including multiple distractors, to evaluate the faithfulness of VMR models. For this task, we suggest an automated massive video pool construction framework to categorize negative (distractors) and positive (false-negative) video sets using textual and visual semantic distance verification methods. We extend existing VMR datasets using these methods and newly construct three practical MVMR datasets. To solve the task, we further propose a strong informative sample-weighted learning method, CroCs, which employs two contrastive learning mechanisms: (1) weakly-supervised potential negative learning and (2) cross-directional hard-negative learning. Experimental results on the MVMR datasets reveal that existing VMR models are easily distracted by the misinformation (distractors), whereas our model shows significantly robust performance, demonstrating that CroCs is essential to distinguishing positive moments against distractors. Our code and datasets are publicly available: https://github.com/yny0506/Massive-Videos-Moment-Retrieval.",
+    "link": "https://arxiv.org/abs/2309.16701",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/yny0506/Massive-Videos-Moment-Retrieval."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Object-level Geometric Structure Preserving for Natural Image Stitching",
+    "summary": "arXiv:2402.12677v3 Announce Type: replace \nAbstract: The topic of stitching images with globally natural structures holds paramount significance, with two main goals: alignment and distortion prevention. The existing approaches exhibit the ability to align well, yet fall short in maintaining object structures. In this paper, we endeavour to safeguard the overall OBJect-level structures within images based on Global Similarity Prior (OBJ-GSP), on the basis of good alignment performance. Our approach leverages semantic segmentation models like the family of Segment Anything Model to extract the contours of any objects in a scene. Triangular meshes are employed in image transformation to protect the overall shapes of objects within images. The balance between alignment and distortion prevention is achieved by allowing the object meshes to strike a balance between similarity and projective transformation. We also demonstrate the importance of segmentation in low-altitude aerial image stitching. Additionally, we propose StitchBench, the most comprehensive image stitching benchmark by far. Extensive experimental results demonstrate that OBJ-GSP outperforms existing methods in both alignment and shape preservation. Code and dataset is publicly available at \\url{https://github.com/RussRobin/OBJ-GSP}.",
+    "link": "https://arxiv.org/abs/2402.12677",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/RussRobin/OBJ-GSP}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "UVMap-ID: A Controllable and Personalized UV Map Generative Model",
+    "summary": "arXiv:2404.14568v2 Announce Type: replace \nAbstract: Recently, diffusion models have made significant strides in synthesizing realistic 2D human images based on provided text prompts. Building upon this, researchers have extended 2D text-to-image diffusion models into the 3D domain for generating human textures (UV Maps). However, some important problems about UV Map Generative models are still not solved, i.e., how to generate personalized texture maps for any given face image, and how to define and evaluate the quality of these generated texture maps. To solve the above problems, we introduce a novel method, UVMap-ID, which is a controllable and personalized UV Map generative model. Unlike traditional large-scale training methods in 2D, we propose to fine-tune a pre-trained text-to-image diffusion model which is integrated with a face fusion module for achieving ID-driven customized generation. To support the finetuning strategy, we introduce a small-scale attribute-balanced training dataset, including high-quality textures with labeled text and Face ID. Additionally, we introduce some metrics to evaluate the multiple aspects of the textures. Finally, both quantitative and qualitative analyses demonstrate the effectiveness of our method in controllable and personalized UV Map generation. Code is publicly available via https://github.com/twowwj/UVMap-ID.",
+    "link": "https://arxiv.org/abs/2404.14568",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/twowwj/UVMap-ID."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Towards Consistent Object Detection via LiDAR-Camera Synergy",
+    "summary": "arXiv:2405.01258v2 Announce Type: replace \nAbstract: As human-machine interaction continues to evolve, the capacity for environmental perception is becoming increasingly crucial. Integrating the two most common types of sensory data, images, and point clouds, can enhance detection accuracy. Currently, there is no existing model capable of detecting an object's position in both point clouds and images while also determining their corresponding relationship. This information is invaluable for human-machine interactions, offering new possibilities for their enhancement. In light of this, this paper introduces an end-to-end Consistency Object Detection (COD) algorithm framework that requires only a single forward inference to simultaneously obtain an object's position in both point clouds and images and establish their correlation. Furthermore, to assess the accuracy of the object correlation between point clouds and images, this paper proposes a new evaluation metric, Consistency Precision (CP). To verify the effectiveness of the proposed framework, an extensive set of experiments has been conducted on the KITTI and DAIR-V2X datasets. The study also explored how the proposed consistency detection method performs on images when the calibration parameters between images and point clouds are disturbed, compared to existing post-processing methods. The experimental results demonstrate that the proposed method exhibits excellent detection performance and robustness, achieving end-to-end consistency detection. The source code will be made publicly available at https://github.com/xifen523/COD.",
+    "link": "https://arxiv.org/abs/2405.01258",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/xifen523/COD."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Efficient Multimodal Large Language Models: A Survey",
+    "summary": "arXiv:2405.10739v2 Announce Type: replace \nAbstract: In the past year, Multimodal Large Language Models (MLLMs) have demonstrated remarkable performance in tasks such as visual question answering, visual understanding and reasoning. However, the extensive model size and high training and inference costs have hindered the widespread application of MLLMs in academia and industry. Thus, studying efficient and lightweight MLLMs has enormous potential, especially in edge computing scenarios. In this survey, we provide a comprehensive and systematic review of the current state of efficient MLLMs. Specifically, we summarize the timeline of representative efficient MLLMs, research state of efficient structures and strategies, and the applications. Finally, we discuss the limitations of current efficient MLLM research and promising future directions. Please refer to our GitHub repository for more details: https://github.com/lijiannuist/Efficient-Multimodal-LLMs-Survey.",
+    "link": "https://arxiv.org/abs/2405.10739",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/lijiannuist/Efficient-Multimodal-LLMs-Survey."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Multimodal Self-Instruct: Synthetic Abstract Image and Visual Reasoning Instruction Using Language Model",
+    "summary": "arXiv:2407.07053v4 Announce Type: replace \nAbstract: Although most current large multimodal models (LMMs) can already understand photos of natural scenes and portraits, their understanding of abstract images, e.g., charts, maps, or layouts, and visual reasoning capabilities remains quite rudimentary. They often struggle with simple daily tasks, such as reading time from a clock, understanding a flowchart, or planning a route using a road map. In light of this, we design a multi-modal self-instruct, utilizing large language models and their code capabilities to synthesize massive abstract images and visual reasoning instructions across daily scenarios. Our strategy effortlessly creates a multimodal benchmark with 11,193 instructions for eight visual scenarios: charts, tables, simulated maps, dashboards, flowcharts, relation graphs, floor plans, and visual puzzles. \\textbf{This benchmark, constructed with simple lines and geometric elements, exposes the shortcomings of most advanced LMMs} like Claude-3.5-Sonnet and GPT-4o in abstract image understanding, spatial relations reasoning, and visual element induction. Besides, to verify the quality of our synthetic data, we fine-tune an LMM using 62,476 synthetic chart, table and road map instructions. The results demonstrate improved chart understanding and map navigation performance, and also demonstrate potential benefits for other visual reasoning tasks. Our code is available at: \\url{https://github.com/zwq2018/Multi-modal-Self-instruct}.",
+    "link": "https://arxiv.org/abs/2407.07053",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/zwq2018/Multi-modal-Self-instruct}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Mini-Monkey: Multi-Scale Adaptive Cropping for Multimodal Large Language Models",
+    "summary": "arXiv:2408.02034v2 Announce Type: replace \nAbstract: Recently, there has been significant interest in enhancing the capability of multimodal large language models (MLLMs) to process high-resolution images. Most existing methods focus on adopting a cropping strategy to improve the ability of multimodal large language models to understand image details. However, this cropping operation inevitably causes the segmentation of objects and connected areas, which impairs the MLLM's ability to recognize small or irregularly shaped objects or text. This issue is particularly evident in lightweight MLLMs. Addressing this issue, we propose Mini-Monkey, a lightweight MLLM that incorporates a plug-and-play method called multi-scale adaptive crop strategy (MSAC). Mini-Monkey adaptively generates multi-scale representations, allowing it to select non-segmented objects from various scales. To mitigate the computational overhead introduced by MSAC, we propose a Scale Compression Mechanism (SCM), which effectively compresses image tokens. Mini-Monkey achieves state-of-the-art performance among 2B-parameter MLLMs. It not only demonstrates leading performance on a variety of general multimodal understanding tasks but also shows consistent improvements in document understanding capabilities. On the OCRBench, Mini-Monkey achieves a score of 802, outperforming 8B-parameter state-of-the-art model InternVL2-8B. Besides, our model and training strategy are very efficient, which can be trained with only eight RTX 3090. The code is available at https://github.com/Yuliang-Liu/Monkey.",
+    "link": "https://arxiv.org/abs/2408.02034",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Yuliang-Liu/Monkey."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DreamLCM: Towards High-Quality Text-to-3D Generation via Latent Consistency Model",
+    "summary": "arXiv:2408.02993v2 Announce Type: replace \nAbstract: Recently, the text-to-3D task has developed rapidly due to the appearance of the SDS method. However, the SDS method always generates 3D objects with poor quality due to the over-smooth issue. This issue is attributed to two factors: 1) the DDPM single-step inference produces poor guidance gradients; 2) the randomness from the input noises and timesteps averages the details of the 3D contents. In this paper, to address the issue, we propose DreamLCM which incorporates the Latent Consistency Model (LCM). DreamLCM leverages the powerful image generation capabilities inherent in LCM, enabling generating consistent and high-quality guidance, i.e., predicted noises or images. Powered by the improved guidance, the proposed method can provide accurate and detailed gradients to optimize the target 3D models. In addition, we propose two strategies to enhance the generation quality further. Firstly, we propose a guidance calibration strategy, utilizing Euler Solver to calibrate the guidance distribution to accelerate 3D models to converge. Secondly, we propose a dual timestep strategy, increasing the consistency of guidance and optimizing 3D models from geometry to appearance in DreamLCM. Experiments show that DreamLCM achieves state-of-the-art results in both generation quality and training efficiency. The code is available at https://github.com/1YimingZhong/DreamLCM.",
+    "link": "https://arxiv.org/abs/2408.02993",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/1YimingZhong/DreamLCM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Img-Diff: Contrastive Data Synthesis for Multimodal Large Language Models",
+    "summary": "arXiv:2408.04594v2 Announce Type: replace \nAbstract: High-performance Multimodal Large Language Models (MLLMs) rely heavily on data quality. This study introduces a novel dataset named Img-Diff, designed to enhance fine-grained image recognition in MLLMs by leveraging insights from contrastive learning and image difference captioning. By analyzing object differences between similar images, we challenge models to identify both matching and distinct components. We utilize the Stable-Diffusion-XL model and advanced image editing techniques to create pairs of similar images that highlight object replacements. Our methodology includes a Difference Area Generator for object differences identifying, followed by a Difference Captions Generator for detailed difference descriptions. The result is a relatively small but high-quality dataset of \"object replacement\" samples. We use the the proposed dataset to finetune state-of-the-art (SOTA) MLLMs such as MGM-7B, yielding comprehensive improvements of performance scores over SOTA models that trained with larger-scale datasets, in numerous image difference and Visual Question Answering tasks. For instance, our trained models notably surpass the SOTA models GPT-4V and Gemini on the MMVP benchmark. Besides, we investigate alternative methods for generating image difference data through \"object removal\" and conduct a thorough evaluation to confirm the dataset's diversity, quality, and robustness, presenting several insights on the synthesis of such a contrastive dataset. To encourage further research and advance the field of multimodal data synthesis and enhancement of MLLMs' fundamental capabilities for image understanding, we release our codes and dataset at https://github.com/modelscope/data-juicer/tree/ImgDiff.",
+    "link": "https://arxiv.org/abs/2408.04594",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/modelscope/data-juicer/tree/ImgDiff."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "A Survey on Deep Neural Network Pruning-Taxonomy, Comparison, Analysis, and Recommendations",
+    "summary": "arXiv:2308.06767v2 Announce Type: replace-cross \nAbstract: Modern deep neural networks, particularly recent large language models, come with massive model sizes that require significant computational and storage resources. To enable the deployment of modern models on resource-constrained environments and accelerate inference time, researchers have increasingly explored pruning techniques as a popular research direction in neural network compression. However, there is a dearth of up-to-date comprehensive review papers on pruning. To address this issue, in this survey, we provide a comprehensive review of existing research works on deep neural network pruning in a taxonomy of 1) universal/specific speedup, 2) when to prune, 3) how to prune, and 4) fusion of pruning and other compression techniques. We then provide a thorough comparative analysis of eight pairs of contrast settings for pruning and explore emerging topics, including pruning for large language models, large multimodal models, post-training pruning, and different supervision levels for pruning to shed light on the commonalities and differences of existing methods and lay the foundation for further method development. To facilitate future research, we build a curated collection of datasets, networks, and evaluations on different applications. Finally, we provide valuable recommendations on selecting pruning methods and prospect several promising research directions. We build a repository at https://github.com/hrcheng1066/awesome-pruning.",
+    "link": "https://arxiv.org/abs/2308.06767",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/hrcheng1066/awesome-pruning."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Advancing Neural Network Performance through Emergence-Promoting Initialization Scheme",
+    "summary": "arXiv:2407.19044v2 Announce Type: replace-cross \nAbstract: We introduce a novel yet straightforward neural network initialization scheme that modifies conventional methods like Xavier and Kaiming initialization. Inspired by the concept of emergence and leveraging the emergence measures proposed by Li (2023), our method adjusts the layer-wise weight scaling factors to achieve higher emergence values. This enhancement is easy to implement, requiring no additional optimization steps for initialization compared to GradInit. We evaluate our approach across various architectures, including MLP and convolutional architectures for image recognition, and transformers for machine translation. We demonstrate substantial improvements in both model accuracy and training speed, with and without batch normalization. The simplicity, theoretical innovation, and demonstrable empirical advantages of our method make it a potent enhancement to neural network initialization practices. These results suggest a promising direction for leveraging emergence to improve neural network training methodologies. Code is available at: https://github.com/johnnyjingzeli/EmergenceInit.",
+    "link": "https://arxiv.org/abs/2407.19044",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/johnnyjingzeli/EmergenceInit."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "NuLite -- Lightweight and Fast Model for Nuclei Instance Segmentation and Classification",
+    "summary": "arXiv:2408.01797v2 Announce Type: replace-cross \nAbstract: In pathology, accurate and efficient analysis of Hematoxylin and Eosin (H\\&amp;E) slides is crucial for timely and effective cancer diagnosis. Although many deep learning solutions for nuclei instance segmentation and classification exist in the literature, they often entail high computational costs and resource requirements, thus limiting their practical usage in medical applications. To address this issue, we introduce a novel convolutional neural network, NuLite, a U-Net-like architecture designed explicitly on Fast-ViT, a state-of-the-art (SOTA) lightweight CNN. We obtained three versions of our model, NuLite-S, NuLite-M, and NuLite-H, trained on the PanNuke dataset. The experimental results prove that our models equal CellViT (SOTA) in terms of panoptic quality and detection. However, our lightest model, NuLite-S, is 40 times smaller in terms of parameters and about 8 times smaller in terms of GFlops, while our heaviest model is 17 times smaller in terms of parameters and about 7 times smaller in terms of GFlops. Moreover, our model is up to about 8 times faster than CellViT. Lastly, to prove the effectiveness of our solution, we provide a robust comparison of external datasets, namely CoNseP, MoNuSeg, and GlySAC. Our model is publicly available at https://github.com/CosmoIknosLab/NuLite",
+    "link": "https://arxiv.org/abs/2408.01797",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/CosmoIknosLab/NuLite"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  }
+]
