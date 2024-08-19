@@ -1,1 +1,288 @@
-[]
+[
+  {
+    "title": "Penny-Wise and Pound-Foolish in Deepfake Detection",
+    "summary": "arXiv:2408.08412v1 Announce Type: new \nAbstract: The diffusion of deepfake technologies has sparked serious concerns about its potential misuse across various domains, prompting the urgent need for robust detection methods. Despite advancement, many current approaches prioritize short-term gains at expense of long-term effectiveness. This paper critiques the overly specialized approach of fine-tuning pre-trained models solely with a penny-wise objective on a single deepfake dataset, while disregarding the pound-wise balance for generalization and knowledge retention. To address this \"Penny-Wise and Pound-Foolish\" issue, we propose a novel learning framework (PoundNet) for generalization of deepfake detection on a pre-trained vision-language model. PoundNet incorporates a learnable prompt design and a balanced objective to preserve broad knowledge from upstream tasks (object classification) while enhancing generalization for downstream tasks (deepfake detection). We train PoundNet on a standard single deepfake dataset, following common practice in the literature. We then evaluate its performance across 10 public large-scale deepfake datasets with 5 main evaluation metrics-forming the largest benchmark test set for assessing the generalization ability of deepfake detection models, to our knowledge. The comprehensive benchmark evaluation demonstrates the proposed PoundNet is significantly less \"Penny-Wise and Pound-Foolish\", achieving a remarkable improvement of 19% in deepfake detection performance compared to state-of-the-art methods, while maintaining a strong performance of 63% on object classification tasks, where other deepfake detection models tend to be ineffective. Code and data are open-sourced at https://github.com/iamwangyabin/PoundNet.",
+    "link": "https://arxiv.org/abs/2408.08412",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/iamwangyabin/PoundNet."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Efficient Image-to-Image Diffusion Classifier for Adversarial Robustness",
+    "summary": "arXiv:2408.08502v1 Announce Type: new \nAbstract: Diffusion models (DMs) have demonstrated great potential in the field of adversarial robustness, where DM-based defense methods can achieve superior defense capability without adversarial training. However, they all require huge computational costs due to the usage of large-scale pre-trained DMs, making it difficult to conduct full evaluation under strong attacks and compare with traditional CNN-based methods. Simply reducing the network size and timesteps in DMs could significantly harm the image generation quality, which invalidates previous frameworks. To alleviate this issue, we redesign the diffusion framework from generating high-quality images to predicting distinguishable image labels. Specifically, we employ an image translation framework to learn many-to-one mapping from input samples to designed orthogonal image labels. Based on this framework, we introduce an efficient Image-to-Image diffusion classifier with a pruned U-Net structure and reduced diffusion timesteps. Besides the framework, we redesign the optimization objective of DMs to fit the target of image classification, where a new classification loss is incorporated in the DM-based image translation framework to distinguish the generated label from those of other classes. We conduct sufficient evaluations of the proposed classifier under various attacks on popular benchmarks. Extensive experiments show that our method achieves better adversarial robustness with fewer computational costs than DM-based and CNN-based methods. The code is available at https://github.com/hfmei/IDC.",
+    "link": "https://arxiv.org/abs/2408.08502",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/hfmei/IDC."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Focus on Focus: Focus-oriented Representation Learning and Multi-view Cross-modal Alignment for Glioma Grading",
+    "summary": "arXiv:2408.08527v1 Announce Type: new \nAbstract: Recently, multimodal deep learning, which integrates histopathology slides and molecular biomarkers, has achieved a promising performance in glioma grading. Despite great progress, due to the intra-modality complexity and inter-modality heterogeneity, existing studies suffer from inadequate histopathology representation learning and inefficient molecular-pathology knowledge alignment. These two issues hinder existing methods to precisely interpret diagnostic molecular-pathology features, thereby limiting their grading performance. Moreover, the real-world applicability of existing multimodal approaches is significantly restricted as molecular biomarkers are not always available during clinical deployment. To address these problems, we introduce a novel Focus on Focus (FoF) framework with paired pathology-genomic training and applicable pathology-only inference, enhancing molecular-pathology representation effectively. Specifically, we propose a Focus-oriented Representation Learning (FRL) module to encourage the model to identify regions positively or negatively related to glioma grading and guide it to focus on the diagnostic areas with a consistency constraint. To effectively link the molecular biomarkers to morphological features, we propose a Multi-view Cross-modal Alignment (MCA) module that projects histopathology representations into molecular subspaces, aligning morphological features with corresponding molecular biomarker status by supervised contrastive learning. Experiments on the TCGA GBM-LGG dataset demonstrate that our FoF framework significantly improves the glioma grading. Remarkably, our FoF achieves superior performance using only histopathology slides compared to existing multimodal methods. The source code is available at https://github.com/peterlipan/FoF.",
+    "link": "https://arxiv.org/abs/2408.08527",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/peterlipan/FoF."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Language-Driven Interactive Shadow Detection",
+    "summary": "arXiv:2408.08543v1 Announce Type: new \nAbstract: Traditional shadow detectors often identify all shadow regions of static images or video sequences. This work presents the Referring Video Shadow Detection (RVSD), which is an innovative task that rejuvenates the classic paradigm by facilitating the segmentation of particular shadows in videos based on descriptive natural language prompts. This novel RVSD not only achieves segmentation of arbitrary shadow areas of interest based on descriptions (flexibility) but also allows users to interact with visual content more directly and naturally by using natural language prompts (interactivity), paving the way for abundant applications ranging from advanced video editing to virtual reality experiences. To pioneer the RVSD research, we curated a well-annotated RVSD dataset, which encompasses 86 videos and a rich set of 15,011 paired textual descriptions with corresponding shadows. To the best of our knowledge, this dataset is the first one for addressing RVSD. Based on this dataset, we propose a Referring Shadow-Track Memory Network (RSM-Net) for addressing the RVSD task. In our RSM-Net, we devise a Twin-Track Synergistic Memory (TSM) to store intra-clip memory features and hierarchical inter-clip memory features, and then pass these memory features into a memory read module to refine features of the current video frame for referring shadow detection. We also develop a Mixed-Prior Shadow Attention (MSA) to utilize physical priors to obtain a coarse shadow map for learning more visual features by weighting it with the input video frame. Experimental results show that our RSM-Net achieves state-of-the-art performance for RVSD with a notable Overall IOU increase of 4.4\\%. Our code and dataset are available at https://github.com/whq-xxh/RVSD.",
+    "link": "https://arxiv.org/abs/2408.08543",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/whq-xxh/RVSD."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Learning A Low-Level Vision Generalist via Visual Task Prompt",
+    "summary": "arXiv:2408.08601v1 Announce Type: new \nAbstract: Building a unified model for general low-level vision tasks holds significant research and practical value. Current methods encounter several critical issues. Multi-task restoration approaches can address multiple degradation-to-clean restoration tasks, while their applicability to tasks with different target domains (e.g., image stylization) is limited. Methods like PromptGIP can handle multiple input-target domains but rely on the Masked Autoencoder (MAE) paradigm. Consequently, they are tied to the ViT architecture, resulting in suboptimal image reconstruction quality. In addition, these methods are sensitive to prompt image content and often struggle with low-frequency information processing. In this paper, we propose a Visual task Prompt-based Image Processing (VPIP) framework to overcome these challenges. VPIP employs visual task prompts to manage tasks with different input-target domains and allows flexible selection of backbone network suitable for general tasks. Besides, a new prompt cross-attention is introduced to facilitate interaction between the input and prompt information. Based on the VPIP framework, we train a low-level vision generalist model, namely GenLV, on 30 diverse tasks. Experimental results show that GenLV can successfully address a variety of low-level tasks, significantly outperforming existing methods both quantitatively and qualitatively. Codes are available at https://github.com/chxy95/GenLV.",
+    "link": "https://arxiv.org/abs/2408.08601",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/chxy95/GenLV."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Generative Dataset Distillation Based on Diffusion Model",
+    "summary": "arXiv:2408.08610v1 Announce Type: new \nAbstract: This paper presents our method for the generative track of The First Dataset Distillation Challenge at ECCV 2024. Since the diffusion model has become the mainstay of generative models because of its high-quality generative effects, we focus on distillation methods based on the diffusion model. Considering that the track can only generate a fixed number of images in 10 minutes using a generative model for CIFAR-100 and Tiny-ImageNet datasets, we need to use a generative model that can generate images at high speed. In this study, we proposed a novel generative dataset distillation method based on Stable Diffusion. Specifically, we use the SDXL-Turbo model which can generate images at high speed and quality. Compared to other diffusion models that can only generate images per class (IPC) = 1, our method can achieve an IPC = 10 for Tiny-ImageNet and an IPC = 20 for CIFAR-100, respectively. Additionally, to generate high-quality distilled datasets for CIFAR-100 and Tiny-ImageNet, we use the class information as text prompts and post data augmentation for the SDXL-Turbo model. Experimental results show the effectiveness of the proposed method, and we achieved third place in the generative track of the ECCV 2024 DD Challenge. Codes are available at https://github.com/Guang000/BANKO.",
+    "link": "https://arxiv.org/abs/2408.08610",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Guang000/BANKO."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Extracting polygonal footprints in off-nadir images with Segment Anything Model",
+    "summary": "arXiv:2408.08645v1 Announce Type: new \nAbstract: Building Footprint Extraction (BFE) in off-nadir aerial images often relies on roof segmentation and roof-to-footprint offset prediction, then drugging roof-to-footprint via the offset. However, the results from this multi-stage inference are not applicable in data production, because of the low quality of masks given by prediction. To solve this problem, we proposed OBMv2 in this paper, which supports both end-to-end and promptable polygonal footprint prediction. Different from OBM, OBMv2 using a newly proposed Self Offset Attention (SOFA) to bridge the performance gap on bungalow and skyscraper, which realized a real end-to-end footprint polygon prediction without postprocessing. %, such as Non-Maximum Suppression (NMS) and Distance NMS (DNMS). % To fully use information contained in roof masks, building masks and offsets, we proposed a Multi-level Information SyStem (MISS) for footprint prediction, with which OBMv2 can predict footprints even with insufficient predictions. Additionally, to squeeze information from the same model, we were inspired by Retrieval-Augmented Generation (RAG) in Nature Language Processing and proposed \"RAG in BFE\" problem. To verify the effectiveness of the proposed method, experiments were conducted on open datasets BONAI and OmniCity-view3. A generalization test was also conducted on Huizhou test set. The code will be available at \\url{https://github.com/likaiucas/OBM}.",
+    "link": "https://arxiv.org/abs/2408.08645",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/likaiucas/OBM}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Decoupling Feature Representations of Ego and Other Modalities for Incomplete Multi-modal Brain Tumor Segmentation",
+    "summary": "arXiv:2408.08708v1 Announce Type: new \nAbstract: Multi-modal brain tumor segmentation typically involves four magnetic resonance imaging (MRI) modalities, while incomplete modalities significantly degrade performance. Existing solutions employ explicit or implicit modality adaptation, aligning features across modalities or learning a fused feature robust to modality incompleteness. They share a common goal of encouraging each modality to express both itself and the others. However, the two expression abilities are entangled as a whole in a seamless feature space, resulting in prohibitive learning burdens. In this paper, we propose DeMoSeg to enhance the modality adaptation by Decoupling the task of representing the ego and other Modalities for robust incomplete multi-modal Segmentation. The decoupling is super lightweight by simply using two convolutions to map each modality onto four feature sub-spaces. The first sub-space expresses itself (Self-feature), while the remaining sub-spaces substitute for other modalities (Mutual-features). The Self- and Mutual-features interactively guide each other through a carefully-designed Channel-wised Sparse Self-Attention (CSSA). After that, a Radiologist-mimic Cross-modality expression Relationships (RCR) is introduced to have available modalities provide Self-feature and also `lend' their Mutual-features to compensate for the absent ones by exploiting the clinical prior knowledge. The benchmark results on BraTS2020, BraTS2018 and BraTS2015 verify the DeMoSeg's superiority thanks to the alleviated modality adaptation difficulty. Concretely, for BraTS2020, DeMoSeg increases Dice by at least 0.92%, 2.95% and 4.95% on whole tumor, tumor core and enhanced tumor regions, respectively, compared to other state-of-the-arts. Codes are at https://github.com/kk42yy/DeMoSeg",
+    "link": "https://arxiv.org/abs/2408.08708",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/kk42yy/DeMoSeg"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "SAM2-UNet: Segment Anything 2 Makes Strong Encoder for Natural and Medical Image Segmentation",
+    "summary": "arXiv:2408.08870v1 Announce Type: new \nAbstract: Image segmentation plays an important role in vision understanding. Recently, the emerging vision foundation models continuously achieved superior performance on various tasks. Following such success, in this paper, we prove that the Segment Anything Model 2 (SAM2) can be a strong encoder for U-shaped segmentation models. We propose a simple but effective framework, termed SAM2-UNet, for versatile image segmentation. Specifically, SAM2-UNet adopts the Hiera backbone of SAM2 as the encoder, while the decoder uses the classic U-shaped design. Additionally, adapters are inserted into the encoder to allow parameter-efficient fine-tuning. Preliminary experiments on various downstream tasks, such as camouflaged object detection, salient object detection, marine animal segmentation, mirror detection, and polyp segmentation, demonstrate that our SAM2-UNet can simply beat existing specialized state-of-the-art methods without bells and whistles. Project page: \\url{https://github.com/WZH0120/SAM2-UNet}.",
+    "link": "https://arxiv.org/abs/2408.08870",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/WZH0120/SAM2-UNet}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "METR: Image Watermarking with Large Number of Unique Messages",
+    "summary": "arXiv:2408.08340v1 Announce Type: cross \nAbstract: Improvements in diffusion models have boosted the quality of image generation, which has led researchers, companies, and creators to focus on improving watermarking algorithms. This provision would make it possible to clearly identify the creators of generative art. The main challenges that modern watermarking algorithms face have to do with their ability to withstand attacks and encrypt many unique messages, such as user IDs. In this paper, we present METR: Message Enhanced Tree-Ring, which is an approach that aims to address these challenges. METR is built on the Tree-Ring watermarking algorithm, a technique that makes it possible to encode multiple distinct messages without compromising attack resilience or image quality. This ensures the suitability of this watermarking algorithm for any Diffusion Model. In order to surpass the limitations on the quantity of encoded messages, we propose METR++, an enhanced version of METR. This approach, while limited to the Latent Diffusion Model architecture, is designed to inject a virtually unlimited number of unique messages. We demonstrate its robustness to attacks and ability to encrypt many unique messages while preserving image quality, which makes METR and METR++ hold great potential for practical applications in real-world settings. Our code is available at https://github.com/deepvk/metr",
+    "link": "https://arxiv.org/abs/2408.08340",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/deepvk/metr"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "S-RAF: A Simulation-Based Robustness Assessment Framework for Responsible Autonomous Driving",
+    "summary": "arXiv:2408.08584v1 Announce Type: cross \nAbstract: As artificial intelligence (AI) technology advances, ensuring the robustness and safety of AI-driven systems has become paramount. However, varying perceptions of robustness among AI developers create misaligned evaluation metrics, complicating the assessment and certification of safety-critical and complex AI systems such as autonomous driving (AD) agents. To address this challenge, we introduce Simulation-Based Robustness Assessment Framework (S-RAF) for autonomous driving. S-RAF leverages the CARLA Driving simulator to rigorously assess AD agents across diverse conditions, including faulty sensors, environmental changes, and complex traffic situations. By quantifying robustness and its relationship with other safety-critical factors, such as carbon emissions, S-RAF aids developers and stakeholders in building safe and responsible driving agents, and streamlining safety certification processes. Furthermore, S-RAF offers significant advantages, such as reduced testing costs, and the ability to explore edge cases that may be unsafe to test in the real world. The code for this framework is available here: https://github.com/cognitive-robots/rai-leaderboard",
+    "link": "https://arxiv.org/abs/2408.08584",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/cognitive-robots/rai-leaderboard"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Reference-free Axial Super-resolution of 3D Microscopy Images using Implicit Neural Representation with a 2D Diffusion Prior",
+    "summary": "arXiv:2408.08616v1 Announce Type: cross \nAbstract: Analysis and visualization of 3D microscopy images pose challenges due to anisotropic axial resolution, demanding volumetric super-resolution along the axial direction. While training a learning-based 3D super-resolution model seems to be a straightforward solution, it requires ground truth isotropic volumes and suffers from the curse of dimensionality. Therefore, existing methods utilize 2D neural networks to reconstruct each axial slice, eventually piecing together the entire volume. However, reconstructing each slice in the pixel domain fails to give consistent reconstruction in all directions leading to misalignment artifacts. In this work, we present a reconstruction framework based on implicit neural representation (INR), which allows 3D coherency even when optimized by independent axial slices in a batch-wise manner. Our method optimizes a continuous volumetric representation from low-resolution axial slices, using a 2D diffusion prior trained on high-resolution lateral slices without requiring isotropic volumes. Through experiments on real and synthetic anisotropic microscopy images, we demonstrate that our method surpasses other state-of-the-art reconstruction methods. The source code is available on GitHub: https://github.com/hvcl/INR-diffusion.",
+    "link": "https://arxiv.org/abs/2408.08616",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/hvcl/INR-diffusion."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "A Survey on Benchmarks of Multimodal Large Language Models",
+    "summary": "arXiv:2408.08632v1 Announce Type: cross \nAbstract: Multimodal Large Language Models (MLLMs) are gaining increasing popularity in both academia and industry due to their remarkable performance in various applications such as visual question answering, visual perception, understanding, and reasoning. Over the past few years, significant efforts have been made to examine MLLMs from multiple perspectives. This paper presents a comprehensive review of \\textbf{180 benchmarks} and evaluation for MLLMs, focusing on (1)perception and understanding, (2)cognition and reasoning, (3)specific domains, (4)key capabilities, and (5)other modalities. Finally, we discuss the limitations of the current evaluation methods for MLLMs and explore promising future directions. Our key argument is that evaluation should be regarded as a crucial discipline to better support the development of MLLMs. For more details, please visit our GitHub repository: https://github.com/swordlidev/Evaluation-Multimodal-LLMs-Survey.",
+    "link": "https://arxiv.org/abs/2408.08632",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/swordlidev/Evaluation-Multimodal-LLMs-Survey."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MicroSSIM: Improved Structural Similarity for Comparing Microscopy Data",
+    "summary": "arXiv:2408.08747v1 Announce Type: cross \nAbstract: Microscopy is routinely used to image biological structures of interest. Due to imaging constraints, acquired images are typically low-SNR and contain noise. Over the last few years, regression-based tasks like unsupervised denoising and splitting have found utility in working with such noisy micrographs. For evaluation, Structural Similarity (SSIM) is one of the most popular measures used in the field. For such tasks, the best evaluation would be when both low-SNR noisy images and corresponding high-SNR clean images are obtained directly from a microscope. However, due to the following three peculiar properties of the microscopy data, we observe that SSIM is not well suited to this data regime: (a) high-SNR micrographs have higher intensity pixels as compared to low SNR micrographs, (b) high-SNR micrographs have higher intensity pixels than found in natural images, images for which SSIM was developed, and (c) a digitally configurable offset is added by the detector present inside the microscope. We show that SSIM components behave unexpectedly when the prediction generated from low-SNR input is compared with the corresponding high-SNR data. We explain this behavior by introducing the phenomenon of saturation, where the value of SSIM components becomes less sensitive to (dis)similarity between the images. We introduce microSSIM, a variant of SSIM, which overcomes the above-discussed issues. We justify the soundness and utility of microSSIM using theoretical and empirical arguments and show the utility of microSSIM on two tasks: unsupervised denoising and joint image splitting with unsupervised denoising. Since our formulation can be applied to a broad family of SSIM-based measures, we also introduce MicroMS3IM, a microscopy-specific variation of MS-SSIM. The source code and python package is available at https://github.com/juglab/MicroSSIM.",
+    "link": "https://arxiv.org/abs/2408.08747",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/juglab/MicroSSIM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Multi-task Learning Approach for Intracranial Hemorrhage Prognosis",
+    "summary": "arXiv:2408.08784v1 Announce Type: cross \nAbstract: Prognosis after intracranial hemorrhage (ICH) is influenced by a complex interplay between imaging and tabular data. Rapid and reliable prognosis are crucial for effective patient stratification and informed treatment decision-making. In this study, we aim to enhance image-based prognosis by learning a robust feature representation shared between prognosis and the clinical and demographic variables most highly correlated with it. Our approach mimics clinical decision-making by reinforcing the model to learn valuable prognostic data embedded in the image. We propose a 3D multi-task image model to predict prognosis, Glasgow Coma Scale and age, improving accuracy and interpretability. Our method outperforms current state-of-the-art baseline image models, and demonstrates superior performance in ICH prognosis compared to four board-certified neuroradiologists using only CT scans as input. We further validate our model with interpretability saliency maps. Code is available at https://github.com/MiriamCobo/MultitaskLearning_ICH_Prognosis.git.",
+    "link": "https://arxiv.org/abs/2408.08784",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/MiriamCobo/MultitaskLearning_ICH_Prognosis.git."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "HandRefiner: Refining Malformed Hands in Generated Images by Diffusion-based Conditional Inpainting",
+    "summary": "arXiv:2311.17957v2 Announce Type: replace \nAbstract: Diffusion models have achieved remarkable success in generating realistic images but suffer from generating accurate human hands, such as incorrect finger counts or irregular shapes. This difficulty arises from the complex task of learning the physical structure and pose of hands from training images, which involves extensive deformations and occlusions. For correct hand generation, our paper introduces a lightweight post-processing solution called $\\textbf{HandRefiner}$. HandRefiner employs a conditional inpainting approach to rectify malformed hands while leaving other parts of the image untouched. We leverage the hand mesh reconstruction model that consistently adheres to the correct number of fingers and hand shape, while also being capable of fitting the desired hand pose in the generated image. Given a generated failed image due to malformed hands, we utilize ControlNet modules to re-inject such correct hand information. Additionally, we uncover a phase transition phenomenon within ControlNet as we vary the control strength. It enables us to take advantage of more readily available synthetic data without suffering from the domain gap between realistic and synthetic hands. Experiments demonstrate that HandRefiner can significantly improve the generation quality quantitatively and qualitatively. The code is available at https://github.com/wenquanlu/HandRefiner .",
+    "link": "https://arxiv.org/abs/2311.17957",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/wenquanlu/HandRefiner"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CLIP-EBC: CLIP Can Count Accurately through Enhanced Blockwise Classification",
+    "summary": "arXiv:2403.09281v2 Announce Type: replace \nAbstract: We propose CLIP-EBC, the first fully CLIP-based model for accurate crowd density estimation. While the CLIP model has demonstrated remarkable success in addressing recognition tasks such as zero-shot image classification, its potential for counting has been largely unexplored due to the inherent challenges in transforming a regression problem, such as counting, into a recognition task. In this work, we investigate and enhance CLIP's ability to count, focusing specifically on the task of estimating crowd sizes from images. Existing classification-based crowd-counting frameworks have significant limitations, including the quantization of count values into bordering real-valued bins and the sole focus on classification errors. These practices result in label ambiguity near the shared borders and inaccurate prediction of count values. Hence, directly applying CLIP within these frameworks may yield suboptimal performance.\n  To address these challenges, we first propose the Enhanced Blockwise Classification (EBC) framework. Unlike previous methods, EBC utilizes integer-valued bins, effectively reducing ambiguity near bin boundaries. Additionally, it incorporates a regression loss based on density maps to improve the prediction of count values. Within our backbone-agnostic EBC framework, we then introduce CLIP-EBC to fully leverage CLIP's recognition capabilities for this task. Extensive experiments demonstrate the effectiveness of EBC and the competitive performance of CLIP-EBC. Specifically, our EBC framework can improve existing classification-based methods by up to 44.5% on the UCF-QNRF dataset, and CLIP-EBC achieves state-of-the-art performance on the NWPU-Crowd test set, with an MAE of 58.2 and an RMSE of 268.5, representing improvements of 8.6% and 13.3% over the previous best method, STEERER. The code and weights are available at https://github.com/Yiming-M/CLIP-EBC.",
+    "link": "https://arxiv.org/abs/2403.09281",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Yiming-M/CLIP-EBC."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "ICAL: Implicit Character-Aided Learning for Enhanced Handwritten Mathematical Expression Recognition",
+    "summary": "arXiv:2405.09032v2 Announce Type: replace \nAbstract: Significant progress has been made in the field of handwritten mathematical expression recognition, while existing encoder-decoder methods are usually difficult to model global information in $LaTeX$. Therefore, this paper introduces a novel approach, Implicit Character-Aided Learning (ICAL), to mine the global expression information and enhance handwritten mathematical expression recognition. Specifically, we propose the Implicit Character Construction Module (ICCM) to predict implicit character sequences and use a Fusion Module to merge the outputs of the ICCM and the decoder, thereby producing corrected predictions. By modeling and utilizing implicit character information, ICAL achieves a more accurate and context-aware interpretation of handwritten mathematical expressions. Experimental results demonstrate that ICAL notably surpasses the state-of-the-art(SOTA) models, improving the expression recognition rate (ExpRate) by 2.25\\%/1.81\\%/1.39\\% on the CROHME 2014/2016/2019 datasets respectively, and achieves a remarkable 69.06\\% on the challenging HME100k test set. We make our code available on the GitHub: https://github.com/qingzhenduyu/ICAL",
+    "link": "https://arxiv.org/abs/2405.09032",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/qingzhenduyu/ICAL"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "BIGbench: A Unified Benchmark for Social Bias in Text-to-Image Generative Models Based on Multi-modal LLM",
+    "summary": "arXiv:2407.15240v3 Announce Type: replace \nAbstract: Text-to-Image (T2I) generative models are becoming increasingly crucial due to their ability to generate high-quality images, which also raises concerns about the social biases in their outputs, especially in the human generation. Sociological research has established systematic classifications of bias. However, existing bias research about T2I models conflates different types of bias, impeding methodological progress. In this paper, we introduce BIGbench, a unified benchmark for Biases of Image Generation, featuring a meticulously designed dataset. Unlike existing benchmarks, BIGbench classifies and evaluates biases across four dimensions: manifestation of bias, visibility of bias, acquired attributes, and protected attributes, which ensures exceptional accuracy for analysis. Furthermore, BIGbench applies advanced multi-modal large language models to achieve fully automated and highly accurate evaluations. We apply BIGbench to evaluate eight representative general T2I models and three debiased methods. Our human evaluation results underscore BIGbench's effectiveness in aligning images and identifying various biases. Besides, our study also reveal new research directions about biases, such as the effect of distillation and irrelevant protected attributes. Our benchmark is openly accessible at https://github.com/BIGbench2024/BIGbench2024/ to ensure reproducibility.",
+    "link": "https://arxiv.org/abs/2407.15240",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/BIGbench2024/BIGbench2024/"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MxT: Mamba x Transformer for Image Inpainting",
+    "summary": "arXiv:2407.16126v3 Announce Type: replace \nAbstract: Image inpainting, or image completion, is a crucial task in computer vision that aims to restore missing or damaged regions of images with semantically coherent content. This technique requires a precise balance of local texture replication and global contextual understanding to ensure the restored image integrates seamlessly with its surroundings. Traditional methods using Convolutional Neural Networks (CNNs) are effective at capturing local patterns but often struggle with broader contextual relationships due to the limited receptive fields. Recent advancements have incorporated transformers, leveraging their ability to understand global interactions. However, these methods face computational inefficiencies and struggle to maintain fine-grained details. To overcome these challenges, we introduce MxT composed of the proposed Hybrid Module (HM), which combines Mamba with the transformer in a synergistic manner. Mamba is adept at efficiently processing long sequences with linear computational costs, making it an ideal complement to the transformer for handling long-scale data interactions. Our HM facilitates dual-level interaction learning at both pixel and patch levels, greatly enhancing the model to reconstruct images with high quality and contextual accuracy. We evaluate MxT on the widely-used CelebA-HQ and Places2-standard datasets, where it consistently outperformed existing state-of-the-art methods. The code will be released: {\\url{https://github.com/ChrisChen1023/MxT}}.",
+    "link": "https://arxiv.org/abs/2407.16126",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/ChrisChen1023/MxT}}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "VersusDebias: Universal Zero-Shot Debiasing for Text-to-Image Models via SLM-Based Prompt Engineering and Generative Adversary",
+    "summary": "arXiv:2407.19524v3 Announce Type: replace \nAbstract: With the rapid development of Text-to-Image (T2I) models, biases in human image generation against demographic social groups become a significant concern, impacting fairness and ethical standards in AI. Some researchers propose their methods to tackle with the issue. However, existing methods are designed for specific models with fixed prompts, limiting their adaptability to the fast-evolving models and diverse practical scenarios. Moreover, they neglect the impact of hallucinations, leading to discrepancies between expected and actual results. To address these issues, we introduce VersusDebias, a novel and universal debiasing framework for biases in arbitrary T2I models, consisting of an array generation (AG) module and an image generation (IG) module. The self-adaptive AG module generates specialized attribute arrays to post-process hallucinations and debias multiple attributes simultaneously. The IG module employs a small language model to modify prompts according to the arrays and drives the T2I model to generate debiased images, enabling zero-shot debiasing. Extensive experiments demonstrate VersusDebias's capability to debias any models across gender, race, and age simultaneously. In both zero-shot and few-shot scenarios, VersusDebias outperforms existing methods, showcasing its exceptional utility. Our work is accessible at https://github.com/VersusDebias/VersusDebias to ensure reproducibility and facilitate further research.",
+    "link": "https://arxiv.org/abs/2407.19524",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/VersusDebias/VersusDebias"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Personalizing Federated Instrument Segmentation with Visual Trait Priors in Robotic Surgery",
+    "summary": "arXiv:2408.03208v2 Announce Type: replace \nAbstract: Personalized federated learning (PFL) for surgical instrument segmentation (SIS) is a promising approach. It enables multiple clinical sites to collaboratively train a series of models in privacy, with each model tailored to the individual distribution of each site. Existing PFL methods rarely consider the personalization of multi-headed self-attention, and do not account for appearance diversity and instrument shape similarity, both inherent in surgical scenes. We thus propose PFedSIS, a novel PFL method with visual trait priors for SIS, incorporating global-personalized disentanglement (GPD), appearance-regulation personalized enhancement (APE), and shape-similarity global enhancement (SGE), to boost SIS performance in each site. GPD represents the first attempt at head-wise assignment for multi-headed self-attention personalization. To preserve the unique appearance representation of each site and gradually leverage the inter-site difference, APE introduces appearance regulation and provides customized layer-wise aggregation solutions via hypernetworks for each site's personalized parameters. The mutual shape information of instruments is maintained and shared via SGE, which enhances the cross-style shape consistency on the image level and computes the shape-similarity contribution of each site on the prediction level for updating the global parameters. PFedSIS outperforms state-of-the-art methods with +1.51% Dice, +2.11% IoU, -2.79 ASSD, -15.55 HD95 performance gains. The corresponding code and models will be released at https://github.com/wzjialang/PFedSIS.",
+    "link": "https://arxiv.org/abs/2408.03208",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/wzjialang/PFedSIS."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Motion-compensated MR CINE reconstruction with reconstruction-driven motion estimation",
+    "summary": "arXiv:2302.02504v2 Announce Type: replace-cross \nAbstract: In cardiac CINE, motion-compensated MR reconstruction (MCMR) is an effective approach to address highly undersampled acquisitions by incorporating motion information between frames. In this work, we propose a novel perspective for addressing the MCMR problem and a more integrated and efficient solution to the MCMR field. Contrary to state-of-the-art (SOTA) MCMR methods which break the original problem into two sub-optimization problems, i.e. motion estimation and reconstruction, we formulate this problem as a single entity with one single optimization. Our approach is unique in that the motion estimation is directly driven by the ultimate goal, reconstruction, but not by the canonical motion-warping loss (similarity measurement between motion-warped images and target images). We align the objectives of motion estimation and reconstruction, eliminating the drawbacks of artifacts-affected motion estimation and therefore error-propagated reconstruction. Further, we can deliver high-quality reconstruction and realistic motion without applying any regularization/smoothness loss terms, circumventing the non-trivial weighting factor tuning. We evaluate our method on two datasets: 1) an in-house acquired 2D CINE dataset for the retrospective study and 2) the public OCMR cardiac dataset for the prospective study. The conducted experiments indicate that the proposed MCMR framework can deliver artifact-free motion estimation and high-quality MR images even for imaging accelerations up to 20x, outperforming SOTA non-MCMR and MCMR methods in both qualitative and quantitative evaluation across all experiments. The code is available at https://github.com/JZPeterPan/MCMR-Recon-Driven-Motion.",
+    "link": "https://arxiv.org/abs/2302.02504",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/JZPeterPan/MCMR-Recon-Driven-Motion."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Novel-View Acoustic Synthesis from 3D Reconstructed Rooms",
+    "summary": "arXiv:2310.15130v2 Announce Type: replace-cross \nAbstract: We investigate the benefit of combining blind audio recordings with 3D scene information for novel-view acoustic synthesis. Given audio recordings from 2-4 microphones and the 3D geometry and material of a scene containing multiple unknown sound sources, we estimate the sound anywhere in the scene. We identify the main challenges of novel-view acoustic synthesis as sound source localization, separation, and dereverberation. While naively training an end-to-end network fails to produce high-quality results, we show that incorporating room impulse responses (RIRs) derived from 3D reconstructed rooms enables the same network to jointly tackle these tasks. Our method outperforms existing methods designed for the individual tasks, demonstrating its effectiveness at utilizing 3D visual information. In a simulated study on the Matterport3D-NVAS dataset, our model achieves near-perfect accuracy on source localization, a PSNR of 26.44dB and a SDR of 14.23dB for source separation and dereverberation, resulting in a PSNR of 25.55 dB and a SDR of 14.20 dB on novel-view acoustic synthesis. We release our code and model on our project website at https://github.com/apple/ml-nvas3d. Please wear headphones when listening to the results.",
+    "link": "https://arxiv.org/abs/2310.15130",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/apple/ml-nvas3d."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "UniFed: A Universal Federation of a Mixture of Highly Heterogeneous Medical Image Classification Tasks",
+    "summary": "arXiv:2408.07075v2 Announce Type: replace-cross \nAbstract: A fundamental challenge in federated learning lies in mixing heterogeneous datasets and classification tasks while minimizing the high communication cost caused by clients as well as the exchange of weight updates with the server over a fixed number of rounds. This results in divergent model convergence rates and performance, which may hinder their deployment in precision medicine. In real-world scenarios, client data is collected from different hospitals with extremely varying components (e.g., imaging modality, organ type, etc). Previous studies often overlooked the convoluted heterogeneity during the training stage where the target learning tasks vary across clients as well as the dataset type and their distributions. To address such limitations, we unprecedentedly introduce UniFed, a universal federated learning paradigm that aims to classify any disease from any imaging modality. UniFed also handles the issue of varying convergence times in the client-specific optimization based on the complexity of their learning tasks. Specifically, by dynamically adjusting both local and global models, UniFed considers the varying task complexities of clients and the server, enhancing its adaptability to real-world scenarios, thereby mitigating issues related to overtraining and excessive communication. Furthermore, our framework incorporates a sequential model transfer mechanism that takes into account the diverse tasks among hospitals and a dynamic task-complexity based ordering. We demonstrate the superiority of our framework in terms of accuracy, communication cost, and convergence time over relevant benchmarks in diagnosing retina, histopathology, and liver tumour diseases under federated learning. Our UniFed code is available at https://github.com/basiralab/UniFed.",
+    "link": "https://arxiv.org/abs/2408.07075",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/basiralab/UniFed."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "ChemVLM: Exploring the Power of Multimodal Large Language Models in Chemistry Area",
+    "summary": "arXiv:2408.07246v2 Announce Type: replace-cross \nAbstract: Large Language Models (LLMs) have achieved remarkable success and have been applied across various scientific fields, including chemistry. However, many chemical tasks require the processing of visual information, which cannot be successfully handled by existing chemical LLMs. This brings a growing need for models capable of integrating multimodal information in the chemical domain. In this paper, we introduce \\textbf{ChemVLM}, an open-source chemical multimodal large language model specifically designed for chemical applications. ChemVLM is trained on a carefully curated bilingual multimodal dataset that enhances its ability to understand both textual and visual chemical information, including molecular structures, reactions, and chemistry examination questions. We develop three datasets for comprehensive evaluation, tailored to Chemical Optical Character Recognition (OCR), Multimodal Chemical Reasoning (MMCR), and Multimodal Molecule Understanding tasks. We benchmark ChemVLM against a range of open-source and proprietary multimodal large language models on various tasks. Experimental results demonstrate that ChemVLM achieves competitive performance across all evaluated tasks. Our model can be found at https://huggingface.co/AI4Chem/ChemVLM-26B.",
+    "link": "https://arxiv.org/abs/2408.07246",
+    "published": "No date available",
+    "github_urls": [],
+    "huggingface_urls": [
+      "https://huggingface.co/AI4Chem/ChemVLM-26B."
+    ],
+    "source": "arXiv"
+  }
+]
