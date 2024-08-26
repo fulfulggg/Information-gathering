@@ -1,1 +1,310 @@
-[]
+[
+  {
+    "title": "GSFusion: Online RGB-D Mapping Where Gaussian Splatting Meets TSDF Fusion",
+    "summary": "arXiv:2408.12677v1 Announce Type: new \nAbstract: Traditional volumetric fusion algorithms preserve the spatial structure of 3D scenes, which is beneficial for many tasks in computer vision and robotics. However, they often lack realism in terms of visualization. Emerging 3D Gaussian splatting bridges this gap, but existing Gaussian-based reconstruction methods often suffer from artifacts and inconsistencies with the underlying 3D structure, and struggle with real-time optimization, unable to provide users with immediate feedback in high quality. One of the bottlenecks arises from the massive amount of Gaussian parameters that need to be updated during optimization. Instead of using 3D Gaussian as a standalone map representation, we incorporate it into a volumetric mapping system to take advantage of geometric information and propose to use a quadtree data structure on images to drastically reduce the number of splats initialized. In this way, we simultaneously generate a compact 3D Gaussian map with fewer artifacts and a volumetric map on the fly. Our method, GSFusion, significantly enhances computational efficiency without sacrificing rendering quality, as demonstrated on both synthetic and real datasets. Code will be available at https://github.com/goldoak/GSFusion.",
+    "link": "https://arxiv.org/abs/2408.12677",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/goldoak/GSFusion."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Staircase Cascaded Fusion of Lightweight Local Pattern Recognition and Long-Range Dependencies for Structural Crack Segmentation",
+    "summary": "arXiv:2408.12815v1 Announce Type: new \nAbstract: Detecting cracks with pixel-level precision for key structures is a significant challenge, as existing methods struggle to effectively integrate local textures and pixel dependencies of cracks. Furthermore, these methods often possess numerous parameters and substantial computational requirements, complicating deployment on edge devices. In this paper, we propose a staircase cascaded fusion crack segmentation network (CrackSCF) that generates high-quality crack segmentation maps using minimal computational resources. We constructed a staircase cascaded fusion module that effectively captures local patterns of cracks and long-range dependencies of pixels, and it can suppress background noise well. To reduce the computational resources required by the model, we introduced a lightweight convolution block, which replaces all convolution operations in the network, significantly reducing the required computation and parameters without affecting the network's performance. To evaluate our method, we created a challenging benchmark dataset called TUT and conducted experiments on this dataset and five other public datasets. The experimental results indicate that our method offers significant advantages over existing methods, especially in handling background noise interference and detailed crack segmentation. The F1 and mIoU scores on the TUT dataset are 0.8382 and 0.8473, respectively, achieving state-of-the-art (SOTA) performance while requiring the least computational resources. The code and dataset is available at https://github.com/Karl1109/CrackSCF.",
+    "link": "https://arxiv.org/abs/2408.12815",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Karl1109/CrackSCF."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "O-Mamba: O-shape State-Space Model for Underwater Image Enhancement",
+    "summary": "arXiv:2408.12816v1 Announce Type: new \nAbstract: Underwater image enhancement (UIE) face significant challenges due to complex underwater lighting conditions. Recently, mamba-based methods have achieved promising results in image enhancement tasks. However, these methods commonly rely on Vmamba, which focuses only on spatial information modeling and struggles to deal with the cross-color channel dependency problem in underwater images caused by the differential attenuation of light wavelengths, limiting the effective use of deep networks. In this paper, we propose a novel UIE framework called O-mamba. O-mamba employs an O-shaped dual-branch network to separately model spatial and cross-channel information, utilizing the efficient global receptive field of state-space models optimized for underwater images. To enhance information interaction between the two branches and effectively utilize multi-scale information, we design a Multi-scale Bi-mutual Promotion Module. This branch includes MS-MoE for fusing multi-scale information within branches, Mutual Promotion module for interaction between spatial and channel information across branches, and Cyclic Multi-scale optimization strategy to maximize the use of multi-scale information. Extensive experiments demonstrate that our method achieves state-of-the-art (SOTA) results.The code is available at https://github.com/chenydong/O-Mamba.",
+    "link": "https://arxiv.org/abs/2408.12816",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/chenydong/O-Mamba."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "S3Simulator: A benchmarking Side Scan Sonar Simulator dataset for Underwater Image Analysis",
+    "summary": "arXiv:2408.12833v1 Announce Type: new \nAbstract: Acoustic sonar imaging systems are widely used for underwater surveillance in both civilian and military sectors. However, acquiring high-quality sonar datasets for training Artificial Intelligence (AI) models confronts challenges such as limited data availability, financial constraints, and data confidentiality. To overcome these challenges, we propose a novel benchmark dataset of Simulated Side-Scan Sonar images, which we term as 'S3Simulator dataset'. Our dataset creation utilizes advanced simulation techniques to accurately replicate underwater conditions and produce diverse synthetic sonar imaging. In particular, the cutting-edge AI segmentation tool i.e. Segment Anything Model (SAM) is leveraged for optimally isolating and segmenting the object images, such as ships and planes, from real scenes. Further, advanced Computer-Aided Design tools i.e. SelfCAD and simulation software such as Gazebo are employed to create the 3D model and to optimally visualize within realistic environments, respectively. Further, a range of computational imaging techniques are employed to improve the quality of the data, enabling the AI models for the analysis of the sonar images. Extensive analyses are carried out on S3simulator as well as real sonar datasets to validate the performance of AI models for underwater object classification. Our experimental results highlight that the S3Simulator dataset will be a promising benchmark dataset for research on underwater image analysis. https://github.com/bashakamal/S3Simulator.",
+    "link": "https://arxiv.org/abs/2408.12833",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/bashakamal/S3Simulator."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Frequency-aware Feature Fusion for Dense Image Prediction",
+    "summary": "arXiv:2408.12879v1 Announce Type: new \nAbstract: Dense image prediction tasks demand features with strong category information and precise spatial boundary details at high resolution. To achieve this, modern hierarchical models often utilize feature fusion, directly adding upsampled coarse features from deep layers and high-resolution features from lower levels. In this paper, we observe rapid variations in fused feature values within objects, resulting in intra-category inconsistency due to disturbed high-frequency features. Additionally, blurred boundaries in fused features lack accurate high frequency, leading to boundary displacement. Building upon these observations, we propose Frequency-Aware Feature Fusion (FreqFusion), integrating an Adaptive Low-Pass Filter (ALPF) generator, an offset generator, and an Adaptive High-Pass Filter (AHPF) generator. The ALPF generator predicts spatially-variant low-pass filters to attenuate high-frequency components within objects, reducing intra-class inconsistency during upsampling. The offset generator refines large inconsistent features and thin boundaries by replacing inconsistent features with more consistent ones through resampling, while the AHPF generator enhances high-frequency detailed boundary information lost during downsampling. Comprehensive visualization and quantitative analysis demonstrate that FreqFusion effectively improves feature consistency and sharpens object boundaries. Extensive experiments across various dense prediction tasks confirm its effectiveness. The code is made publicly available at https://github.com/Linwei-Chen/FreqFusion.",
+    "link": "https://arxiv.org/abs/2408.12879",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Linwei-Chen/FreqFusion."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "T3M: Text Guided 3D Human Motion Synthesis from Speech",
+    "summary": "arXiv:2408.12885v1 Announce Type: new \nAbstract: Speech-driven 3D motion synthesis seeks to create lifelike animations based on human speech, with potential uses in virtual reality, gaming, and the film production. Existing approaches reply solely on speech audio for motion generation, leading to inaccurate and inflexible synthesis results. To mitigate this problem, we introduce a novel text-guided 3D human motion synthesis method, termed \\textit{T3M}. Unlike traditional approaches, T3M allows precise control over motion synthesis via textual input, enhancing the degree of diversity and user customization. The experiment results demonstrate that T3M can greatly outperform the state-of-the-art methods in both quantitative metrics and qualitative evaluations. We have publicly released our code at \\href{https://github.com/Gloria2tt/T3M.git}{https://github.com/Gloria2tt/T3M.git}",
+    "link": "https://arxiv.org/abs/2408.12885",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Gloria2tt/T3M.git}{https://github.com/Gloria2tt/T3M.git}"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Unleashing the Potential of SAM2 for Biomedical Images and Videos: A Survey",
+    "summary": "arXiv:2408.12889v1 Announce Type: new \nAbstract: The unprecedented developments in segmentation foundational models have become a dominant force in the field of computer vision, introducing a multitude of previously unexplored capabilities in a wide range of natural images and videos. Specifically, the Segment Anything Model (SAM) signifies a noteworthy expansion of the prompt-driven paradigm into the domain of image segmentation. The recent introduction of SAM2 effectively extends the original SAM to a streaming fashion and demonstrates strong performance in video segmentation. However, due to the substantial distinctions between natural and medical images, the effectiveness of these models on biomedical images and videos is still under exploration. This paper presents an overview of recent efforts in applying and adapting SAM2 to biomedical images and videos. The findings indicate that while SAM2 shows promise in reducing annotation burdens and enabling zero-shot segmentation, its performance varies across different datasets and tasks. Addressing the domain gap between natural and medical images through adaptation and fine-tuning is essential to fully unleash SAM2's potential in clinical applications. To support ongoing research endeavors, we maintain an active repository that contains up-to-date SAM & SAM2-related papers and projects at https://github.com/YichiZhang98/SAM4MIS.",
+    "link": "https://arxiv.org/abs/2408.12889",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/YichiZhang98/SAM4MIS."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "BoostTrack++: using tracklet information to detect more objects in multiple object tracking",
+    "summary": "arXiv:2408.13003v1 Announce Type: new \nAbstract: Multiple object tracking (MOT) depends heavily on selection of true positive detected bounding boxes. However, this aspect of the problem is mostly overlooked or mitigated by employing two-stage association and utilizing low confidence detections in the second stage. Recently proposed BoostTrack attempts to avoid the drawbacks of multiple stage association approach and use low-confidence detections by applying detection confidence boosting. In this paper, we identify the limitations of the confidence boost used in BoostTrack and propose a method to improve its performance. To construct a richer similarity measure and enable a better selection of true positive detections, we propose to use a combination of shape, Mahalanobis distance and novel soft BIoU similarity. We propose a soft detection confidence boost technique which calculates new confidence scores based on the similarity measure and the previous confidence scores, and we introduce varying similarity threshold to account for lower similarity measure between detections and tracklets which are not regularly updated. The proposed additions are mutually independent and can be used in any MOT algorithm.\n  Combined with the BoostTrack+ baseline, our method achieves near state of the art results on the MOT17 dataset and new state of the art HOTA and IDF1 scores on the MOT20 dataset.\n  The source code is available at: https://github.com/vukasin-stanojevic/BoostTrack .",
+    "link": "https://arxiv.org/abs/2408.13003",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/vukasin-stanojevic/BoostTrack"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "VFM-Det: Towards High-Performance Vehicle Detection via Large Foundation Models",
+    "summary": "arXiv:2408.13031v1 Announce Type: new \nAbstract: Existing vehicle detectors are usually obtained by training a typical detector (e.g., YOLO, RCNN, DETR series) on vehicle images based on a pre-trained backbone (e.g., ResNet, ViT). Some researchers also exploit and enhance the detection performance using pre-trained large foundation models. However, we think these detectors may only get sub-optimal results because the large models they use are not specifically designed for vehicles. In addition, their results heavily rely on visual features, and seldom of they consider the alignment between the vehicle's semantic information and visual representations. In this work, we propose a new vehicle detection paradigm based on a pre-trained foundation vehicle model (VehicleMAE) and a large language model (T5), termed VFM-Det. It follows the region proposal-based detection framework and the features of each proposal can be enhanced using VehicleMAE. More importantly, we propose a new VAtt2Vec module that predicts the vehicle semantic attributes of these proposals and transforms them into feature vectors to enhance the vision features via contrastive learning. Extensive experiments on three vehicle detection benchmark datasets thoroughly proved the effectiveness of our vehicle detector. Specifically, our model improves the baseline approach by $+5.1\\%$, $+6.2\\%$ on the $AP_{0.5}$, $AP_{0.75}$ metrics, respectively, on the Cityscapes dataset.The source code of this work will be released at https://github.com/Event-AHU/VFM-Det.",
+    "link": "https://arxiv.org/abs/2408.13031",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/Event-AHU/VFM-Det."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Quantization-free Lossy Image Compression Using Integer Matrix Factorization",
+    "summary": "arXiv:2408.12691v1 Announce Type: cross \nAbstract: Lossy image compression is essential for efficient transmission and storage. Traditional compression methods mainly rely on discrete cosine transform (DCT) or singular value decomposition (SVD), both of which represent image data in continuous domains and therefore necessitate carefully designed quantizers. Notably, SVD-based methods are more sensitive to quantization errors than DCT-based methods like JPEG. To address this issue, we introduce a variant of integer matrix factorization (IMF) to develop a novel quantization-free lossy image compression method. IMF provides a low-rank representation of the image data as a product of two smaller factor matrices with bounded integer elements, thereby eliminating the need for quantization. We propose an efficient, provably convergent iterative algorithm for IMF using a block coordinate descent (BCD) scheme, with subproblems having closed-form solutions. Our experiments on the Kodak and CLIC 2024 datasets demonstrate that our IMF compression method consistently outperforms JPEG at low bit rates below 0.25 bits per pixel (bpp) and remains comparable at higher bit rates. We also assessed our method's capability to preserve visual semantics by evaluating an ImageNet pre-trained classifier on compressed images. Remarkably, our method improved top-1 accuracy by over 5 percentage points compared to JPEG at bit rates under 0.25 bpp. The project is available at https://github.com/pashtari/lrf .",
+    "link": "https://arxiv.org/abs/2408.12691",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/pashtari/lrf"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Mapping Degeneration Meets Label Evolution: Learning Infrared Small Target Detection with Single Point Supervision",
+    "summary": "arXiv:2304.01484v2 Announce Type: replace \nAbstract: Training a convolutional neural network (CNN) to detect infrared small targets in a fully supervised manner has gained remarkable research interests in recent years, but is highly labor expensive since a large number of per-pixel annotations are required. To handle this problem, in this paper, we make the first attempt to achieve infrared small target detection with point-level supervision. Interestingly, during the training phase supervised by point labels, we discover that CNNs first learn to segment a cluster of pixels near the targets, and then gradually converge to predict groundtruth point labels. Motivated by this \"mapping degeneration\" phenomenon, we propose a label evolution framework named label evolution with single point supervision (LESPS) to progressively expand the point label by leveraging the intermediate predictions of CNNs. In this way, the network predictions can finally approximate the updated pseudo labels, and a pixel-level target mask can be obtained to train CNNs in an end-to-end manner. We conduct extensive experiments with insightful visualizations to validate the effectiveness of our method. Experimental results show that CNNs equipped with LESPS can well recover the target masks from corresponding point labels, {and can achieve over 70% and 95% of their fully supervised performance in terms of pixel-level intersection over union (IoU) and object-level probability of detection (Pd), respectively. Code is available at https://github.com/XinyiYing/LESPS.",
+    "link": "https://arxiv.org/abs/2304.01484",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/XinyiYing/LESPS."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "A Geometric Perspective on Diffusion Models",
+    "summary": "arXiv:2305.19947v3 Announce Type: replace \nAbstract: Recent years have witnessed significant progress in developing effective training and fast sampling techniques for diffusion models. A remarkable advancement is the use of stochastic differential equations (SDEs) and their marginal-preserving ordinary differential equations (ODEs) to describe data perturbation and generative modeling in a unified framework. In this paper, we carefully inspect the ODE-based sampling of a popular variance-exploding SDE and reveal several intriguing structures of its sampling dynamics. We discover that the data distribution and the noise distribution are smoothly connected with a quasi-linear sampling trajectory and another implicit denoising trajectory that even converges faster. Meanwhile, the denoising trajectory governs the curvature of the corresponding sampling trajectory and its finite differences yield various second-order samplers used in practice. Furthermore, we establish a theoretical relationship between the optimal ODE-based sampling and the classic mean-shift (mode-seeking) algorithm, with which we can characterize the asymptotic behavior of diffusion models and identify the empirical score deviation. Code is available at \\url{https://github.com/zju-pi/diff-sampler}.",
+    "link": "https://arxiv.org/abs/2305.19947",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/zju-pi/diff-sampler}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "UniM$^2$AE: Multi-modal Masked Autoencoders with Unified 3D Representation for 3D Perception in Autonomous Driving",
+    "summary": "arXiv:2308.10421v3 Announce Type: replace \nAbstract: Masked Autoencoders (MAE) play a pivotal role in learning potent representations, delivering outstanding results across various 3D perception tasks essential for autonomous driving. In real-world driving scenarios, it's commonplace to deploy multiple sensors for comprehensive environment perception. Despite integrating multi-modal features from these sensors can produce rich and powerful features, there is a noticeable challenge in MAE methods addressing this integration due to the substantial disparity between the different modalities. This research delves into multi-modal Masked Autoencoders tailored for a unified representation space in autonomous driving, aiming to pioneer a more efficient fusion of two distinct modalities. To intricately marry the semantics inherent in images with the geometric intricacies of LiDAR point clouds, we propose UniM$^2$AE. This model stands as a potent yet straightforward, multi-modal self-supervised pre-training framework, mainly consisting of two designs. First, it projects the features from both modalities into a cohesive 3D volume space to intricately marry the bird's eye view (BEV) with the height dimension. The extension allows for a precise representation of objects and reduces information loss when aligning multi-modal features. Second, the Multi-modal 3D Interactive Module (MMIM) is invoked to facilitate the efficient inter-modal interaction during the interaction process. Extensive experiments conducted on the nuScenes Dataset attest to the efficacy of UniM$^2$AE, indicating enhancements in 3D object detection and BEV map segmentation by 1.2\\% NDS and 6.5\\% mIoU, respectively. The code is available at https://github.com/hollow-503/UniM2AE.",
+    "link": "https://arxiv.org/abs/2308.10421",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/hollow-503/UniM2AE."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "ESVAE: An Efficient Spiking Variational Autoencoder with Reparameterizable Poisson Spiking Sampling",
+    "summary": "arXiv:2310.14839v2 Announce Type: replace \nAbstract: In recent years, studies on image generation models of spiking neural networks (SNNs) have gained the attention of many researchers. Variational autoencoders (VAEs), as one of the most popular image generation models, have attracted a lot of work exploring their SNN implementation. Due to the constrained binary representation in SNNs, existing SNN VAE methods implicitly construct the latent space by an elaborated autoregressive network and use the network outputs as the sampling variables. However, this unspecified implicit representation of the latent space will increase the difficulty of generating high-quality images and introduces additional network parameters. In this paper, we propose an efficient spiking variational autoencoder (ESVAE) that constructs an interpretable latent space distribution and design a reparameterizable spiking sampling method. Specifically, we construct the prior and posterior of the latent space as a Poisson distribution using the firing rate of the spiking neurons. Subsequently, we propose a reparameterizable Poisson spiking sampling method, which is free from the additional network. Comprehensive experiments have been conducted, and the experimental results show that the proposed ESVAE outperforms previous SNN VAE methods in reconstructed & generated images quality. In addition, experiments demonstrate that ESVAE's encoder is able to retain the original image information more efficiently, and the decoder is more robust. The source code is available at https://github.com/QgZhan/ESVAE.",
+    "link": "https://arxiv.org/abs/2310.14839",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/QgZhan/ESVAE."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Spiking NeRF: Representing the Real-World Geometry by a Discontinuous Representation",
+    "summary": "arXiv:2311.09077v3 Announce Type: replace \nAbstract: A crucial reason for the success of existing NeRF-based methods is to build a neural density field for the geometry representation via multiple perceptron layers (MLPs). MLPs are continuous functions, however, real geometry or density field is frequently discontinuous at the interface between the air and the surface. Such a contrary brings the problem of unfaithful geometry representation. To this end, this paper proposes spiking NeRF, which leverages spiking neurons and a hybrid Artificial Neural Network (ANN)-Spiking Neural Network (SNN) framework to build a discontinuous density field for faithful geometry representation. Specifically, we first demonstrate the reason why continuous density fields will bring inaccuracy. Then, we propose to use the spiking neurons to build a discontinuous density field. We conduct a comprehensive analysis for the problem of existing spiking neuron models and then provide the numerical relationship between the parameter of the spiking neuron and the theoretical accuracy of geometry. Based on this, we propose a bounded spiking neuron to build the discontinuous density field. Our method achieves SOTA performance. The source code and the supplementary material are available at https://github.com/liaozhanfeng/Spiking-NeRF.",
+    "link": "https://arxiv.org/abs/2311.09077",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/liaozhanfeng/Spiking-NeRF."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "The All-Seeing Project V2: Towards General Relation Comprehension of the Open World",
+    "summary": "arXiv:2402.19474v4 Announce Type: replace \nAbstract: We present the All-Seeing Project V2: a new model and dataset designed for understanding object relations in images. Specifically, we propose the All-Seeing Model V2 (ASMv2) that integrates the formulation of text generation, object localization, and relation comprehension into a relation conversation (ReC) task. Leveraging this unified task, our model excels not only in perceiving and recognizing all objects within the image but also in grasping the intricate relation graph between them, diminishing the relation hallucination often encountered by Multi-modal Large Language Models (MLLMs). To facilitate training and evaluation of MLLMs in relation understanding, we created the first high-quality ReC dataset ({AS-V2) which is aligned with the format of standard instruction tuning data. In addition, we design a new benchmark, termed Circular-based Relation Probing Evaluation (CRPE) for comprehensively evaluating the relation comprehension capabilities of MLLMs. Notably, our ASMv2 achieves an overall accuracy of 52.04 on this relation-aware benchmark, surpassing the 43.14 of LLaVA-1.5 by a large margin. We hope that our work can inspire more future research and contribute to the evolution towards artificial general intelligence. Our project is released at https://github.com/OpenGVLab/all-seeing.",
+    "link": "https://arxiv.org/abs/2402.19474",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/OpenGVLab/all-seeing."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Semi-Supervised Unconstrained Head Pose Estimation in the Wild",
+    "summary": "arXiv:2404.02544v2 Announce Type: replace \nAbstract: Existing research on unconstrained in-the-wild head pose estimation suffers from the flaws of its datasets, which consist of either numerous samples by non-realistic synthesis or constrained collection, or small-scale natural images yet with plausible manual annotations. To alleviate it, we propose the first semi-supervised unconstrained head pose estimation method SemiUHPE, which can leverage abundant easily available unlabeled head images. Technically, we choose semi-supervised rotation regression and adapt it to the error-sensitive and label-scarce problem of unconstrained head pose. Our method is based on the observation that the aspect-ratio invariant cropping of wild heads is superior to the previous landmark-based affine alignment given that landmarks of unconstrained human heads are usually unavailable, especially for less-explored non-frontal heads. Instead of using an empirically fixed threshold to filter out pseudo labeled heads, we propose dynamic entropy based filtering to adaptively remove unlabeled outliers as training progresses by updating the threshold in multiple stages. We then revisit the design of weak-strong augmentations and improve it by devising two novel head-oriented strong augmentations, termed pose-irrelevant cut-occlusion and pose-altering rotation consistency respectively. Extensive experiments and ablation studies show that SemiUHPE outperforms existing methods greatly on public benchmarks under both the front-range and full-range settings. Code is released in \\url{https://github.com/hnuzhy/SemiUHPE}.",
+    "link": "https://arxiv.org/abs/2404.02544",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/hnuzhy/SemiUHPE}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "OMEGAS: Object Mesh Extraction from Large Scenes Guided by Gaussian Segmentation",
+    "summary": "arXiv:2404.15891v3 Announce Type: replace \nAbstract: Recent advancements in 3D reconstruction technologies have paved the way for high-quality and real-time rendering of complex 3D scenes. Despite these achievements, a notable challenge persists: it is difficult to precisely reconstruct specific objects from large scenes. Current scene reconstruction techniques frequently result in the loss of object detail textures and are unable to reconstruct object portions that are occluded or unseen in views. To address this challenge, we delve into the meticulous 3D reconstruction of specific objects within large scenes and propose a framework termed OMEGAS: Object Mesh Extraction from Large Scenes Guided by Gaussian Segmentation. Specifically, we proposed a novel 3D target segmentation technique based on 2D Gaussian Splatting, which segments 3D consistent target masks in multi-view scene images and generates a preliminary target model. Moreover, to reconstruct the unseen portions of the target, we propose a novel target replenishment technique driven by large-scale generative diffusion priors. We demonstrate that our method can accurately reconstruct specific targets from large scenes, both quantitatively and qualitatively. Our experiments show that OMEGAS significantly outperforms existing reconstruction methods across various scenarios. Our project page is at: https://github.com/CrystalWlz/OMEGAS",
+    "link": "https://arxiv.org/abs/2404.15891",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/CrystalWlz/OMEGAS"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Accurate Explanation Model for Image Classifiers using Class Association Embedding",
+    "summary": "arXiv:2406.07961v2 Announce Type: replace \nAbstract: Image classification is a primary task in data analysis where explainable models are crucially demanded in various applications. Although amounts of methods have been proposed to obtain explainable knowledge from the black-box classifiers, these approaches lack the efficiency of extracting global knowledge regarding the classification task, thus is vulnerable to local traps and often leads to poor accuracy. In this study, we propose a generative explanation model that combines the advantages of global and local knowledge for explaining image classifiers. We develop a representation learning method called class association embedding (CAE), which encodes each sample into a pair of separated class-associated and individual codes. Recombining the individual code of a given sample with altered class-associated code leads to a synthetic real-looking sample with preserved individual characters but modified class-associated features and possibly flipped class assignments. A building-block coherency feature extraction algorithm is proposed that efficiently separates class-associated features from individual ones. The extracted feature space forms a low-dimensional manifold that visualizes the classification decision patterns. Explanation on each individual sample can be then achieved in a counter-factual generation manner which continuously modifies the sample in one direction, by shifting its class-associated code along a guided path, until its classification outcome is changed. We compare our method with state-of-the-art ones on explaining image classification tasks in the form of saliency maps, demonstrating that our method achieves higher accuracies. The code is available at https://github.com/xrt11/XAI-CODE.",
+    "link": "https://arxiv.org/abs/2406.07961",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/xrt11/XAI-CODE."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "TokenPacker: Efficient Visual Projector for Multimodal LLM",
+    "summary": "arXiv:2407.02392v3 Announce Type: replace \nAbstract: The visual projector serves as an essential bridge between the visual encoder and the Large Language Model (LLM) in a Multimodal LLM (MLLM). Typically, MLLMs adopt a simple MLP to preserve all visual contexts via one-to-one transformation. However, the visual tokens are redundant and can be considerably increased when dealing with high-resolution images, impairing the efficiency of MLLMs significantly. Some recent works have introduced resampler or abstractor to reduce the number of resulting visual tokens. Unfortunately, they fail to capture finer details and undermine the visual reasoning capabilities of MLLMs. In this work, we propose a novel visual projector, which adopts a coarse-to-fine scheme to inject the enriched characteristics to generate the condensed visual tokens. In specific, we first interpolate the visual features as a low-resolution point query, providing the overall visual representation as the foundation. Then, we introduce a region-to-point injection module that utilizes high-resolution, multi-level region-based cues as fine-grained reference keys and values, allowing them to be fully absorbed within the corresponding local context region. This step effectively updates the coarse point query, transforming it into an enriched one for the subsequent LLM reasoning. Extensive experiments demonstrate that our approach compresses the visual tokens by 75%~89%, while achieves comparable or even better performance across diverse benchmarks with significantly higher efficiency. The source codes can be found at https://github.com/CircleRadon/TokenPacker.",
+    "link": "https://arxiv.org/abs/2407.02392",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/CircleRadon/TokenPacker."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Multi-head Spatial-Spectral Mamba for Hyperspectral Image Classification",
+    "summary": "arXiv:2408.01224v2 Announce Type: replace \nAbstract: Spatial-Spectral Mamba (SSM) improves computational efficiency and captures long-range dependencies, addressing Transformer limitations. However, traditional Mamba models overlook rich spectral information in HSIs and struggle with high dimensionality and sequential data. To address these issues, we propose the SSM with multi-head self-attention and token enhancement (MHSSMamba). This model integrates spectral and spatial information by enhancing spectral tokens and using multi-head attention to capture complex relationships between spectral bands and spatial locations. It also manages long-range dependencies and the sequential nature of HSI data, preserving contextual information across spectral bands. MHSSMamba achieved remarkable classification accuracies of 97.62\\% on Pavia University, 96.92\\% on the University of Houston, 96.85\\% on Salinas, and 99.49\\% on Wuhan-longKou datasets. The source code is available at \\href{https://github.com/MHassaanButt/MHA\\_SS\\_Mamba}{GitHub}.",
+    "link": "https://arxiv.org/abs/2408.01224",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/MHassaanButt/MHA\\_SS\\_Mamba}{GitHub}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Spatial-Spectral Morphological Mamba for Hyperspectral Image Classification",
+    "summary": "arXiv:2408.01372v2 Announce Type: replace \nAbstract: In recent years, the emergence of Transformers with self-attention mechanism has revolutionized the hyperspectral image (HSI) classification. However, these models face major challenges in computational efficiency, as their complexity increases quadratically with the sequence length. The Mamba architecture, leveraging a state space model (SSM), offers a more efficient alternative to Transformers. This paper introduces the Spatial-Spectral Morphological Mamba (MorpMamba) model in which, a token generation module first converts the HSI patch into spatial-spectral tokens. These tokens are then processed by morphological operations, which compute structural and shape information using depthwise separable convolutional operations. The extracted information is enhanced in a feature enhancement module that adjusts the spatial and spectral tokens based on the center region of the HSI sample, allowing for effective information fusion within each block. Subsequently, the tokens are refined through a multi-head self-attention which further improves the feature space. Finally, the combined information is fed into the state space block for classification and the creation of the ground truth map. Experiments on widely used HSI datasets demonstrate that the MorpMamba model outperforms (parametric efficiency) both CNN and Transformer models. The source code will be made publicly available at \\url{https://github.com/MHassaanButt/MorpMamba}.",
+    "link": "https://arxiv.org/abs/2408.01372",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/MHassaanButt/MorpMamba}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "TWLV-I: Analysis and Insights from Holistic Evaluation on Video Foundation Models",
+    "summary": "arXiv:2408.11318v2 Announce Type: replace \nAbstract: In this work, we discuss evaluating video foundation models in a fair and robust manner. Unlike language or image foundation models, many video foundation models are evaluated with differing parameters (such as sampling rate, number of frames, pretraining steps, etc.), making fair and robust comparisons challenging. Therefore, we present a carefully designed evaluation framework for measuring two core capabilities of video comprehension: appearance and motion understanding. Our findings reveal that existing video foundation models, whether text-supervised like UMT or InternVideo2, or self-supervised like V-JEPA, exhibit limitations in at least one of these capabilities. As an alternative, we introduce TWLV-I, a new video foundation model that constructs robust visual representations for both motion- and appearance-based videos. Based on the average top-1 accuracy of linear probing on five action recognition benchmarks, pretrained only on publicly accessible datasets, our model shows a 4.6%p improvement compared to V-JEPA (ViT-L) and a 7.7%p improvement compared to UMT (ViT-L). Even when compared to much larger models, our model demonstrates a 7.2%p improvement compared to DFN (ViT-H), a 2.7%p improvement compared to V-JEPA (ViT-H) and a 2.8%p improvement compared to InternVideo2 (ViT-g). We provide embedding vectors obtained by TWLV-I from videos of several commonly used video benchmarks, along with evaluation source code that can directly utilize these embeddings. The code is available at https://github.com/twelvelabs-io/video-embeddings-evaluation-framework.",
+    "link": "https://arxiv.org/abs/2408.11318",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/twelvelabs-io/video-embeddings-evaluation-framework."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DH-Bench: Probing Depth and Height Perception of Large Visual-Language Models",
+    "summary": "arXiv:2408.11748v2 Announce Type: replace \nAbstract: Geometric understanding is crucial for navigating and interacting with our environment. While large Vision Language Models (VLMs) demonstrate impressive capabilities, deploying them in real-world scenarios necessitates a comparable geometric understanding in visual perception. In this work, we focus on the geometric comprehension of these models; specifically targeting the depths and heights of objects within a scene. Our observations reveal that, although VLMs excel in basic geometric properties perception such as shape and size, they encounter significant challenges in reasoning about the depth and height of objects. To address this, we introduce a suite of benchmark datasets encompassing Synthetic 2D, Synthetic 3D, and Real-World scenarios to rigorously evaluate these aspects. We benchmark 17 state-of-the-art VLMs using these datasets and find that they consistently struggle with both depth and height perception. Our key insights include detailed analyses of the shortcomings in depth and height reasoning capabilities of VLMs and the inherent bias present in these models. This study aims to pave the way for the development of VLMs with enhanced geometric understanding, crucial for real-world applications. The code and datasets for our benchmarks will be available at \\url{https://github.com/sacrcv/DH-Bench}.",
+    "link": "https://arxiv.org/abs/2408.11748",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/sacrcv/DH-Bench}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "SPARK: Multi-Vision Sensor Perception and Reasoning Benchmark for Large-scale Vision-Language Models",
+    "summary": "arXiv:2408.12114v2 Announce Type: replace \nAbstract: Large-scale Vision-Language Models (LVLMs) have significantly advanced with text-aligned vision inputs. They have made remarkable progress in computer vision tasks by aligning text modality with vision inputs. There are also endeavors to incorporate multi-vision sensors beyond RGB, including thermal, depth, and medical X-ray images. However, we observe that current LVLMs view images taken from multi-vision sensors as if they were in the same RGB domain without considering the physical characteristics of multi-vision sensors. They fail to convey the fundamental multi-vision sensor information from the dataset and the corresponding contextual knowledge properly. Consequently, alignment between the information from the actual physical environment and the text is not achieved correctly, making it difficult to answer complex sensor-related questions that consider the physical environment. In this paper, we aim to establish a multi-vision Sensor Perception And Reasoning benchmarK called SPARK that can reduce the fundamental multi-vision sensor information gap between images and multi-vision sensors. We generated 6,248 vision-language test samples to investigate multi-vision sensory perception and multi-vision sensory reasoning on physical sensor knowledge proficiency across different formats, covering different types of sensor-related questions. We utilized these samples to assess ten leading LVLMs. The results showed that most models displayed deficiencies in multi-vision sensory reasoning to varying extents. Codes and data are available at https://github.com/top-yun/SPARK",
+    "link": "https://arxiv.org/abs/2408.12114",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/top-yun/SPARK"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "A Heterogeneous Dynamic Convolutional Neural Network for Image Super-resolution",
+    "summary": "arXiv:2402.15704v2 Announce Type: replace-cross \nAbstract: Convolutional neural networks can automatically learn features via deep network architectures and given input samples. However, robustness of obtained models may have challenges in varying scenes. Bigger differences of a network architecture are beneficial to extract more complementary structural information to enhance robustness of an obtained super-resolution model. In this paper, we present a heterogeneous dynamic convolutional network in image super-resolution (HDSRNet). To capture more information, HDSRNet is implemented by a heterogeneous parallel network. The upper network can facilitate more contexture information via stacked heterogeneous blocks to improve effects of image super-resolution. Each heterogeneous block is composed of a combination of a dilated, dynamic, common convolutional layers, ReLU and residual learning operation. It can not only adaptively adjust parameters, according to different inputs, but also prevent long-term dependency problem. The lower network utilizes a symmetric architecture to enhance relations of different layers to mine more structural information, which is complementary with a upper network for image super-resolution. The relevant experimental results show that the proposed HDSRNet is effective to deal with image resolving. The code of HDSRNet can be obtained at https://github.com/hellloxiaotian/HDSRNet.",
+    "link": "https://arxiv.org/abs/2402.15704",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/hellloxiaotian/HDSRNet."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "RSTAR: Rotational Streak Artifact Reduction in 4D CBCT using Separable and Circular Convolutions",
+    "summary": "arXiv:2403.16361v2 Announce Type: replace-cross \nAbstract: Four-dimensional cone-beam computed tomography (4D CBCT) provides respiration-resolved images and can be used for image-guided radiation therapy. However, the ability to reveal respiratory motion comes at the cost of image artifacts. As raw projection data are sorted into multiple respiratory phases, the cone-beam projections become much sparser and the reconstructed 4D CBCT images will be covered by severe streak artifacts. Although several deep learning-based methods have been proposed to address this issue, most algorithms employ 2D network models as backbones, neglecting the intrinsic structural priors within 4D CBCT images. In this paper, we first explore the origin and appearance of streak artifacts in 4D CBCT images. We find that streak artifacts exhibit a unique rotational motion along with the patient's respiration, distinguishable from diaphragm-driven respiratory motion in the spatiotemporal domain. Therefore, we propose a novel 4D neural network model, RSTAR4D-Net, designed to address Rotational STreak Artifact Reduction by integrating the spatial and temporal information within 4D CBCT images. Specifically, we overcome the computational and training difficulties of a 4D neural network. The specially designed model adopts an efficient implementation of 4D convolutions to reduce computational costs and thus can process the whole 4D image in one pass. Additionally, a Tetris training strategy pertinent to the separable 4D convolutions is proposed to effectively train the model using limited 4D training samples. Extensive experiments substantiate the effectiveness of our proposed method, and the RSTAR4D-Net shows superior performance compared to other methods. The source code and dynamic demos are available at https://github.com/ivy9092111111/RSTAR.",
+    "link": "https://arxiv.org/abs/2403.16361",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/ivy9092111111/RSTAR."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "S-CycleGAN: Semantic Segmentation Enhanced CT-Ultrasound Image-to-Image Translation for Robotic Ultrasonography",
+    "summary": "arXiv:2406.01191v2 Announce Type: replace-cross \nAbstract: Ultrasound imaging is pivotal in various medical diagnoses due to its non-invasive nature and safety. In clinical practice, the accuracy and precision of ultrasound image analysis are critical. Recent advancements in deep learning are showing great capacity of processing medical images. However, the data hungry nature of deep learning and the shortage of high-quality ultrasound image training data suppress the development of deep learning based ultrasound analysis methods. To address these challenges, we introduce an advanced deep learning model, dubbed S-CycleGAN, which generates high-quality synthetic ultrasound images from computed tomography (CT) data. This model incorporates semantic discriminators within a CycleGAN framework to ensure that critical anatomical details are preserved during the style transfer process. The synthetic images are utilized to enhance various aspects of our development of the robot-assisted ultrasound scanning system. The data and code will be available at https://github.com/yhsong98/ct-us-i2i-translation.",
+    "link": "https://arxiv.org/abs/2406.01191",
+    "published": "No date available",
+    "github_urls": [
+      "https://github.com/yhsong98/ct-us-i2i-translation."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  }
+]
