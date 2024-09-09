@@ -1,1 +1,321 @@
-[]
+[
+  {
+    "title": "Few-shot Adaptation of Medical Vision-Language Models",
+    "summary": "arXiv:2409.03868v1 Announce Type: new \nAbstract: Integrating image and text data through multi-modal learning has emerged as a new approach in medical imaging research, following its successful deployment in computer vision. While considerable efforts have been dedicated to establishing medical foundation models and their zero-shot transfer to downstream tasks, the popular few-shot setting remains relatively unexplored. Following on from the currently strong emergence of this setting in computer vision, we introduce the first structured benchmark for adapting medical vision-language models (VLMs) in a strict few-shot regime and investigate various adaptation strategies commonly used in the context of natural images. Furthermore, we evaluate a simple generalization of the linear-probe adaptation baseline, which seeks an optimal blending of the visual prototypes and text embeddings via learnable class-wise multipliers. Surprisingly, such a text-informed linear probe yields competitive performances in comparison to convoluted prompt-learning and adapter-based strategies, while running considerably faster and accommodating the black-box setting. Our extensive experiments span three different medical modalities and specialized foundation models, nine downstream tasks, and several state-of-the-art few-shot adaptation methods. We made our benchmark and code publicly available to trigger further developments in this emergent subject: \\url{https://github.com/FereshteShakeri/few-shot-MedVLMs}.",
+    "link": "https://arxiv.org/abs/2409.03868",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/FereshteShakeri/few-shot-MedVLMs}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MVTN: A Multiscale Video Transformer Network for Hand Gesture Recognition",
+    "summary": "arXiv:2409.03890v1 Announce Type: new \nAbstract: In this paper, we introduce a novel Multiscale Video Transformer Network (MVTN) for dynamic hand gesture recognition, since multiscale features can extract features with variable size, pose, and shape of hand which is a challenge in hand gesture recognition. The proposed model incorporates a multiscale feature hierarchy to capture diverse levels of detail and context within hand gestures which enhances the model's ability. This multiscale hierarchy is obtained by extracting different dimensions of attention in different transformer stages with initial stages to model high-resolution features and later stages to model low-resolution features. Our approach also leverages multimodal data, utilizing depth maps, infrared data, and surface normals along with RGB images from NVGesture and Briareo datasets. Experiments show that the proposed MVTN achieves state-of-the-art results with less computational complexity and parameters. The source code is available at https://github.com/mallikagarg/MVTN.",
+    "link": "https://arxiv.org/abs/2409.03890",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/mallikagarg/MVTN."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DreamForge: Motion-Aware Autoregressive Video Generation for Multi-View Driving Scenes",
+    "summary": "arXiv:2409.04003v1 Announce Type: new \nAbstract: Recent advances in diffusion models have significantly enhanced the cotrollable generation of streetscapes for and facilitated downstream perception and planning tasks. However, challenges such as maintaining temporal coherence, generating long videos, and accurately modeling driving scenes persist. Accordingly, we propose DreamForge, an advanced diffusion-based autoregressive video generation model designed for the long-term generation of 3D-controllable and extensible video. In terms of controllability, our DreamForge supports flexible conditions such as text descriptions, camera poses, 3D bounding boxes, and road layouts, while also providing perspective guidance to produce driving scenes that are both geometrically and contextually accurate. For consistency, we ensure inter-view consistency through cross-view attention and temporal coherence via an autoregressive architecture enhanced with motion cues. Codes will be available at https://github.com/PJLab-ADG/DriveArena.",
+    "link": "https://arxiv.org/abs/2409.04003",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/PJLab-ADG/DriveArena."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "One-Shot Diffusion Mimicker for Handwritten Text Generation",
+    "summary": "arXiv:2409.04004v1 Announce Type: new \nAbstract: Existing handwritten text generation methods often require more than ten handwriting samples as style references. However, in practical applications, users tend to prefer a handwriting generation model that operates with just a single reference sample for its convenience and efficiency. This approach, known as \"one-shot generation\", significantly simplifies the process but poses a significant challenge due to the difficulty of accurately capturing a writer's style from a single sample, especially when extracting fine details from the characters' edges amidst sparse foreground and undesired background noise. To address this problem, we propose a One-shot Diffusion Mimicker (One-DM) to generate handwritten text that can mimic any calligraphic style with only one reference sample. Inspired by the fact that high-frequency information of the individual sample often contains distinct style patterns (e.g., character slant and letter joining), we develop a novel style-enhanced module to improve the style extraction by incorporating high-frequency components from a single sample. We then fuse the style features with the text content as a merged condition for guiding the diffusion model to produce high-quality handwritten text images. Extensive experiments demonstrate that our method can successfully generate handwriting scripts with just one sample reference in multiple languages, even outperforming previous methods using over ten samples. Our source code is available at https://github.com/dailenson/One-DM.",
+    "link": "https://arxiv.org/abs/2409.04004",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/dailenson/One-DM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Qihoo-T2X: An Efficiency-Focused Diffusion Transformer via Proxy Tokens for Text-to-Any-Task",
+    "summary": "arXiv:2409.04005v1 Announce Type: new \nAbstract: The global self-attention mechanism in diffusion transformers involves redundant computation due to the sparse and redundant nature of visual information, and the attention map of tokens within a spatial window shows significant similarity. To address this redundancy, we propose the Proxy Token Diffusion Transformer (PT-DiT), which employs sparse representative token attention (where the number of representative tokens is much smaller than the total number of tokens) to model global visual information efficiently. Specifically, in each transformer block, we randomly sample one token from each spatial-temporal window to serve as a proxy token for that region. The global semantics are captured through the self-attention of these proxy tokens and then injected into all latent tokens via cross-attention. Simultaneously, we introduce window and shift window attention to address the limitations in detail modeling caused by the sparse attention mechanism. Building on the well-designed PT-DiT, we further develop the Qihoo-T2X family, which includes a variety of models for T2I, T2V, and T2MV tasks. Experimental results show that PT-DiT achieves competitive performance while reducing the computational complexity in both image and video generation tasks (e.g., a 48% reduction compared to DiT and a 35% reduction compared to Pixart-alpha). Our source code is available at https://github.com/360CVGroup/Qihoo-T2X.",
+    "link": "https://arxiv.org/abs/2409.04005",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/360CVGroup/Qihoo-T2X."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Introducing a Class-Aware Metric for Monocular Depth Estimation: An Automotive Perspective",
+    "summary": "arXiv:2409.04086v1 Announce Type: new \nAbstract: The increasing accuracy reports of metric monocular depth estimation models lead to a growing interest from the automotive domain. Current model evaluations do not provide deeper insights into the models' performance, also in relation to safety-critical or unseen classes. Within this paper, we present a novel approach for the evaluation of depth estimation models. Our proposed metric leverages three components, a class-wise component, an edge and corner image feature component, and a global consistency retaining component. Classes are further weighted on their distance in the scene and on criticality for automotive applications. In the evaluation, we present the benefits of our metric through comparison to classical metrics, class-wise analytics, and the retrieval of critical situations. The results show that our metric provides deeper insights into model results while fulfilling safety-critical requirements. We release the code and weights on the following repository: \\href{https://github.com/leisemann/ca_mmde}",
+    "link": "https://arxiv.org/abs/2409.04086",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/leisemann/ca_mmde}"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Smooth-edged Perturbations Improve Perturbation-based Image Explanations",
+    "summary": "arXiv:2409.04116v1 Announce Type: new \nAbstract: Perturbation-based post-hoc image explanation methods are commonly used to explain image prediction models by perturbing parts of the input to measure how those parts affect the output. Due to the intractability of perturbing each pixel individually, images are typically attributed to larger segments. The Randomized Input Sampling for Explanations (RISE) method solved this issue by using smooth perturbation masks.\n  While this method has proven effective and popular, it has not been investigated which parts of the method are responsible for its success. This work tests many combinations of mask sampling, segmentation techniques, smoothing, and attribution calculation. The results show that the RISE-style pixel attribution is beneficial to all evaluated methods. Furthermore, it is shown that attribution calculation is the least impactful parameter.\n  The implementation of this work is available online: https://github.com/guspih/post-hoc-image-perturbation.",
+    "link": "https://arxiv.org/abs/2409.04116",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/guspih/post-hoc-image-perturbation."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "LITE: A Paradigm Shift in Multi-Object Tracking with Efficient ReID Feature Integration",
+    "summary": "arXiv:2409.04187v1 Announce Type: new \nAbstract: The Lightweight Integrated Tracking-Feature Extraction (LITE) paradigm is introduced as a novel multi-object tracking (MOT) approach. It enhances ReID-based trackers by eliminating inference, pre-processing, post-processing, and ReID model training costs. LITE uses real-time appearance features without compromising speed. By integrating appearance feature extraction directly into the tracking pipeline using standard CNN-based detectors such as YOLOv8m, LITE demonstrates significant performance improvements. The simplest implementation of LITE on top of classic DeepSORT achieves a HOTA score of 43.03% at 28.3 FPS on the MOT17 benchmark, making it twice as fast as DeepSORT on MOT17 and four times faster on the more crowded MOT20 dataset, while maintaining similar accuracy. Additionally, a new evaluation framework for tracking-by-detection approaches reveals that conventional trackers like DeepSORT remain competitive with modern state-of-the-art trackers when evaluated under fair conditions. The code will be available post-publication at https://github.com/Jumabek/LITE.",
+    "link": "https://arxiv.org/abs/2409.04187",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Jumabek/LITE."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MpoxMamba: A Grouped Mamba-based Lightweight Hybrid Network for Mpox Detection",
+    "summary": "arXiv:2409.04218v1 Announce Type: new \nAbstract: Due to the lack of effective mpox detection tools, the mpox virus continues to spread worldwide and has once again been declared a public health emergency of international concern by the World Health Organization. Deep learning-based mpox detection tools are crucial to alleviate mpox outbreak. However, existing methods have difficulty in achieving a good trade-off between detection performance, parameter size, and model complexity, which is crucial for practical applications and widespread deployment, especially in resource-limited scenarios. Given that the success of Mamba in modeling long-range dependencies and its linear complexity, we proposed a lightweight hybrid architecture called MpoxMamba. MpoxMamba utilizes deep separable convolutions to extract local feature representations in mpox skin lesions, and greatly enhances the model's ability to model the global contextual information by grouped Mamba modules. Experimental results on two widely recognized mpox datasets demonstrate that MpoxMamba outperforms existing mpox detection methods and state-of-the-art lightweight models. We also developed a web-based online application to provide free mpox detection services to the public in the epidemic areas (http://5227i971s5.goho.co:30290). The source codes of MpoxMamba are available at https://github.com/YubiaoYue/MpoxMamba.",
+    "link": "https://arxiv.org/abs/2409.04218",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/YubiaoYue/MpoxMamba."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "UniDet3D: Multi-dataset Indoor 3D Object Detection",
+    "summary": "arXiv:2409.04234v1 Announce Type: new \nAbstract: Growing customer demand for smart solutions in robotics and augmented reality has attracted considerable attention to 3D object detection from point clouds. Yet, existing indoor datasets taken individually are too small and insufficiently diverse to train a powerful and general 3D object detection model. In the meantime, more general approaches utilizing foundation models are still inferior in quality to those based on supervised training for a specific task. In this work, we propose \\ours{}, a simple yet effective 3D object detection model, which is trained on a mixture of indoor datasets and is capable of working in various indoor environments. By unifying different label spaces, \\ours{} enables learning a strong representation across multiple datasets through a supervised joint training scheme. The proposed network architecture is built upon a vanilla transformer encoder, making it easy to run, customize and extend the prediction pipeline for practical use. Extensive experiments demonstrate that \\ours{} obtains significant gains over existing 3D object detection methods in 6 indoor benchmarks: ScanNet (+1.1 mAP50), ARKitScenes (+19.4 mAP25), S3DIS (+9.1 mAP50), MultiScan (+9.3 mAP50), 3RScan (+3.2 mAP50), and ScanNet++ (+2.7 mAP50). Code is available at https://github.com/filapro/unidet3d .",
+    "link": "https://arxiv.org/abs/2409.04234",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/filapro/unidet3d"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Hybrid Cost Volume for Memory-Efficient Optical Flow",
+    "summary": "arXiv:2409.04243v1 Announce Type: new \nAbstract: Current state-of-the-art flow methods are mostly based on dense all-pairs cost volumes. However, as image resolution increases, the computational and spatial complexity of constructing these cost volumes grows at a quartic rate, making these methods impractical for high-resolution images. In this paper, we propose a novel Hybrid Cost Volume for memory-efficient optical flow, named HCV. To construct HCV, we first propose a Top-k strategy to separate the 4D cost volume into two global 3D cost volumes. These volumes significantly reduce memory usage while retaining a substantial amount of matching information. We further introduce a local 4D cost volume with a local search space to supplement the local information for HCV. Based on HCV, we design a memory-efficient optical flow network, named HCVFlow. Compared to the recurrent flow methods based the all-pairs cost volumes, our HCVFlow significantly reduces memory consumption while ensuring high accuracy. We validate the effectiveness and efficiency of our method on the Sintel and KITTI datasets and real-world 4K (2160*3840) resolution images. Extensive experiments show that our HCVFlow has very low memory usage and outperforms other memory-efficient methods in terms of accuracy. The code is publicly available at https://github.com/gangweiX/HCVFlow.",
+    "link": "https://arxiv.org/abs/2409.04243",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/gangweiX/HCVFlow."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "FS-MedSAM2: Exploring the Potential of SAM2 for Few-Shot Medical Image Segmentation without Fine-tuning",
+    "summary": "arXiv:2409.04298v1 Announce Type: new \nAbstract: The Segment Anything Model 2 (SAM2) has recently demonstrated exceptional performance in zero-shot prompt segmentation for natural images and videos. However, it faces significant challenges when applied to medical images. Since its release, many attempts have been made to adapt SAM2's segmentation capabilities to the medical imaging domain. These efforts typically involve using a substantial amount of labeled data to fine-tune the model's weights. In this paper, we explore SAM2 from a different perspective via making the full use of its trained memory attention module and its ability of processing mask prompts. We introduce FS-MedSAM2, a simple yet effective framework that enables SAM2 to achieve superior medical image segmentation in a few-shot setting, without the need for fine-tuning. Our framework outperforms the current state-of-the-arts on two publicly available medical image datasets. The code is available at https://github.com/DeepMed-Lab-ECNU/FS_MedSAM2.",
+    "link": "https://arxiv.org/abs/2409.04298",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/DeepMed-Lab-ECNU/FS_MedSAM2."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Connectivity-Inspired Network for Context-Aware Recognition",
+    "summary": "arXiv:2409.04360v1 Announce Type: new \nAbstract: The aim of this paper is threefold. We inform the AI practitioner about the human visual system with an extensive literature review; we propose a novel biologically motivated neural network for image classification; and, finally, we present a new plug-and-play module to model context awareness. We focus on the effect of incorporating circuit motifs found in biological brains to address visual recognition. Our convolutional architecture is inspired by the connectivity of human cortical and subcortical streams, and we implement bottom-up and top-down modulations that mimic the extensive afferent and efferent connections between visual and cognitive areas. Our Contextual Attention Block is simple and effective and can be integrated with any feed-forward neural network. It infers weights that multiply the feature maps according to their causal influence on the scene, modeling the co-occurrence of different objects in the image. We place our module at different bottlenecks to infuse a hierarchical context awareness into the model. We validated our proposals through image classification experiments on benchmark data and found a consistent improvement in performance and the robustness of the produced explanations via class activation. Our code is available at https://github.com/gianlucarloni/CoCoReco.",
+    "link": "https://arxiv.org/abs/2409.04360",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/gianlucarloni/CoCoReco."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "RCNet: Deep Recurrent Collaborative Network for Multi-View Low-Light Image Enhancement",
+    "summary": "arXiv:2409.04363v1 Announce Type: new \nAbstract: Scene observation from multiple perspectives would bring a more comprehensive visual experience. However, in the context of acquiring multiple views in the dark, the highly correlated views are seriously alienated, making it challenging to improve scene understanding with auxiliary views. Recent single image-based enhancement methods may not be able to provide consistently desirable restoration performance for all views due to the ignorance of potential feature correspondence among different views. To alleviate this issue, we make the first attempt to investigate multi-view low-light image enhancement. First, we construct a new dataset called Multi-View Low-light Triplets (MVLT), including 1,860 pairs of triple images with large illumination ranges and wide noise distribution. Each triplet is equipped with three different viewpoints towards the same scene. Second, we propose a deep multi-view enhancement framework based on the Recurrent Collaborative Network (RCNet). Specifically, in order to benefit from similar texture correspondence across different views, we design the recurrent feature enhancement, alignment and fusion (ReEAF) module, in which intra-view feature enhancement (Intra-view EN) followed by inter-view feature alignment and fusion (Inter-view AF) is performed to model the intra-view and inter-view feature propagation sequentially via multi-view collaboration. In addition, two different modules from enhancement to alignment (E2A) and from alignment to enhancement (A2E) are developed to enable the interactions between Intra-view EN and Inter-view AF, which explicitly utilize attentive feature weighting and sampling for enhancement and alignment, respectively. Experimental results demonstrate that our RCNet significantly outperforms other state-of-the-art methods. All of our dataset, code, and model will be available at https://github.com/hluo29/RCNet.",
+    "link": "https://arxiv.org/abs/2409.04363",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/hluo29/RCNet."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DEVIAS: Learning Disentangled Video Representations of Action and Scene",
+    "summary": "arXiv:2312.00826v3 Announce Type: replace \nAbstract: Video recognition models often learn scene-biased action representation due to the spurious correlation between actions and scenes in the training data. Such models show poor performance when the test data consists of videos with unseen action-scene combinations. Although scene-debiased action recognition models might address the issue, they often overlook valuable scene information in the data. To address this challenge, we propose to learn DisEntangled VIdeo representations of Action and Scene (DEVIAS), for more holistic video understanding. We propose an encoder-decoder architecture to learn disentangled action and scene representations with a single model. The architecture consists of a disentangling encoder (DE), an action mask decoder (AMD), and a prediction head. The key to achieving the disentanglement is employing both DE and AMD during training time. The DE uses the slot attention mechanism to learn disentangled action and scene representations. For further disentanglement, an AMD learns to predict action masks, given an action slot. With the resulting disentangled representations, we can achieve robust performance across diverse scenarios, including both seen and unseen action-scene combinations. We rigorously validate the proposed method on the UCF-101, Kinetics-400, and HVU datasets for the seen, and the SCUBA, HAT, and HVU datasets for unseen action-scene combination scenarios. Furthermore, DEVIAS provides flexibility to adjust the emphasis on action or scene information depending on dataset characteristics for downstream tasks. DEVIAS shows favorable performance in various downstream tasks: Diving48, Something-Something-V2, UCF-101, and ActivityNet. The code is available at https://github.com/KHU-VLL/DEVIAS.",
+    "link": "https://arxiv.org/abs/2312.00826",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/KHU-VLL/DEVIAS."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Segment Change Model (SCM) for Unsupervised Change detection in VHR Remote Sensing Images: a Case Study of Buildings",
+    "summary": "arXiv:2312.16410v2 Announce Type: replace \nAbstract: The field of Remote Sensing (RS) widely employs Change Detection (CD) on very-high-resolution (VHR) images. A majority of extant deep-learning-based methods hinge on annotated samples to complete the CD process. Recently, the emergence of Vision Foundation Model (VFM) enables zero-shot predictions in particular vision tasks. In this work, we propose an unsupervised CD method named Segment Change Model (SCM), built upon the Segment Anything Model (SAM) and Contrastive Language-Image Pre-training (CLIP). Our method recalibrates features extracted at different scales and integrates them in a top-down manner to enhance discriminative change edges. We further design an innovative Piecewise Semantic Attention (PSA) scheme, which can offer semantic representation without training, thereby minimize pseudo change phenomenon. Through conducting experiments on two public datasets, the proposed SCM increases the mIoU from 46.09% to 53.67% on the LEVIR-CD dataset, and from 47.56% to 52.14% on the WHU-CD dataset. Our codes are available at https://github.com/StephenApX/UCD-SCM.",
+    "link": "https://arxiv.org/abs/2312.16410",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/StephenApX/UCD-SCM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "QuEST: Low-bit Diffusion Model Quantization via Efficient Selective Finetuning",
+    "summary": "arXiv:2402.03666v3 Announce Type: replace \nAbstract: The practical deployment of diffusion models still suffers from the high memory and time overhead. While quantization paves a way for compression and acceleration, existing methods unfortunately fail when the models are quantized to low-bits. In this paper, we empirically unravel three properties in quantized diffusion models that compromise the efficacy of current methods: imbalanced activation distributions, imprecise temporal information, and vulnerability to perturbations of specific modules. To alleviate the intensified low-bit quantization difficulty stemming from the distribution imbalance, we propose finetuning the quantized model to better adapt to the activation distribution. Building on this idea, we identify two critical types of quantized layers: those holding vital temporal information and those sensitive to reduced bit-width, and finetune them to mitigate performance degradation with efficiency. We empirically verify that our approach modifies the activation distribution and provides meaningful temporal information, facilitating easier and more accurate quantization. Our method is evaluated over three high-resolution image generation tasks and achieves state-of-the-art performance under various bit-width settings, as well as being the first method to generate readable images on full 4-bit (i.e. W4A4) Stable Diffusion. Code is available \\href{https://github.com/hatchetProject/QuEST}{here}.",
+    "link": "https://arxiv.org/abs/2402.03666",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/hatchetProject/QuEST}{here}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Less is More: Fewer Interpretable Region via Submodular Subset Selection",
+    "summary": "arXiv:2402.09164v3 Announce Type: replace \nAbstract: Image attribution algorithms aim to identify important regions that are highly relevant to model decisions. Although existing attribution solutions can effectively assign importance to target elements, they still face the following challenges: 1) existing attribution methods generate inaccurate small regions thus misleading the direction of correct attribution, and 2) the model cannot produce good attribution results for samples with wrong predictions. To address the above challenges, this paper re-models the above image attribution problem as a submodular subset selection problem, aiming to enhance model interpretability using fewer regions. To address the lack of attention to local regions, we construct a novel submodular function to discover more accurate small interpretation regions. To enhance the attribution effect for all samples, we also impose four different constraints on the selection of sub-regions, i.e., confidence, effectiveness, consistency, and collaboration scores, to assess the importance of various subsets. Moreover, our theoretical analysis substantiates that the proposed function is in fact submodular. Extensive experiments show that the proposed method outperforms SOTA methods on two face datasets (Celeb-A and VGG-Face2) and one fine-grained dataset (CUB-200-2011). For correctly predicted samples, the proposed method improves the Deletion and Insertion scores with an average of 4.9% and 2.5% gain relative to HSIC-Attribution. For incorrectly predicted samples, our method achieves gains of 81.0% and 18.4% compared to the HSIC-Attribution algorithm in the average highest confidence and Insertion score respectively. The code is released at https://github.com/RuoyuChen10/SMDL-Attribution.",
+    "link": "https://arxiv.org/abs/2402.09164",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/RuoyuChen10/SMDL-Attribution."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Res-VMamba: Fine-Grained Food Category Visual Classification Using Selective State Space Models with Deep Residual Learning",
+    "summary": "arXiv:2402.15761v3 Announce Type: replace \nAbstract: Food classification is the foundation for developing food vision tasks and plays a key role in the burgeoning field of computational nutrition. Due to the complexity of food requiring fine-grained classification, recent academic research mainly modifies Convolutional Neural Networks (CNNs) and/or Vision Transformers (ViTs) to perform food category classification. However, to learn fine-grained features, the CNN backbone needs additional structural design, whereas ViT, containing the self-attention module, has increased computational complexity. In recent months, a new Sequence State Space (S4) model, through a Selection mechanism and computation with a Scan (S6), colloquially termed Mamba, has demonstrated superior performance and computation efficiency compared to the Transformer architecture. The VMamba model, which incorporates the Mamba mechanism into image tasks (such as classification), currently establishes the state-of-the-art (SOTA) on the ImageNet dataset. In this research, we introduce an academically underestimated food dataset CNFOOD-241, and pioneer the integration of a residual learning framework within the VMamba model to concurrently harness both global and local state features inherent in the original VMamba architectural design. The research results show that VMamba surpasses current SOTA models in fine-grained and food classification. The proposed Res-VMamba further improves the classification accuracy to 79.54\\% without pretrained weight. Our findings elucidate that our proposed methodology establishes a new benchmark for SOTA performance in food recognition on the CNFOOD-241 dataset. The code can be obtained on GitHub: https://github.com/ChiShengChen/ResVMamba.",
+    "link": "https://arxiv.org/abs/2402.15761",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ChiShengChen/ResVMamba."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Invisible Gas Detection: An RGB-Thermal Cross Attention Network and A New Benchmark",
+    "summary": "arXiv:2403.17712v2 Announce Type: replace \nAbstract: The widespread use of various chemical gases in industrial processes necessitates effective measures to prevent their leakage during transportation and storage, given their high toxicity. Thermal infrared-based computer vision detection techniques provide a straightforward approach to identify gas leakage areas. However, the development of high-quality algorithms has been challenging due to the low texture in thermal images and the lack of open-source datasets. In this paper, we present the RGB-Thermal Cross Attention Network (RT-CAN), which employs an RGB-assisted two-stream network architecture to integrate texture information from RGB images and gas area information from thermal images. Additionally, to facilitate the research of invisible gas detection, we introduce Gas-DB, an extensive open-source gas detection database including about 1.3K well-annotated RGB-thermal images with eight variant collection scenes. Experimental results demonstrate that our method successfully leverages the advantages of both modalities, achieving state-of-the-art (SOTA) performance among RGB-thermal methods, surpassing single-stream SOTA models in terms of accuracy, Intersection of Union (IoU), and F2 metrics by 4.86%, 5.65%, and 4.88%, respectively. The code and data can be found at https://github.com/logic112358/RT-CAN.",
+    "link": "https://arxiv.org/abs/2403.17712",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/logic112358/RT-CAN."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Spatial-frequency Dual-Domain Feature Fusion Network for Low-Light Remote Sensing Image Enhancement",
+    "summary": "arXiv:2404.17400v2 Announce Type: replace \nAbstract: Low-light remote sensing images generally feature high resolution and high spatial complexity, with continuously distributed surface features in space. This continuity in scenes leads to extensive long-range correlations in spatial domains within remote sensing images. Convolutional Neural Networks, which rely on local correlations for long-distance modeling, struggle to establish long-range correlations in such images. On the other hand, transformer-based methods that focus on global information face high computational complexities when processing high-resolution remote sensing images. From another perspective, Fourier transform can compute global information without introducing a large number of parameters, enabling the network to more efficiently capture the overall image structure and establish long-range correlations. Therefore, we propose a Dual-Domain Feature Fusion Network (DFFN) for low-light remote sensing image enhancement. Specifically, this challenging task of low-light enhancement is divided into two more manageable sub-tasks: the first phase learns amplitude information to restore image brightness, and the second phase learns phase information to refine details. To facilitate information exchange between the two phases, we designed an information fusion affine block that combines data from different phases and scales. Additionally, we have constructed two dark light remote sensing datasets to address the current lack of datasets in dark light remote sensing image enhancement. Extensive evaluations show that our method outperforms existing state-of-the-art methods. The code is available at https://github.com/iijjlk/DFFN.",
+    "link": "https://arxiv.org/abs/2404.17400",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/iijjlk/DFFN."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "HyperKAN: Kolmogorov-Arnold Networks make Hyperspectral Image Classificators Smarter",
+    "summary": "arXiv:2407.05278v3 Announce Type: replace \nAbstract: In traditional neural network architectures, a multilayer perceptron (MLP) is typically employed as a classification block following the feature extraction stage. However, the Kolmogorov-Arnold Network (KAN) presents a promising alternative to MLP, offering the potential to enhance prediction accuracy. In this paper, we propose the replacement of linear and convolutional layers of traditional networks with KAN-based counterparts. These modifications allowed us to significantly increase the per-pixel classification accuracy for hyperspectral remote-sensing images. We modified seven different neural network architectures for hyperspectral image classification and observed a substantial improvement in the classification accuracy across all the networks. The architectures considered in the paper include baseline MLP, state-of-the-art 1D (1DCNN) and 3D convolutional (two different 3DCNN, NM3DCNN), and transformer (SSFTT) architectures, as well as newly proposed M1DCNN. The greatest effect was achieved for convolutional networks working exclusively on spectral data, and the best classification quality was achieved using a KAN-based transformer architecture. All the experiments were conducted using seven openly available hyperspectral datasets. Our code is available at https://github.com/f-neumann77/HyperKAN.",
+    "link": "https://arxiv.org/abs/2407.05278",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/f-neumann77/HyperKAN."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Scaling Diffusion Transformers to 16 Billion Parameters",
+    "summary": "arXiv:2407.11633v2 Announce Type: replace \nAbstract: In this paper, we present DiT-MoE, a sparse version of the diffusion Transformer, that is scalable and competitive with dense networks while exhibiting highly optimized inference. The DiT-MoE includes two simple designs: shared expert routing and expert-level balance loss, thereby capturing common knowledge and reducing redundancy among the different routed experts. When applied to conditional image generation, a deep analysis of experts specialization gains some interesting observations: (i) Expert selection shows preference with spatial position and denoising time step, while insensitive with different class-conditional information; (ii) As the MoE layers go deeper, the selection of experts gradually shifts from specific spacial position to dispersion and balance. (iii) Expert specialization tends to be more concentrated at the early time step and then gradually uniform after half. We attribute it to the diffusion process that first models the low-frequency spatial information and then high-frequency complex information. Based on the above guidance, a series of DiT-MoE experimentally achieves performance on par with dense networks yet requires much less computational load during inference. More encouragingly, we demonstrate the potential of DiT-MoE with synthesized image data, scaling diffusion model at a 16.5B parameter that attains a new SoTA FID-50K score of 1.80 in 512$\\times$512 resolution settings. The project page: https://github.com/feizc/DiT-MoE.",
+    "link": "https://arxiv.org/abs/2407.11633",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/feizc/DiT-MoE."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "LAR-IQA: A Lightweight, Accurate, and Robust No-Reference Image Quality Assessment Model",
+    "summary": "arXiv:2408.17057v2 Announce Type: replace \nAbstract: Recent advancements in the field of No-Reference Image Quality Assessment (NR-IQA) using deep learning techniques demonstrate high performance across multiple open-source datasets. However, such models are typically very large and complex making them not so suitable for real-world deployment, especially on resource- and battery-constrained mobile devices. To address this limitation, we propose a compact, lightweight NR-IQA model that achieves state-of-the-art (SOTA) performance on ECCV AIM UHD-IQA challenge validation and test datasets while being also nearly 5.7 times faster than the fastest SOTA model. Our model features a dual-branch architecture, with each branch separately trained on synthetically and authentically distorted images which enhances the model's generalizability across different distortion types. To improve robustness under diverse real-world visual conditions, we additionally incorporate multiple color spaces during the training process. We also demonstrate the higher accuracy of recently proposed Kolmogorov-Arnold Networks (KANs) for final quality regression as compared to the conventional Multi-Layer Perceptrons (MLPs). Our evaluation considering various open-source datasets highlights the practical, high-accuracy, and robust performance of our proposed lightweight model. Code: https://github.com/nasimjamshidi/LAR-IQA.",
+    "link": "https://arxiv.org/abs/2408.17057",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/nasimjamshidi/LAR-IQA."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "AdaNAT: Exploring Adaptive Policy for Token-Based Image Generation",
+    "summary": "arXiv:2409.00342v2 Announce Type: replace \nAbstract: Recent studies have demonstrated the effectiveness of token-based methods for visual content generation. As a representative work, non-autoregressive Transformers (NATs) are able to synthesize images with decent quality in a small number of steps. However, NATs usually necessitate configuring a complicated generation policy comprising multiple manually-designed scheduling rules. These heuristic-driven rules are prone to sub-optimality and come with the requirements of expert knowledge and labor-intensive efforts. Moreover, their one-size-fits-all nature cannot flexibly adapt to the diverse characteristics of each individual sample. To address these issues, we propose AdaNAT, a learnable approach that automatically configures a suitable policy tailored for every sample to be generated. In specific, we formulate the determination of generation policies as a Markov decision process. Under this framework, a lightweight policy network for generation can be learned via reinforcement learning. Importantly, we demonstrate that simple reward designs such as FID or pre-trained reward models, may not reliably guarantee the desired quality or diversity of generated samples. Therefore, we propose an adversarial reward design to guide the training of policy networks effectively. Comprehensive experiments on four benchmark datasets, i.e., ImageNet-256 & 512, MS-COCO, and CC3M, validate the effectiveness of AdaNAT. Code and pre-trained models will be released at https://github.com/LeapLabTHU/AdaNAT.",
+    "link": "https://arxiv.org/abs/2409.00342",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/LeapLabTHU/AdaNAT."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Refusing Safe Prompts for Multi-modal Large Language Models",
+    "summary": "arXiv:2407.09050v2 Announce Type: replace-cross \nAbstract: Multimodal large language models (MLLMs) have become the cornerstone of today's generative AI ecosystem, sparking intense competition among tech giants and startups. In particular, an MLLM generates a text response given a prompt consisting of an image and a question. While state-of-the-art MLLMs use safety filters and alignment techniques to refuse unsafe prompts, in this work, we introduce MLLM-Refusal, the first method that induces refusals for safe prompts. In particular, our MLLM-Refusal optimizes a nearly-imperceptible refusal perturbation and adds it to an image, causing target MLLMs to likely refuse a safe prompt containing the perturbed image and a safe question. Specifically, we formulate MLLM-Refusal as a constrained optimization problem and propose an algorithm to solve it. Our method offers competitive advantages for MLLM model providers by potentially disrupting user experiences of competing MLLMs, since competing MLLM's users will receive unexpected refusals when they unwittingly use these perturbed images in their prompts. We evaluate MLLM-Refusal on four MLLMs across four datasets, demonstrating its effectiveness in causing competing MLLMs to refuse safe prompts while not affecting non-competing MLLMs. Furthermore, we explore three potential countermeasures-adding Gaussian noise, DiffPure, and adversarial training. Our results show that though they can mitigate MLLM-Refusal's effectiveness, they also sacrifice the accuracy and/or efficiency of the competing MLLM. The code is available at https://github.com/Sadcardation/MLLM-Refusal.",
+    "link": "https://arxiv.org/abs/2407.09050",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Sadcardation/MLLM-Refusal."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Hyp2Nav: Hyperbolic Planning and Curiosity for Crowd Navigation",
+    "summary": "arXiv:2407.13567v3 Announce Type: replace-cross \nAbstract: Autonomous robots are increasingly becoming a strong fixture in social environments. Effective crowd navigation requires not only safe yet fast planning, but should also enable interpretability and computational efficiency for working in real-time on embedded devices. In this work, we advocate for hyperbolic learning to enable crowd navigation and we introduce Hyp2Nav. Different from conventional reinforcement learning-based crowd navigation methods, Hyp2Nav leverages the intrinsic properties of hyperbolic geometry to better encode the hierarchical nature of decision-making processes in navigation tasks. We propose a hyperbolic policy model and a hyperbolic curiosity module that results in effective social navigation, best success rates, and returns across multiple simulation settings, using up to 6 times fewer parameters than competitor state-of-the-art models. With our approach, it becomes even possible to obtain policies that work in 2-dimensional embedding spaces, opening up new possibilities for low-resource crowd navigation and model interpretability. Insightfully, the internal hyperbolic representation of Hyp2Nav correlates with how much attention the robot pays to the surrounding crowds, e.g. due to multiple people occluding its pathway or to a few of them showing colliding plans, rather than to its own planned route. The code is available at https://github.com/GDam90/hyp2nav.",
+    "link": "https://arxiv.org/abs/2407.13567",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/GDam90/hyp2nav."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Training-Free Condition Video Diffusion Models for single frame Spatial-Semantic Echocardiogram Synthesis",
+    "summary": "arXiv:2408.03035v2 Announce Type: replace-cross \nAbstract: Conditional video diffusion models (CDM) have shown promising results for video synthesis, potentially enabling the generation of realistic echocardiograms to address the problem of data scarcity. However, current CDMs require a paired segmentation map and echocardiogram dataset. We present a new method called Free-Echo for generating realistic echocardiograms from a single end-diastolic segmentation map without additional training data. Our method is based on the 3D-Unet with Temporal Attention Layers model and is conditioned on the segmentation map using a training-free conditioning method based on SDEdit. We evaluate our model on two public echocardiogram datasets, CAMUS and EchoNet-Dynamic. We show that our model can generate plausible echocardiograms that are spatially aligned with the input segmentation map, achieving performance comparable to training-based CDMs. Our work opens up new possibilities for generating echocardiograms from a single segmentation map, which can be used for data augmentation, domain adaptation, and other applications in medical imaging. Our code is available at \\url{https://github.com/gungui98/echo-free}",
+    "link": "https://arxiv.org/abs/2408.03035",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/gungui98/echo-free}"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "A Survey on Benchmarks of Multimodal Large Language Models",
+    "summary": "arXiv:2408.08632v2 Announce Type: replace-cross \nAbstract: Multimodal Large Language Models (MLLMs) are gaining increasing popularity in both academia and industry due to their remarkable performance in various applications such as visual question answering, visual perception, understanding, and reasoning. Over the past few years, significant efforts have been made to examine MLLMs from multiple perspectives. This paper presents a comprehensive review of 200 benchmarks and evaluations for MLLMs, focusing on (1)perception and understanding, (2)cognition and reasoning, (3)specific domains, (4)key capabilities, and (5)other modalities. Finally, we discuss the limitations of the current evaluation methods for MLLMs and explore promising future directions. Our key argument is that evaluation should be regarded as a crucial discipline to support the development of MLLMs better. For more details, please visit our GitHub repository: https://github.com/swordlidev/Evaluation-Multimodal-LLMs-Survey.",
+    "link": "https://arxiv.org/abs/2408.08632",
+    "published": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/swordlidev/Evaluation-Multimodal-LLMs-Survey."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  }
+]
