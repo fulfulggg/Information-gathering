@@ -1,1 +1,311 @@
-[]
+[
+  {
+    "title": "Activation function optimization method: Learnable series linear units (LSLUs)",
+    "summary": "arXiv:2409.08283v1 Announce Type: new \nAbstract: Effective activation functions introduce non-linear transformations, providing neural networks with stronger fitting capa-bilities, which help them better adapt to real data distributions. Huawei Noah's Lab believes that dynamic activation functions are more suitable than static activation functions for enhancing the non-linear capabilities of neural networks. Tsinghua University's related research also suggests using dynamically adjusted activation functions. Building on the ideas of using fine-tuned activation functions from Tsinghua University and Huawei Noah's Lab, we propose a series-based learnable ac-tivation function called LSLU (Learnable Series Linear Units). This method simplifies deep learning networks while im-proving accuracy. This method introduces learnable parameters {\\theta} and {\\omega} to control the activation function, adapting it to the current layer's training stage and improving the model's generalization. The principle is to increase non-linearity in each activation layer, boosting the network's overall non-linearity. We evaluate LSLU's performance on CIFAR10, CIFAR100, and specific task datasets (e.g., Silkworm), validating its effectiveness. The convergence behavior of the learnable parameters {\\theta} and {\\omega}, as well as their effects on generalization, are analyzed. Our empirical results show that LSLU enhances the general-ization ability of the original model in various tasks while speeding up training. In VanillaNet training, parameter {\\theta} initially decreases, then increases before stabilizing, while {\\omega} shows an opposite trend. Ultimately, LSLU achieves a 3.17% accuracy improvement on CIFAR100 for VanillaNet (Table 3). Codes are available at https://github.com/vontran2021/Learnable-series-linear-units-LSLU.",
+    "link": "https://arxiv.org/abs/2409.08283",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/vontran2021/Learnable-series-linear-units-LSLU."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "360PanT: Training-Free Text-Driven 360-Degree Panorama-to-Panorama Translation",
+    "summary": "arXiv:2409.08397v1 Announce Type: new \nAbstract: Preserving boundary continuity in the translation of 360-degree panoramas remains a significant challenge for existing text-driven image-to-image translation methods. These methods often produce visually jarring discontinuities at the translated panorama's boundaries, disrupting the immersive experience. To address this issue, we propose 360PanT, a training-free approach to text-based 360-degree panorama-to-panorama translation with boundary continuity. Our 360PanT achieves seamless translations through two key components: boundary continuity encoding and seamless tiling translation with spatial control. Firstly, the boundary continuity encoding embeds critical boundary continuity information of the input 360-degree panorama into the noisy latent representation by constructing an extended input image. Secondly, leveraging this embedded noisy latent representation and guided by a target prompt, the seamless tiling translation with spatial control enables the generation of a translated image with identical left and right halves while adhering to the extended input's structure and semantic layout. This process ensures a final translated 360-degree panorama with seamless boundary continuity. Experimental results on both real-world and synthesized datasets demonstrate the effectiveness of our 360PanT in translating 360-degree panoramas. Code is available at \\href{https://github.com/littlewhitesea/360PanT}{https://github.com/littlewhitesea/360PanT}.",
+    "link": "https://arxiv.org/abs/2409.08397",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/littlewhitesea/360PanT}{https://github.com/littlewhitesea/360PanT}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CasDyF-Net: Image Dehazing via Cascaded Dynamic Filters",
+    "summary": "arXiv:2409.08510v1 Announce Type: new \nAbstract: Image dehazing aims to restore image clarity and visual quality by reducing atmospheric scattering and absorption effects. While deep learning has made significant strides in this area, more and more methods are constrained by network depth. Consequently, lots of approaches have adopted parallel branching strategies. however, they often prioritize aspects such as resolution, receptive field, or frequency domain segmentation without dynamically partitioning branches based on the distribution of input features. Inspired by dynamic filtering, we propose using cascaded dynamic filters to create a multi-branch network by dynamically generating filter kernels based on feature map distribution. To better handle branch features, we propose a residual multiscale block (RMB), combining different receptive fields. Furthermore, we also introduce a dynamic convolution-based local fusion method to merge features from adjacent branches. Experiments on RESIDE, Haze4K, and O-Haze datasets validate our method's effectiveness, with our model achieving a PSNR of 43.21dB on the RESIDE-Indoor dataset. The code is available at https://github.com/dauing/CasDyF-Net.",
+    "link": "https://arxiv.org/abs/2409.08510",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/dauing/CasDyF-Net."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Anytime Continual Learning for Open Vocabulary Classification",
+    "summary": "arXiv:2409.08518v1 Announce Type: new \nAbstract: We propose an approach for anytime continual learning (AnytimeCL) for open vocabulary image classification. The AnytimeCL problem aims to break away from batch training and rigid models by requiring that a system can predict any set of labels at any time and efficiently update and improve when receiving one or more training samples at any time. Despite the challenging goal, we achieve substantial improvements over recent methods. We propose a dynamic weighting between predictions of a partially fine-tuned model and a fixed open vocabulary model that enables continual improvement when training samples are available for a subset of a task's labels. We also propose an attention-weighted PCA compression of training features that reduces storage and computation with little impact to model accuracy. Our methods are validated with experiments that test flexibility of learning and inference. Code is available at https://github.com/jessemelpolio/AnytimeCL.",
+    "link": "https://arxiv.org/abs/2409.08518",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/jessemelpolio/AnytimeCL."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DiffFAS: Face Anti-Spoofing via Generative Diffusion Models",
+    "summary": "arXiv:2409.08572v1 Announce Type: new \nAbstract: Face anti-spoofing (FAS) plays a vital role in preventing face recognition (FR) systems from presentation attacks. Nowadays, FAS systems face the challenge of domain shift, impacting the generalization performance of existing FAS methods. In this paper, we rethink about the inherence of domain shift and deconstruct it into two factors: image style and image quality. Quality influences the purity of the presentation of spoof information, while style affects the manner in which spoof information is presented. Based on our analysis, we propose DiffFAS framework, which quantifies quality as prior information input into the network to counter image quality shift, and performs diffusion-based high-fidelity cross-domain and cross-attack types generation to counter image style shift. DiffFAS transforms easily collectible live faces into high-fidelity attack faces with precise labels while maintaining consistency between live and spoof face identities, which can also alleviate the scarcity of labeled data with novel type attacks faced by nowadays FAS system. We demonstrate the effectiveness of our framework on challenging cross-domain and cross-attack FAS datasets, achieving the state-of-the-art performance. Available at https://github.com/murphytju/DiffFAS.",
+    "link": "https://arxiv.org/abs/2409.08572",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/murphytju/DiffFAS."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "HTR-VT: Handwritten Text Recognition with Vision Transformer",
+    "summary": "arXiv:2409.08573v1 Announce Type: new \nAbstract: We explore the application of Vision Transformer (ViT) for handwritten text recognition. The limited availability of labeled data in this domain poses challenges for achieving high performance solely relying on ViT. Previous transformer-based models required external data or extensive pre-training on large datasets to excel. To address this limitation, we introduce a data-efficient ViT method that uses only the encoder of the standard transformer. We find that incorporating a Convolutional Neural Network (CNN) for feature extraction instead of the original patch embedding and employ Sharpness-Aware Minimization (SAM) optimizer to ensure that the model can converge towards flatter minima and yield notable enhancements. Furthermore, our introduction of the span mask technique, which masks interconnected features in the feature map, acts as an effective regularizer. Empirically, our approach competes favorably with traditional CNN-based models on small datasets like IAM and READ2016. Additionally, it establishes a new benchmark on the LAM dataset, currently the largest dataset with 19,830 training text lines. The code is publicly available at: https://github.com/YutingLi0606/HTR-VT.",
+    "link": "https://arxiv.org/abs/2409.08573",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/YutingLi0606/HTR-VT."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "ChangeChat: An Interactive Model for Remote Sensing Change Analysis via Multimodal Instruction Tuning",
+    "summary": "arXiv:2409.08582v1 Announce Type: new \nAbstract: Remote sensing (RS) change analysis is vital for monitoring Earth's dynamic processes by detecting alterations in images over time. Traditional change detection excels at identifying pixel-level changes but lacks the ability to contextualize these alterations. While recent advancements in change captioning offer natural language descriptions of changes, they do not support interactive, user-specific queries. To address these limitations, we introduce ChangeChat, the first bitemporal vision-language model (VLM) designed specifically for RS change analysis. ChangeChat utilizes multimodal instruction tuning, allowing it to handle complex queries such as change captioning, category-specific quantification, and change localization. To enhance the model's performance, we developed the ChangeChat-87k dataset, which was generated using a combination of rule-based methods and GPT-assisted techniques. Experiments show that ChangeChat offers a comprehensive, interactive solution for RS change analysis, achieving performance comparable to or even better than state-of-the-art (SOTA) methods on specific tasks, and significantly surpassing the latest general-domain model, GPT-4. Code and pre-trained weights are available at https://github.com/hanlinwu/ChangeChat.",
+    "link": "https://arxiv.org/abs/2409.08582",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/hanlinwu/ChangeChat."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "GenMapping: Unleashing the Potential of Inverse Perspective Mapping for Robust Online HD Map Construction",
+    "summary": "arXiv:2409.08688v1 Announce Type: new \nAbstract: Online High-Definition (HD) maps have emerged as the preferred option for autonomous driving, overshadowing the counterpart offline HD maps due to flexible update capability and lower maintenance costs. However, contemporary online HD map models embed parameters of visual sensors into training, resulting in a significant decrease in generalization performance when applied to visual sensors with different parameters. Inspired by the inherent potential of Inverse Perspective Mapping (IPM), where camera parameters are decoupled from the training process, we have designed a universal map generation framework, GenMapping. The framework is established with a triadic synergy architecture, including principal and dual auxiliary branches. When faced with a coarse road image with local distortion translated via IPM, the principal branch learns robust global features under the state space models. The two auxiliary branches are a dense perspective branch and a sparse prior branch. The former exploits the correlation information between static and moving objects, whereas the latter introduces the prior knowledge of OpenStreetMap (OSM). The triple-enhanced merging module is crafted to synergistically integrate the unique spatial features from all three branches. To further improve generalization capabilities, a Cross-View Map Learning (CVML) scheme is leveraged to realize joint learning within the common space. Additionally, a Bidirectional Data Augmentation (BiDA) module is introduced to mitigate reliance on datasets concurrently. A thorough array of experimental results shows that the proposed model surpasses current state-of-the-art methods in both semantic mapping and vectorized mapping, while also maintaining a rapid inference speed. The source code will be publicly available at https://github.com/lynn-yu/GenMapping.",
+    "link": "https://arxiv.org/abs/2409.08688",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/lynn-yu/GenMapping."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Causal Transformer for Fusion and Pose Estimation in Deep Visual Inertial Odometry",
+    "summary": "arXiv:2409.08769v1 Announce Type: new \nAbstract: In recent years, transformer-based architectures become the de facto standard for sequence modeling in deep learning frameworks. Inspired by the successful examples, we propose a causal visual-inertial fusion transformer (VIFT) for pose estimation in deep visual-inertial odometry. This study aims to improve pose estimation accuracy by leveraging the attention mechanisms in transformers, which better utilize historical data compared to the recurrent neural network (RNN) based methods seen in recent methods. Transformers typically require large-scale data for training. To address this issue, we utilize inductive biases for deep VIO networks. Since latent visual-inertial feature vectors encompass essential information for pose estimation, we employ transformers to refine pose estimates by updating latent vectors temporally. Our study also examines the impact of data imbalance and rotation learning methods in supervised end-to-end learning of visual inertial odometry by utilizing specialized gradients in backpropagation for the elements of SE$(3)$ group. The proposed method is end-to-end trainable and requires only a monocular camera and IMU during inference. Experimental results demonstrate that VIFT increases the accuracy of monocular VIO networks, achieving state-of-the-art results when compared to previous methods on the KITTI dataset. The code will be made available at https://github.com/ybkurt/VIFT.",
+    "link": "https://arxiv.org/abs/2409.08769",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ybkurt/VIFT."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Pathfinder for Low-altitude Aircraft with Binary Neural Network",
+    "summary": "arXiv:2409.08824v1 Announce Type: new \nAbstract: A prior global topological map (e.g., the OpenStreetMap, OSM) can boost the performance of autonomous mapping by a ground mobile robot. However, the prior map is usually incomplete due to lacking labeling in partial paths. To solve this problem, this paper proposes an OSM maker using airborne sensors carried by low-altitude aircraft, where the core of the OSM maker is a novel efficient pathfinder approach based on LiDAR and camera data, i.e., a binary dual-stream road segmentation model. Specifically, a multi-scale feature extraction based on the UNet architecture is implemented for images and point clouds. To reduce the effect caused by the sparsity of point cloud, an attention-guided gated block is designed to integrate image and point-cloud features. For enhancing the efficiency of the model, we propose a binarization streamline to each model component, including a variant of vision transformer (ViT) architecture as the encoder of the image branch, and new focal and perception losses to optimize the model training. The experimental results on two datasets demonstrate that our pathfinder method achieves SOTA accuracy with high efficiency in finding paths from the low-level airborne sensors, and we can create complete OSM prior maps based on the segmented road skeletons. Code and data are available at:https://github.com/IMRL/Pathfinder}{https://github.com/IMRL/Pathfinder.",
+    "link": "https://arxiv.org/abs/2409.08824",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/IMRL/Pathfinder}{https://github.com/IMRL/Pathfinder."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Detect Fake with Fake: Leveraging Synthetic Data-driven Representation for Synthetic Image Detection",
+    "summary": "arXiv:2409.08884v1 Announce Type: new \nAbstract: Are general-purpose visual representations acquired solely from synthetic data useful for detecting fake images? In this work, we show the effectiveness of synthetic data-driven representations for synthetic image detection. Upon analysis, we find that vision transformers trained by the latest visual representation learners with synthetic data can effectively distinguish fake from real images without seeing any real images during pre-training. Notably, using SynCLR as the backbone in a state-of-the-art detection method demonstrates a performance improvement of +10.32 mAP and +4.73% accuracy over the widely used CLIP, when tested on previously unseen GAN models. Code is available at https://github.com/cvpaperchallenge/detect-fake-with-fake.",
+    "link": "https://arxiv.org/abs/2409.08884",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/cvpaperchallenge/detect-fake-with-fake."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "WheelPoser: Sparse-IMU Based Body Pose Estimation for Wheelchair Users",
+    "summary": "arXiv:2409.08494v1 Announce Type: cross \nAbstract: Despite researchers having extensively studied various ways to track body pose on-the-go, most prior work does not take into account wheelchair users, leading to poor tracking performance. Wheelchair users could greatly benefit from this pose information to prevent injuries, monitor their health, identify environmental accessibility barriers, and interact with gaming and VR experiences. In this work, we present WheelPoser, a real-time pose estimation system specifically designed for wheelchair users. Our system uses only four strategically placed IMUs on the user's body and wheelchair, making it far more practical than prior systems using cameras and dense IMU arrays. WheelPoser is able to track a wheelchair user's pose with a mean joint angle error of 14.30 degrees and a mean joint position error of 6.74 cm, more than three times better than similar systems using sparse IMUs. To train our system, we collect a novel WheelPoser-IMU dataset, consisting of 167 minutes of paired IMU sensor and motion capture data of people in wheelchairs, including wheelchair-specific motions such as propulsion and pressure relief. Finally, we explore the potential application space enabled by our system and discuss future opportunities. Open-source code, models, and dataset can be found here: https://github.com/axle-lab/WheelPoser.",
+    "link": "https://arxiv.org/abs/2409.08494",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/axle-lab/WheelPoser."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "SkinFormer: Learning Statistical Texture Representation with Transformer for Skin Lesion Segmentation",
+    "summary": "arXiv:2409.08652v1 Announce Type: cross \nAbstract: Accurate skin lesion segmentation from dermoscopic images is of great importance for skin cancer diagnosis. However, automatic segmentation of melanoma remains a challenging task because it is difficult to incorporate useful texture representations into the learning process. Texture representations are not only related to the local structural information learned by CNN, but also include the global statistical texture information of the input image. In this paper, we propose a trans\\textbf{Former} network (\\textbf{SkinFormer}) that efficiently extracts and fuses statistical texture representation for \\textbf{Skin} lesion segmentation. Specifically, to quantify the statistical texture of input features, a Kurtosis-guided Statistical Counting Operator is designed. We propose Statistical Texture Fusion Transformer and Statistical Texture Enhance Transformer with the help of Kurtosis-guided Statistical Counting Operator by utilizing the transformer's global attention mechanism. The former fuses structural texture information and statistical texture information, and the latter enhances the statistical texture of multi-scale features. {Extensive experiments on three publicly available skin lesion datasets validate that our SkinFormer outperforms other SOAT methods, and our method achieves 93.2\\% Dice score on ISIC 2018. It can be easy to extend SkinFormer to segment 3D images in the future.} Our code is available at https://github.com/Rongtao-Xu/SkinFormer.",
+    "link": "https://arxiv.org/abs/2409.08652",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Rongtao-Xu/SkinFormer."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Efficient Image Super-Resolution with Feature Interaction Weighted Hybrid Network",
+    "summary": "arXiv:2212.14181v2 Announce Type: replace \nAbstract: Lightweight image super-resolution aims to reconstruct high-resolution images from low-resolution images using low computational costs. However, existing methods result in the loss of middle-layer features due to activation functions. To minimize the impact of intermediate feature loss on reconstruction quality, we propose a Feature Interaction Weighted Hybrid Network (FIWHN), which comprises a series of Wide-residual Distillation Interaction Block (WDIB) as the backbone. Every third WDIB forms a Feature Shuffle Weighted Group (FSWG) by applying mutual information shuffle and fusion. Moreover, to mitigate the negative effects of intermediate feature loss, we introduce Wide Residual Weighting units within WDIB. These units effectively fuse features of varying levels of detail through a Wide-residual Distillation Connection (WRDC) and a Self-Calibrating Fusion (SCF). To compensate for global feature deficiencies, we incorporate a Transformer and explore a novel architecture to combine CNN and Transformer. We show that our FIWHN achieves a favorable balance between performance and efficiency through extensive experiments on low-level and high-level tasks. Codes will be available at \\url{https://github.com/IVIPLab/FIWHN}.",
+    "link": "https://arxiv.org/abs/2212.14181",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/IVIPLab/FIWHN}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Pavlok-Nudge: A Feedback Mechanism for Atomic Behaviour Modification with Snoring Usecase",
+    "summary": "arXiv:2305.06110v3 Announce Type: replace \nAbstract: This paper proposes a feedback mechanism to change behavioural patterns using the Pavlok device. Pavlok utilises beeps, vibration and shocks as a mode of aversion technique to help individuals with behaviour modification. While the device can be useful in certain periodic daily life situations, like alarms and exercise notifications, the device relies on manual operations that limit its usage. To automate behaviour modification, we propose a framework that first detects targeted behaviours through a lightweight deep learning model and subsequently nudges the user through Pavlok. Our proposed solution is implemented and verified in the context of snoring, which captures audio from the environment following a prediction of whether the audio content is a snore or not using a 1D convolutional neural network. Based on the prediction, we use Pavlok to nudge users for preventive measures, such as a change in sleeping posture. We believe that this simple solution can help people to change their atomic habits, which may lead to long-term health benefits. Our proposed real-time, lightweight model (99.8% less parameters over SOTA; 1,278,049 --> 1337) achieves SOTA performance (test accuracy of 0.99) on a public domain benchmark. The code and model are publicly available at https://github.com/hasan-rakibul/pavlok-nudge-snore.",
+    "link": "https://arxiv.org/abs/2305.06110",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/hasan-rakibul/pavlok-nudge-snore."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DualBEV: Unifying Dual View Transformation with Probabilistic Correspondences",
+    "summary": "arXiv:2403.05402v2 Announce Type: replace \nAbstract: Camera-based Bird's-Eye-View (BEV) perception often struggles between adopting 3D-to-2D or 2D-to-3D view transformation (VT). The 3D-to-2D VT typically employs resource-intensive Transformer to establish robust correspondences between 3D and 2D features, while the 2D-to-3D VT utilizes the Lift-Splat-Shoot (LSS) pipeline for real-time application, potentially missing distant information. To address these limitations, we propose DualBEV, a unified framework that utilizes a shared feature transformation incorporating three probabilistic measurements for both strategies. By considering dual-view correspondences in one stage, DualBEV effectively bridges the gap between these strategies, harnessing their individual strengths. Our method achieves state-of-the-art performance without Transformer, delivering comparable efficiency to the LSS approach, with 55.2% mAP and 63.4% NDS on the nuScenes test set. Code is available at \\url{https://github.com/PeidongLi/DualBEV}",
+    "link": "https://arxiv.org/abs/2403.05402",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/PeidongLi/DualBEV}"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Efficient Diffusion Model for Image Restoration by Residual Shifting",
+    "summary": "arXiv:2403.07319v2 Announce Type: replace \nAbstract: While diffusion-based image restoration (IR) methods have achieved remarkable success, they are still limited by the low inference speed attributed to the necessity of executing hundreds or even thousands of sampling steps. Existing acceleration sampling techniques, though seeking to expedite the process, inevitably sacrifice performance to some extent, resulting in over-blurry restored outcomes. To address this issue, this study proposes a novel and efficient diffusion model for IR that significantly reduces the required number of diffusion steps. Our method avoids the need for post-acceleration during inference, thereby avoiding the associated performance deterioration. Specifically, our proposed method establishes a Markov chain that facilitates the transitions between the high-quality and low-quality images by shifting their residuals, substantially improving the transition efficiency. A carefully formulated noise schedule is devised to flexibly control the shifting speed and the noise strength during the diffusion process. Extensive experimental evaluations demonstrate that the proposed method achieves superior or comparable performance to current state-of-the-art methods on three classical IR tasks, namely image super-resolution, image inpainting, and blind face restoration, \\textit{\\textbf{even only with four sampling steps}}. Our code and model are publicly available at \\url{https://github.com/zsyOAOA/ResShift}.",
+    "link": "https://arxiv.org/abs/2403.07319",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/zsyOAOA/ResShift}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "OC4-ReID: Occluded Cloth-Changing Person Re-Identification",
+    "summary": "arXiv:2403.08557v4 Announce Type: replace \nAbstract: The study of Cloth-Changing Person Re-identification (CC-ReID) focuses on retrieving specific pedestrians when their clothing has changed, typically under the assumption that the entire pedestrian images are visible. Pedestrian images in real-world scenarios, however, are often partially obscured by obstacles, presenting a significant challenge to existing CC-ReID systems. In this paper, we introduce a more challenging task termed Occluded Cloth-Changing Person Re-Identification (OC4-ReID), which simultaneously addresses two challenges of clothing changes and occlusion. Concretely, we construct two new datasets, Occ-LTCC and Occ-PRCC, based on original CC-ReID datasets to include random occlusions of key pedestrians components (e.g., head, torso). Moreover, a novel benchmark is proposed for OC4-ReID incorporating a Train-Test Micro Granularity Screening (T2MGS) module to mitigate the influence of occlusion and proposing a Part-Robust Triplet (PRT) loss for partial features learning. Comprehensive experiments on the proposed datasets, as well as on two CC-ReID benchmark datasets demonstrate the superior performance of proposed method against other state-of-the-art methods. The codes and datasets are available at: https://github.com/1024AILab/OC4-ReID.",
+    "link": "https://arxiv.org/abs/2403.08557",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/1024AILab/OC4-ReID."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Pseudo-Prompt Generating in Pre-trained Vision-Language Models for Multi-Label Medical Image Classification",
+    "summary": "arXiv:2405.06468v3 Announce Type: replace \nAbstract: The task of medical image recognition is notably complicated by the presence of varied and multiple pathological indications, presenting a unique challenge in multi-label classification with unseen labels. This complexity underlines the need for computer-aided diagnosis methods employing multi-label zero-shot learning. Recent advancements in pre-trained vision-language models (VLMs) have showcased notable zero-shot classification abilities on medical images. However, these methods have limitations on leveraging extensive pre-trained knowledge from broader image datasets, and often depend on manual prompt construction by expert radiologists. By automating the process of prompt tuning, prompt learning techniques have emerged as an efficient way to adapt VLMs to downstream tasks. Yet, existing CoOp-based strategies fall short in performing class-specific prompts on unseen categories, limiting generalizability in fine-grained scenarios. To overcome these constraints, we introduce a novel prompt generation approach inspirited by text generation in natural language processing (NLP). Our method, named Pseudo-Prompt Generating (PsPG), capitalizes on the priori knowledge of multi-modal features. Featuring a RNN-based decoder, PsPG autoregressively generates class-tailored embedding vectors, i.e., pseudo-prompts. Comparative evaluations on various multi-label chest radiograph datasets affirm the superiority of our approach against leading medical vision-language and multi-label prompt learning methods. The source code is available at https://github.com/fallingnight/PsPG",
+    "link": "https://arxiv.org/abs/2405.06468",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/fallingnight/PsPG"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "XAMI -- A Benchmark Dataset for Artefact Detection in XMM-Newton Optical Images",
+    "summary": "arXiv:2406.17323v2 Announce Type: replace \nAbstract: Reflected or scattered light produce artefacts in astronomical observations that can negatively impact the scientific study. Hence, automated detection of these artefacts is highly beneficial, especially with the increasing amounts of data gathered. Machine learning methods are well-suited to this problem, but currently there is a lack of annotated data to train such approaches to detect artefacts in astronomical observations. In this work, we present a dataset of images from the XMM-Newton space telescope Optical Monitoring camera showing different types of artefacts. We hand-annotated a sample of 1000 images with artefacts which we use to train automated ML methods. We further demonstrate techniques tailored for accurate detection and masking of artefacts using instance segmentation. We adopt a hybrid approach, combining knowledge from both convolutional neural networks (CNNs) and transformer-based models and use their advantages in segmentation. The presented method and dataset will advance artefact detection in astronomical observations by providing a reproducible baseline. All code and data are made available (https://github.com/ESA-Datalabs/XAMI-model and https://github.com/ESA-Datalabs/XAMI-dataset).",
+    "link": "https://arxiv.org/abs/2406.17323",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ESA-Datalabs/XAMI-model",
+      "https://github.com/ESA-Datalabs/XAMI-dataset)."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CerberusDet: Unified Multi-Dataset Object Detection",
+    "summary": "arXiv:2407.12632v2 Announce Type: replace \nAbstract: Conventional object detection models are usually limited by the data on which they were trained and by the category logic they define. With the recent rise of Language-Visual Models, new methods have emerged that are not restricted to these fixed categories. Despite their flexibility, such Open Vocabulary detection models still fall short in accuracy compared to traditional models with fixed classes. At the same time, more accurate data-specific models face challenges when there is a need to extend classes or merge different datasets for training. The latter often cannot be combined due to different logics or conflicting class definitions, making it difficult to improve a model without compromising its performance. In this paper, we introduce CerberusDet, a framework with a multi-headed model designed for handling multiple object detection tasks. Proposed model is built on the YOLO architecture and efficiently shares visual features from both backbone and neck components, while maintaining separate task heads. This approach allows CerberusDet to perform very efficiently while still delivering optimal results. We evaluated the model on the PASCAL VOC dataset and Objects365 dataset to demonstrate its abilities. CerberusDet achieved state-of-the-art results with 36% less inference time. The more tasks are trained together, the more efficient the proposed model becomes compared to running individual models sequentially. The training and inference code, as well as the model, are available as open-source (https://github.com/ai-forever/CerberusDet).",
+    "link": "https://arxiv.org/abs/2407.12632",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ai-forever/CerberusDet)."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "A Closer Look at GAN Priors: Exploiting Intermediate Features for Enhanced Model Inversion Attacks",
+    "summary": "arXiv:2407.13863v4 Announce Type: replace \nAbstract: Model Inversion (MI) attacks aim to reconstruct privacy-sensitive training data from released models by utilizing output information, raising extensive concerns about the security of Deep Neural Networks (DNNs). Recent advances in generative adversarial networks (GANs) have contributed significantly to the improved performance of MI attacks due to their powerful ability to generate realistic images with high fidelity and appropriate semantics. However, previous MI attacks have solely disclosed private information in the latent space of GAN priors, limiting their semantic extraction and transferability across multiple target models and datasets. To address this challenge, we propose a novel method, Intermediate Features enhanced Generative Model Inversion (IF-GMI), which disassembles the GAN structure and exploits features between intermediate blocks. This allows us to extend the optimization space from latent code to intermediate features with enhanced expressive capabilities. To prevent GAN priors from generating unrealistic images, we apply a L1 ball constraint to the optimization process. Experiments on multiple benchmarks demonstrate that our method significantly outperforms previous approaches and achieves state-of-the-art results under various settings, especially in the out-of-distribution (OOD) scenario. Our code is available at: https://github.com/final-solution/IF-GMI",
+    "link": "https://arxiv.org/abs/2407.13863",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/final-solution/IF-GMI"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Facial Wrinkle Segmentation for Cosmetic Dermatology: Pretraining with Texture Map-Based Weak Supervision",
+    "summary": "arXiv:2408.10060v3 Announce Type: replace \nAbstract: Facial wrinkle detection plays a crucial role in cosmetic dermatology. Precise manual segmentation of facial wrinkles is challenging and time-consuming, with inherent subjectivity leading to inconsistent results among graders. To address this issue, we propose two solutions. First, we build and release the first public facial wrinkle dataset, 'FFHQ-Wrinkle', an extension of the NVIDIA FFHQ dataset. It includes 1,000 images with human labels and 50,000 images with automatically generated weak labels. This dataset could serve as a foundation for the research community to develop advanced wrinkle detection algorithms. Second, we introduce a simple training strategy utilizing texture maps, applicable to various segmentation models, to detect wrinkles across the face. Our two-stage training strategy first pretrain models on a large dataset with weak labels (N=50k), or masked texture maps generated through computer vision techniques, without human intervention. We then finetune the models using human-labeled data (N=1k), which consists of manually labeled wrinkle masks. The network takes as input a combination of RGB and masked texture map of the image, comprising four channels, in finetuning. We effectively combine labels from multiple annotators to minimize subjectivity in manual labeling. Our strategies demonstrate improved segmentation performance in facial wrinkle segmentation both quantitatively and visually compared to existing pretraining methods. The dataset is available at https://github.com/labhai/ffhq-wrinkle-dataset.",
+    "link": "https://arxiv.org/abs/2408.10060",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/labhai/ffhq-wrinkle-dataset."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "GaussianOcc: Fully Self-supervised and Efficient 3D Occupancy Estimation with Gaussian Splatting",
+    "summary": "arXiv:2408.11447v2 Announce Type: replace \nAbstract: We introduce GaussianOcc, a systematic method that investigates the two usages of Gaussian splatting for fully self-supervised and efficient 3D occupancy estimation in surround views. First, traditional methods for self-supervised 3D occupancy estimation still require ground truth 6D poses from sensors during training. To address this limitation, we propose Gaussian Splatting for Projection (GSP) module to provide accurate scale information for fully self-supervised training from adjacent view projection. Additionally, existing methods rely on volume rendering for final 3D voxel representation learning using 2D signals (depth maps, semantic maps), which is both time-consuming and less effective. We propose Gaussian Splatting from Voxel space (GSV) to leverage the fast rendering properties of Gaussian splatting. As a result, the proposed GaussianOcc method enables fully self-supervised (no ground truth pose) 3D occupancy estimation in competitive performance with low computational cost (2.7 times faster in training and 5 times faster in rendering). The relevant code will be available in https://github.com/GANWANSHUI/GaussianOcc.git.",
+    "link": "https://arxiv.org/abs/2408.11447",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/GANWANSHUI/GaussianOcc.git."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Prompt2Fashion: An automatically generated fashion dataset",
+    "summary": "arXiv:2409.06442v2 Announce Type: replace \nAbstract: Despite the rapid evolution and increasing efficacy of language and vision generative models, there remains a lack of comprehensive datasets that bridge the gap between personalized fashion needs and AI-driven design, limiting the potential for truly inclusive and customized fashion solutions. In this work, we leverage generative models to automatically construct a fashion image dataset tailored to various occasions, styles, and body types as instructed by users. We use different Large Language Models (LLMs) and prompting strategies to offer personalized outfits of high aesthetic quality, detail, and relevance to both expert and non-expert users' requirements, as demonstrated by qualitative analysis. Up until now the evaluation of the generated outfits has been conducted by non-expert human subjects. Despite the provided fine-grained insights on the quality and relevance of generation, we extend the discussion on the importance of expert knowledge for the evaluation of artistic AI-generated datasets such as this one. Our dataset is publicly available on GitHub at https://github.com/georgiarg/Prompt2Fashion.",
+    "link": "https://arxiv.org/abs/2409.06442",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/georgiarg/Prompt2Fashion."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Estimating Atmospheric Variables from Digital Typhoon Satellite Images via Conditional Denoising Diffusion Models",
+    "summary": "arXiv:2409.07961v2 Announce Type: replace \nAbstract: This study explores the application of diffusion models in the field of typhoons, predicting multiple ERA5 meteorological variables simultaneously from Digital Typhoon satellite images. The focus of this study is taken to be Taiwan, an area very vulnerable to typhoons. By comparing the performance of Conditional Denoising Diffusion Probability Model (CDDPM) with Convolutional Neural Networks (CNN) and Squeeze-and-Excitation Networks (SENet), results suggest that the CDDPM performs best in generating accurate and realistic meteorological data. Specifically, CDDPM achieved a PSNR of 32.807, which is approximately 7.9% higher than CNN and 5.5% higher than SENet. Furthermore, CDDPM recorded an RMSE of 0.032, showing a 11.1% improvement over CNN and 8.6% improvement over SENet. A key application of this research can be for imputation purposes in missing meteorological datasets and generate additional high-quality meteorological data using satellite images. It is hoped that the results of this analysis will enable more robust and detailed forecasting, reducing the impact of severe weather events on vulnerable regions. Code accessible at https://github.com/TammyLing/Typhoon-forecasting.",
+    "link": "https://arxiv.org/abs/2409.07961",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/TammyLing/Typhoon-forecasting."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Fisheye-Calib-Adapter: An Easy Tool for Fisheye Camera Model Conversion",
+    "summary": "arXiv:2407.12405v3 Announce Type: replace-cross \nAbstract: The increasing necessity for fisheye cameras in fields such as robotics and autonomous driving has led to the proposal of various fisheye camera models. While the evolution of camera models has facilitated the development of diverse systems in the field, the lack of adaptation between different fisheye camera models means that recalibration is always necessary, which is cumbersome. This paper introduces a conversion tool for various previously proposed fisheye camera models. It is user-friendly, simple, yet extremely fast and accurate, offering conversion capabilities for a broader range of models compared to existing tools. We have verified that models converted using our system perform correctly in applications such as SLAM. By utilizing our system, researchers can obtain output parameters directly from input parameters without the need for an image set and any recalibration processes, thus serving as a bridge across different fisheye camera models in various research fields. We provide our system as an open source tool available at: https://github.com/eowjd0512/fisheye-calib-adapter",
+    "link": "https://arxiv.org/abs/2407.12405",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/eowjd0512/fisheye-calib-adapter"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Adversarial Attacks and Defenses on Text-to-Image Diffusion Models: A Survey",
+    "summary": "arXiv:2407.15861v2 Announce Type: replace-cross \nAbstract: Recently, the text-to-image diffusion model has gained considerable attention from the community due to its exceptional image generation capability. A representative model, Stable Diffusion, amassed more than 10 million users within just two months of its release. This surge in popularity has facilitated studies on the robustness and safety of the model, leading to the proposal of various adversarial attack methods. Simultaneously, there has been a marked increase in research focused on defense methods to improve the robustness and safety of these models. In this survey, we provide a comprehensive review of the literature on adversarial attacks and defenses targeting text-to-image diffusion models. We begin with an overview of text-to-image diffusion models, followed by an introduction to a taxonomy of adversarial attacks and an in-depth review of existing attack methods. We then present a detailed analysis of current defense methods that improve model robustness and safety. Finally, we discuss ongoing challenges and explore promising future research directions. For a complete list of the adversarial attack and defense methods covered in this survey, please refer to our curated repository at https://github.com/datar001/Awesome-AD-on-T2IDM.",
+    "link": "https://arxiv.org/abs/2407.15861",
+    "published": "Mon, 16 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/datar001/Awesome-AD-on-T2IDM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  }
+]
