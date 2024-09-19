@@ -1,331 +1,319 @@
 [
   {
-    "title": "ResEmoteNet: Bridging Accuracy and Loss Reduction in Facial Emotion Recognition",
-    "summary": "arXiv:2409.10545v1 Announce Type: new \nAbstract: The human face is a silent communicator, expressing emotions and thoughts through its facial expressions. With the advancements in computer vision in recent years, facial emotion recognition technology has made significant strides, enabling machines to decode the intricacies of facial cues. In this work, we propose ResEmoteNet, a novel deep learning architecture for facial emotion recognition designed with the combination of Convolutional, Squeeze-Excitation (SE) and Residual Networks. The inclusion of SE block selectively focuses on the important features of the human face, enhances the feature representation and suppresses the less relevant ones. This helps in reducing the loss and enhancing the overall model performance. We also integrate the SE block with three residual blocks that help in learning more complex representation of the data through deeper layers. We evaluated ResEmoteNet on three open-source databases: FER2013, RAF-DB, and AffectNet, achieving accuracies of 79.79%, 94.76%, and 72.39%, respectively. The proposed network outperforms state-of-the-art models across all three databases. The source code for ResEmoteNet is available at https://github.com/ArnabKumarRoy02/ResEmoteNet.",
-    "link": "https://arxiv.org/abs/2409.10545",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "title": "Obfuscation Based Privacy Preserving Representations are Recoverable Using Neighborhood Information",
+    "summary": "arXiv:2409.11536v1 Announce Type: new \nAbstract: Rapid growth in the popularity of AR/VR/MR applications and cloud-based visual localization systems has given rise to an increased focus on the privacy of user content in the localization process.\n  This privacy concern has been further escalated by the ability of deep neural networks to recover detailed images of a scene from a sparse set of 3D or 2D points and their descriptors - the so-called inversion attacks.\n  Research on privacy-preserving localization has therefore focused on preventing these inversion attacks on both the query image keypoints and the 3D points of the scene map.\n  To this end, several geometry obfuscation techniques that lift points to higher-dimensional spaces, i.e., lines or planes, or that swap coordinates between points % have been proposed.\n  In this paper, we point to a common weakness of these obfuscations that allows to recover approximations of the original point positions under the assumption of known neighborhoods.\n  We further show that these neighborhoods can be computed by learning to identify descriptors that co-occur in neighborhoods.\n  Extensive experiments show that our approach for point recovery is practically applicable to all existing geometric obfuscation schemes.\n  Our results show that these schemes should not be considered privacy-preserving, even though they are claimed to be privacy-preserving.\n  Code will be available at \\url{https://github.com/kunalchelani/RecoverPointsNeighborhood}.",
+    "link": "https://arxiv.org/abs/2409.11536",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
-      "https://github.com/ArnabKumarRoy02/ResEmoteNet."
+      "https://github.com/kunalchelani/RecoverPointsNeighborhood}."
     ],
     "huggingface_urls": [],
     "source": "arXiv"
   },
   {
-    "title": "SoccerNet 2024 Challenges Results",
-    "summary": "arXiv:2409.10587v1 Announce Type: new \nAbstract: The SoccerNet 2024 challenges represent the fourth annual video understanding challenges organized by the SoccerNet team. These challenges aim to advance research across multiple themes in football, including broadcast video understanding, field understanding, and player understanding. This year, the challenges encompass four vision-based tasks. (1) Ball Action Spotting, focusing on precisely localizing when and which soccer actions related to the ball occur, (2) Dense Video Captioning, focusing on describing the broadcast with natural language and anchored timestamps, (3) Multi-View Foul Recognition, a novel task focusing on analyzing multiple viewpoints of a potential foul incident to classify whether a foul occurred and assess its severity, (4) Game State Reconstruction, another novel task focusing on reconstructing the game state from broadcast videos onto a 2D top-view map of the field. Detailed information about the tasks, challenges, and leaderboards can be found at https://www.soccer-net.org, with baselines and development kits available at https://github.com/SoccerNet.",
-    "link": "https://arxiv.org/abs/2409.10587",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "title": "VALO: A Versatile Anytime Framework for LiDAR-based Object Detection Deep Neural Networks",
+    "summary": "arXiv:2409.11542v1 Announce Type: new \nAbstract: This work addresses the challenge of adapting dynamic deadline requirements for LiDAR object detection deep neural networks (DNNs). The computing latency of object detection is critically important to ensure safe and efficient navigation. However, state-of-the-art LiDAR object detection DNNs often exhibit significant latency, hindering their real-time performance on resource-constrained edge platforms. Therefore, a tradeoff between detection accuracy and latency should be dynamically managed at runtime to achieve optimum results.\n  In this paper, we introduce VALO (Versatile Anytime algorithm for LiDAR Object detection), a novel data-centric approach that enables anytime computing of 3D LiDAR object detection DNNs. VALO employs a deadline-aware scheduler to selectively process input regions, making execution time and accuracy tradeoffs without architectural modifications. Additionally, it leverages efficient forecasting of past detection results to mitigate possible loss of accuracy due to partial processing of input. Finally, it utilizes a novel input reduction technique within its detection heads to significantly accelerate execution without sacrificing accuracy.\n  We implement VALO on state-of-the-art 3D LiDAR object detection networks, namely CenterPoint and VoxelNext, and demonstrate its dynamic adaptability to a wide range of time constraints while achieving higher accuracy than the prior state-of-the-art. Code is available athttps://github.com/CSL-KU/VALO}{github.com/CSL-KU/VALO.",
+    "link": "https://arxiv.org/abs/2409.11542",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
-      "https://github.com/SoccerNet."
+      "https://github.com/CSL-KU/VALO}{github.com/CSL-KU/VALO."
     ],
     "huggingface_urls": [],
     "source": "arXiv"
   },
   {
-    "title": "KALE: An Artwork Image Captioning System Augmented with Heterogeneous Graph",
-    "summary": "arXiv:2409.10921v1 Announce Type: new \nAbstract: Exploring the narratives conveyed by fine-art paintings is a challenge in image captioning, where the goal is to generate descriptions that not only precisely represent the visual content but also offer a in-depth interpretation of the artwork's meaning. The task is particularly complex for artwork images due to their diverse interpretations and varied aesthetic principles across different artistic schools and styles. In response to this, we present KALE Knowledge-Augmented vision-Language model for artwork Elaborations), a novel approach that enhances existing vision-language models by integrating artwork metadata as additional knowledge. KALE incorporates the metadata in two ways: firstly as direct textual input, and secondly through a multimodal heterogeneous knowledge graph. To optimize the learning of graph representations, we introduce a new cross-modal alignment loss that maximizes the similarity between the image and its corresponding metadata. Experimental results demonstrate that KALE achieves strong performance (when evaluated with CIDEr, in particular) over existing state-of-the-art work across several artwork datasets. Source code of the project is available at https://github.com/Yanbei-Jiang/Artwork-Interpretation.",
-    "link": "https://arxiv.org/abs/2409.10921",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "title": "DAF-Net: A Dual-Branch Feature Decomposition Fusion Network with Domain Adaptive for Infrared and Visible Image Fusion",
+    "summary": "arXiv:2409.11642v1 Announce Type: new \nAbstract: Infrared and visible image fusion aims to combine complementary information from both modalities to provide a more comprehensive scene understanding. However, due to the significant differences between the two modalities, preserving key features during the fusion process remains a challenge. To address this issue, we propose a dual-branch feature decomposition fusion network (DAF-Net) with domain adaptive, which introduces Multi-Kernel Maximum Mean Discrepancy (MK-MMD) into the base encoder and designs a hybrid kernel function suitable for infrared and visible image fusion. The base encoder built on the Restormer network captures global structural information while the detail encoder based on Invertible Neural Networks (INN) focuses on extracting detail texture information. By incorporating MK-MMD, the DAF-Net effectively aligns the latent feature spaces of visible and infrared images, thereby improving the quality of the fused images. Experimental results demonstrate that the proposed method outperforms existing techniques across multiple datasets, significantly enhancing both visual quality and fusion performance. The related Python code is available at https://github.com/xujian000/DAF-Net.",
+    "link": "https://arxiv.org/abs/2409.11642",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
-      "https://github.com/Yanbei-Jiang/Artwork-Interpretation."
+      "https://github.com/xujian000/DAF-Net."
     ],
     "huggingface_urls": [],
     "source": "arXiv"
   },
   {
-    "title": "Versatile Incremental Learning: Towards Class and Domain-Agnostic Incremental Learning",
-    "summary": "arXiv:2409.10956v1 Announce Type: new \nAbstract: Incremental Learning (IL) aims to accumulate knowledge from sequential input tasks while overcoming catastrophic forgetting. Existing IL methods typically assume that an incoming task has only increments of classes or domains, referred to as Class IL (CIL) or Domain IL (DIL), respectively. In this work, we consider a more challenging and realistic but under-explored IL scenario, named Versatile Incremental Learning (VIL), in which a model has no prior of which of the classes or domains will increase in the next task. In the proposed VIL scenario, the model faces intra-class domain confusion and inter-domain class confusion, which makes the model fail to accumulate new knowledge without interference with learned knowledge. To address these issues, we propose a simple yet effective IL framework, named Incremental Classifier with Adaptation Shift cONtrol (ICON). Based on shifts of learnable modules, we design a novel regularization method called Cluster-based Adaptation Shift conTrol (CAST) to control the model to avoid confusion with the previously learned knowledge and thereby accumulate the new knowledge more effectively. Moreover, we introduce an Incremental Classifier (IC) which expands its output nodes to address the overwriting issue from different domains corresponding to a single class while maintaining the previous knowledge. We conducted extensive experiments on three benchmarks, showcasing the effectiveness of our method across all the scenarios, particularly in cases where the next task can be randomly altered. Our implementation code is available at https://github.com/KHU-AGI/VIL.",
-    "link": "https://arxiv.org/abs/2409.10956",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "title": "SRIF: Semantic Shape Registration Empowered by Diffusion-based Image Morphing and Flow Estimation",
+    "summary": "arXiv:2409.11682v1 Announce Type: new \nAbstract: In this paper, we propose SRIF, a novel Semantic shape Registration framework based on diffusion-based Image morphing and Flow estimation. More concretely, given a pair of extrinsically aligned shapes, we first render them from multi-views, and then utilize an image interpolation framework based on diffusion models to generate sequences of intermediate images between them. The images are later fed into a dynamic 3D Gaussian splatting framework, with which we reconstruct and post-process for intermediate point clouds respecting the image morphing processing. In the end, tailored for the above, we propose a novel registration module to estimate continuous normalizing flow, which deforms source shape consistently towards the target, with intermediate point clouds as weak guidance. Our key insight is to leverage large vision models (LVMs) to associate shapes and therefore obtain much richer semantic information on the relationship between shapes than the ad-hoc feature extraction and alignment. As a consequence, SRIF achieves high-quality dense correspondences on challenging shape pairs, but also delivers smooth, semantically meaningful interpolation in between. Empirical evidence justifies the effectiveness and superiority of our method as well as specific design choices. The code is released at https://github.com/rqhuang88/SRIF.",
+    "link": "https://arxiv.org/abs/2409.11682",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
-      "https://github.com/KHU-AGI/VIL."
+      "https://github.com/rqhuang88/SRIF."
     ],
     "huggingface_urls": [],
     "source": "arXiv"
   },
   {
-    "title": "MM2Latent: Text-to-facial image generation and editing in GANs with multimodal assistance",
-    "summary": "arXiv:2409.11010v1 Announce Type: new \nAbstract: Generating human portraits is a hot topic in the image generation area, e.g. mask-to-face generation and text-to-face generation. However, these unimodal generation methods lack controllability in image generation. Controllability can be enhanced by exploring the advantages and complementarities of various modalities. For instance, we can utilize the advantages of text in controlling diverse attributes and masks in controlling spatial locations. Current state-of-the-art methods in multimodal generation face limitations due to their reliance on extensive hyperparameters, manual operations during the inference stage, substantial computational demands during training and inference, or inability to edit real images. In this paper, we propose a practical framework - MM2Latent - for multimodal image generation and editing. We use StyleGAN2 as our image generator, FaRL for text encoding, and train an autoencoders for spatial modalities like mask, sketch and 3DMM. We propose a strategy that involves training a mapping network to map the multimodal input into the w latent space of StyleGAN. The proposed framework 1) eliminates hyperparameters and manual operations in the inference stage, 2) ensures fast inference speeds, and 3) enables the editing of real images. Extensive experiments demonstrate that our method exhibits superior performance in multimodal image generation, surpassing recent GAN- and diffusion-based methods. Also, it proves effective in multimodal image editing and is faster than GAN- and diffusion-based methods. We make the code publicly available at: https://github.com/Open-Debin/MM2Latent",
-    "link": "https://arxiv.org/abs/2409.11010",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "title": "Exploring Gaze Pattern in Autistic Children: Clustering, Visualization, and Prediction",
+    "summary": "arXiv:2409.11744v1 Announce Type: new \nAbstract: Autism Spectrum Disorder (ASD) significantly affects the social and communication abilities of children, and eye-tracking is commonly used as a diagnostic tool by identifying associated atypical gaze patterns. Traditional methods demand manual identification of Areas of Interest in gaze patterns, lowering the performance of gaze behavior analysis in ASD subjects. To tackle this limitation, we propose a novel method to automatically analyze gaze behaviors in ASD children with superior accuracy. To be specific, we first apply and optimize seven clustering algorithms to automatically group gaze points to compare ASD subjects with typically developing peers. Subsequently, we extract 63 significant features to fully describe the patterns. These features can describe correlations between ASD diagnosis and gaze patterns. Lastly, using these features as prior knowledge, we train multiple predictive machine learning models to predict and diagnose ASD based on their gaze behaviors. To evaluate our method, we apply our method to three ASD datasets. The experimental and visualization results demonstrate the improvements of clustering algorithms in the analysis of unique gaze patterns in ASD children. Additionally, these predictive machine learning models achieved state-of-the-art prediction performance ($81\\%$ AUC) in the field of automatically constructed gaze point features for ASD diagnosis. Our code is available at \\url{https://github.com/username/projectname}.",
+    "link": "https://arxiv.org/abs/2409.11744",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
-      "https://github.com/Open-Debin/MM2Latent"
+      "https://github.com/username/projectname}."
     ],
     "huggingface_urls": [],
     "source": "arXiv"
   },
   {
-    "title": "Quantitative Evaluation of MILs' Reliability For WSIs Classification",
-    "summary": "arXiv:2409.11110v1 Announce Type: new \nAbstract: Reliable models are dependable and provide predictions acceptable given basic domain knowledge. Therefore, it is critical to develop and deploy reliable models, especially for healthcare applications. However, Multiple Instance Learning (MIL) models designed for Whole Slide Images (WSIs) classification in computational pathology are not evaluated in terms of reliability. Hence, in this paper we compare the reliability of MIL models with three suggested metrics and use three region-wise annotated datasets. We find the mean pooling instance (MEAN-POOL-INS) model more reliable than other networks despite its naive architecture design and computation efficiency. The code to reproduce the results is accessible at https://github.com/tueimage/MILs'R .",
-    "link": "https://arxiv.org/abs/2409.11110",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "title": "ABHINAW: A method for Automatic Evaluation of Typography within AI-Generated Images",
+    "summary": "arXiv:2409.11874v1 Announce Type: new \nAbstract: In the fast-evolving field of Generative AI, platforms like MidJourney, DALL-E, and Stable Diffusion have transformed Text-to-Image (T2I) Generation. However, despite their impressive ability to create high-quality images, they often struggle to generate accurate text within these images. Theoretically, if we could achieve accurate text generation in AI images in a ``zero-shot'' manner, it would not only make AI-generated images more meaningful but also democratize the graphic design industry. The first step towards this goal is to create a robust scoring matrix for evaluating text accuracy in AI-generated images. Although there are existing bench-marking methods like CLIP SCORE and T2I-CompBench++, there's still a gap in systematically evaluating text and typography in AI-generated images, especially with diffusion-based methods. In this paper, we introduce a novel evaluation matrix designed explicitly for quantifying the performance of text and typography generation within AI-generated images. We have used letter by letter matching strategy to compute the exact matching scores from the reference text to the AI generated text. Our novel approach to calculate the score takes care of multiple redundancies such as repetition of words, case sensitivity, mixing of words, irregular incorporation of letters etc. Moreover, we have developed a Novel method named as brevity adjustment to handle excess text. In addition we have also done a quantitative analysis of frequent errors arise due to frequently used words and less frequently used words. Project page is available at: https://github.com/Abhinaw3906/ABHINAW-MATRIX.",
+    "link": "https://arxiv.org/abs/2409.11874",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
-      "https://github.com/tueimage/MILs'R"
+      "https://github.com/Abhinaw3906/ABHINAW-MATRIX."
     ],
     "huggingface_urls": [],
     "source": "arXiv"
   },
   {
-    "title": "HS3-Bench: A Benchmark and Strong Baseline for Hyperspectral Semantic Segmentation in Driving Scenarios",
-    "summary": "arXiv:2409.11205v1 Announce Type: new \nAbstract: Semantic segmentation is an essential step for many vision applications in order to understand a scene and the objects within. Recent progress in hyperspectral imaging technology enables the application in driving scenarios and the hope is that the devices perceptive abilities provide an advantage over RGB-cameras. Even though some datasets exist, there is no standard benchmark available to systematically measure progress on this task and evaluate the benefit of hyperspectral data. In this paper, we work towards closing this gap by providing the HyperSpectral Semantic Segmentation benchmark (HS3-Bench). It combines annotated hyperspectral images from three driving scenario datasets and provides standardized metrics, implementations, and evaluation protocols. We use the benchmark to derive two strong baseline models that surpass the previous state-of-the-art performances with and without pre-training on the individual datasets. Further, our results indicate that the existing learning-based methods benefit more from leveraging additional RGB training data than from leveraging the additional hyperspectral channels. This poses important questions for future research on hyperspectral imaging for semantic segmentation in driving scenarios. Code to run the benchmark and the strong baseline approaches are available under https://github.com/nickstheisen/hyperseg.",
-    "link": "https://arxiv.org/abs/2409.11205",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "title": "Tracking Any Point with Frame-Event Fusion Network at High Frame Rate",
+    "summary": "arXiv:2409.11953v1 Announce Type: new \nAbstract: Tracking any point based on image frames is constrained by frame rates, leading to instability in high-speed scenarios and limited generalization in real-world applications. To overcome these limitations, we propose an image-event fusion point tracker, FE-TAP, which combines the contextual information from image frames with the high temporal resolution of events, achieving high frame rate and robust point tracking under various challenging conditions. Specifically, we designed an Evolution Fusion module (EvoFusion) to model the image generation process guided by events. This module can effectively integrate valuable information from both modalities operating at different frequencies. To achieve smoother point trajectories, we employed a transformer-based refinement strategy that updates the point's trajectories and features iteratively. Extensive experiments demonstrate that our method outperforms state-of-the-art approaches, particularly improving expected feature age by 24$\\%$ on EDS datasets. Finally, we qualitatively validated the robustness of our algorithm in real driving scenarios using our custom-designed high-resolution image-event synchronization device. Our source code will be released at https://github.com/ljx1002/FE-TAP.",
+    "link": "https://arxiv.org/abs/2409.11953",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
-      "https://github.com/nickstheisen/hyperseg."
+      "https://github.com/ljx1002/FE-TAP."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "PhysMamba: Efficient Remote Physiological Measurement with SlowFast Temporal Difference Mamba",
+    "summary": "arXiv:2409.12031v1 Announce Type: new \nAbstract: Facial-video based Remote photoplethysmography (rPPG) aims at measuring physiological signals and monitoring heart activity without any contact, showing significant potential in various applications. Previous deep learning based rPPG measurement are primarily based on CNNs and Transformers. However, the limited receptive fields of CNNs restrict their ability to capture long-range spatio-temporal dependencies, while Transformers also struggle with modeling long video sequences with high complexity. Recently, the state space models (SSMs) represented by Mamba are known for their impressive performance on capturing long-range dependencies from long sequences. In this paper, we propose the PhysMamba, a Mamba-based framework, to efficiently represent long-range physiological dependencies from facial videos. Specifically, we introduce the Temporal Difference Mamba block to first enhance local dynamic differences and further model the long-range spatio-temporal context. Moreover, a dual-stream SlowFast architecture is utilized to fuse the multi-scale temporal features. Extensive experiments are conducted on three benchmark datasets to demonstrate the superiority and efficiency of PhysMamba. The codes are available at https://github.com/Chaoqi31/PhysMamba",
+    "link": "https://arxiv.org/abs/2409.12031",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Chaoqi31/PhysMamba"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "SFDA-rPPG: Source-Free Domain Adaptive Remote Physiological Measurement with Spatio-Temporal Consistency",
+    "summary": "arXiv:2409.12040v1 Announce Type: new \nAbstract: Remote Photoplethysmography (rPPG) is a non-contact method that uses facial video to predict changes in blood volume, enabling physiological metrics measurement. Traditional rPPG models often struggle with poor generalization capacity in unseen domains. Current solutions to this problem is to improve its generalization in the target domain through Domain Generalization (DG) or Domain Adaptation (DA). However, both traditional methods require access to both source domain data and target domain data, which cannot be implemented in scenarios with limited access to source data, and another issue is the privacy of accessing source domain data. In this paper, we propose the first Source-free Domain Adaptation benchmark for rPPG measurement (SFDA-rPPG), which overcomes these limitations by enabling effective domain adaptation without access to source domain data. Our framework incorporates a Three-Branch Spatio-Temporal Consistency Network (TSTC-Net) to enhance feature consistency across domains. Furthermore, we propose a new rPPG distribution alignment loss based on the Frequency-domain Wasserstein Distance (FWD), which leverages optimal transport to align power spectrum distributions across domains effectively and further enforces the alignment of the three branches. Extensive cross-domain experiments and ablation studies demonstrate the effectiveness of our proposed method in source-free domain adaptation settings. Our findings highlight the significant contribution of the proposed FWD loss for distributional alignment, providing a valuable reference for future research and applications. The source code is available at https://github.com/XieYiping66/SFDA-rPPG",
+    "link": "https://arxiv.org/abs/2409.12040",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/XieYiping66/SFDA-rPPG"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Massively Multi-Person 3D Human Motion Forecasting with Scene Context",
+    "summary": "arXiv:2409.12189v1 Announce Type: new \nAbstract: Forecasting long-term 3D human motion is challenging: the stochasticity of human behavior makes it hard to generate realistic human motion from the input sequence alone. Information on the scene environment and the motion of nearby people can greatly aid the generation process. We propose a scene-aware social transformer model (SAST) to forecast long-term (10s) human motion motion. Unlike previous models, our approach can model interactions between both widely varying numbers of people and objects in a scene. We combine a temporal convolutional encoder-decoder architecture with a Transformer-based bottleneck that allows us to efficiently combine motion and scene information. We model the conditional motion distribution using denoising diffusion models. We benchmark our approach on the Humans in Kitchens dataset, which contains 1 to 16 persons and 29 to 50 objects that are visible simultaneously. Our model outperforms other approaches in terms of realism and diversity on different metrics and in a user study. Code is available at https://github.com/felixbmuller/SAST.",
+    "link": "https://arxiv.org/abs/2409.12189",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/felixbmuller/SAST."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution",
+    "summary": "arXiv:2409.12191v1 Announce Type: new \nAbstract: We present the Qwen2-VL Series, an advanced upgrade of the previous Qwen-VL models that redefines the conventional predetermined-resolution approach in visual processing. Qwen2-VL introduces the Naive Dynamic Resolution mechanism, which enables the model to dynamically process images of varying resolutions into different numbers of visual tokens. This approach allows the model to generate more efficient and accurate visual representations, closely aligning with human perceptual processes. The model also integrates Multimodal Rotary Position Embedding (M-RoPE), facilitating the effective fusion of positional information across text, images, and videos. We employ a unified paradigm for processing both images and videos, enhancing the model's visual perception capabilities. To explore the potential of large multimodal models, Qwen2-VL investigates the scaling laws for large vision-language models (LVLMs). By scaling both the model size-with versions at 2B, 8B, and 72B parameters-and the amount of training data, the Qwen2-VL Series achieves highly competitive performance. Notably, the Qwen2-VL-72B model achieves results comparable to leading models such as GPT-4o and Claude3.5-Sonnet across various multimodal benchmarks, outperforming other generalist models. Code is available at \\url{https://github.com/QwenLM/Qwen2-VL}.",
+    "link": "https://arxiv.org/abs/2409.12191",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/QwenLM/Qwen2-VL}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Vista3D: Unravel the 3D Darkside of a Single Image",
+    "summary": "arXiv:2409.12193v1 Announce Type: new \nAbstract: We embark on the age-old quest: unveiling the hidden dimensions of objects from mere glimpses of their visible parts. To address this, we present Vista3D, a framework that realizes swift and consistent 3D generation within a mere 5 minutes. At the heart of Vista3D lies a two-phase approach: the coarse phase and the fine phase. In the coarse phase, we rapidly generate initial geometry with Gaussian Splatting from a single image. In the fine phase, we extract a Signed Distance Function (SDF) directly from learned Gaussian Splatting, optimizing it with a differentiable isosurface representation. Furthermore, it elevates the quality of generation by using a disentangled representation with two independent implicit functions to capture both visible and obscured aspects of objects. Additionally, it harmonizes gradients from 2D diffusion prior with 3D-aware diffusion priors by angular diffusion prior composition. Through extensive evaluation, we demonstrate that Vista3D effectively sustains a balance between the consistency and diversity of the generated 3D objects. Demos and code will be available at https://github.com/florinshen/Vista3D.",
+    "link": "https://arxiv.org/abs/2409.12193",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/florinshen/Vista3D."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "NCT-CRC-HE: Not All Histopathological Datasets Are Equally Useful",
+    "summary": "arXiv:2409.11546v1 Announce Type: cross \nAbstract: Numerous deep learning-based solutions have been proposed for histopathological image analysis over the past years. While they usually demonstrate exceptionally high accuracy, one key question is whether their precision might be affected by low-level image properties not related to histopathology but caused by microscopy image handling and pre-processing. In this paper, we analyze a popular NCT-CRC-HE-100K colorectal cancer dataset used in numerous prior works and show that both this dataset and the obtained results may be affected by data-specific biases. The most prominent revealed dataset issues are inappropriate color normalization, severe JPEG artifacts inconsistent between different classes, and completely corrupted tissue samples resulting from incorrect image dynamic range handling. We show that even the simplest model using only 3 features per image (red, green and blue color intensities) can demonstrate over 50% accuracy on this 9-class dataset, while using color histogram not explicitly capturing cell morphology features yields over 82% accuracy. Moreover, we show that a basic EfficientNet-B0 ImageNet pretrained model can achieve over 97.7% accuracy on this dataset, outperforming all previously proposed solutions developed for this task, including dedicated foundation histopathological models and large cell morphology-aware neural networks. The NCT-CRC-HE dataset is publicly available and can be freely used to replicate the presented results. The codes and pre-trained models used in this paper are available at https://github.com/gmalivenko/NCT-CRC-HE-experiments",
+    "link": "https://arxiv.org/abs/2409.11546",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/gmalivenko/NCT-CRC-HE-experiments"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Multi-Domain Data Aggregation for Axon and Myelin Segmentation in Histology Images",
+    "summary": "arXiv:2409.11552v1 Announce Type: cross \nAbstract: Quantifying axon and myelin properties (e.g., axon diameter, myelin thickness, g-ratio) in histology images can provide useful information about microstructural changes caused by neurodegenerative diseases. Automatic tissue segmentation is an important tool for these datasets, as a single stained section can contain up to thousands of axons. Advances in deep learning have made this task quick and reliable with minimal overhead, but a deep learning model trained by one research group will hardly ever be usable by other groups due to differences in their histology training data. This is partly due to subject diversity (different body parts, species, genetics, pathologies) and also to the range of modern microscopy imaging techniques resulting in a wide variability of image features (i.e., contrast, resolution). There is a pressing need to make AI accessible to neuroscience researchers to facilitate and accelerate their workflow, but publicly available models are scarce and poorly maintained. Our approach is to aggregate data from multiple imaging modalities (bright field, electron microscopy, Raman spectroscopy) and species (mouse, rat, rabbit, human), to create an open-source, durable tool for axon and myelin segmentation. Our generalist model makes it easier for researchers to process their data and can be fine-tuned for better performance on specific domains. We study the benefits of different aggregation schemes. This multi-domain segmentation model performs better than single-modality dedicated learners (p=0.03077), generalizes better on out-of-distribution data and is easier to use and maintain. Importantly, we package the segmentation tool into a well-maintained open-source software ecosystem (see https://github.com/axondeepseg/axondeepseg).",
+    "link": "https://arxiv.org/abs/2409.11552",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/axondeepseg/axondeepseg)."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "NT-ViT: Neural Transcoding Vision Transformers for EEG-to-fMRI Synthesis",
+    "summary": "arXiv:2409.11836v1 Announce Type: cross \nAbstract: This paper introduces the Neural Transcoding Vision Transformer (\\modelname), a generative model designed to estimate high-resolution functional Magnetic Resonance Imaging (fMRI) samples from simultaneous Electroencephalography (EEG) data. A key feature of \\modelname is its Domain Matching (DM) sub-module which effectively aligns the latent EEG representations with those of fMRI volumes, enhancing the model's accuracy and reliability. Unlike previous methods that tend to struggle with fidelity and reproducibility of images, \\modelname addresses these challenges by ensuring methodological integrity and higher-quality reconstructions which we showcase through extensive evaluation on two benchmark datasets; \\modelname outperforms the current state-of-the-art by a significant margin in both cases, e.g. achieving a $10\\times$ reduction in RMSE and a $3.14\\times$ increase in SSIM on the Oddball dataset. An ablation study also provides insights into the contribution of each component to the model's overall effectiveness. This development is critical in offering a new approach to lessen the time and financial constraints typically linked with high-resolution brain imaging, thereby aiding in the swift and precise diagnosis of neurological disorders. Although it is not a replacement for actual fMRI but rather a step towards making such imaging more accessible, we believe that it represents a pivotal advancement in clinical practice and neuroscience research. Code is available at \\url{https://github.com/rom42pla/ntvit}.",
+    "link": "https://arxiv.org/abs/2409.11836",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/rom42pla/ntvit}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Autopet III challenge: Incorporating anatomical knowledge into nnUNet for lesion segmentation in PET/CT",
+    "summary": "arXiv:2409.12155v1 Announce Type: cross \nAbstract: Lesion segmentation in PET/CT imaging is essential for precise tumor characterization, which supports personalized treatment planning and enhances diagnostic precision in oncology. However, accurate manual segmentation of lesions is time-consuming and prone to inter-observer variability. Given the rising demand and clinical use of PET/CT, automated segmentation methods, particularly deep-learning-based approaches, have become increasingly more relevant. The autoPET III Challenge focuses on advancing automated segmentation of tumor lesions in PET/CT images in a multitracer multicenter setting, addressing the clinical need for quantitative, robust, and generalizable solutions. Building on previous challenges, the third iteration of the autoPET challenge introduces a more diverse dataset featuring two different tracers (FDG and PSMA) from two clinical centers. To this extent, we developed a classifier that identifies the tracer of the given PET/CT based on the Maximum Intensity Projection of the PET scan. We trained two individual nnUNet-ensembles for each tracer where anatomical labels are included as a multi-label task to enhance the model's performance. Our final submission achieves cross-validation Dice scores of 76.90% and 61.33% for the publicly available FDG and PSMA datasets, respectively. The code is available at https://github.com/hakal104/autoPETIII/ .",
+    "link": "https://arxiv.org/abs/2409.12155",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/hakal104/autoPETIII/"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Unsupervised Cross-domain Pulmonary Nodule Detection without Source Data",
+    "summary": "arXiv:2304.01085v2 Announce Type: replace \nAbstract: Cross-domain pulmonary nodule detection suffers from performance degradation due to a large shift of data distributions between the source and target domain. Besides, considering the high cost of medical data annotation, it is often assumed that the target images are unlabeled. Existing approaches have made much progress for this unsupervised domain adaptation setting. However, this setting is still rarely plausible in medical applications since the source medical data are often not accessible due to privacy concerns. This motivates us to propose a Source-free Unsupervised cross-domain method for Pulmonary nodule detection (SUP), named Instance-level Contrastive Instruction fine-tuning framework (ICI). It first adapts the source model to the target domain by utilizing instance-level contrastive learning. Then the adapted model is trained in a teacher-student interaction manner, and a weighted entropy loss is incorporated to further improve the accuracy. We establish a benchmark by adapting a pre-trained source model to three popular datasets for pulmonary nodule detection. To the best of our knowledge, this represents the first exploration of source-free unsupervised domain adaptation in medical image object detection. Our extensive evaluations reveal that SUP-ICI substantially surpasses existing state-of-the-art approaches, achieving FROC score improvements ranging from 8.98% to 16.05%. This breakthrough not only sets a new precedent for domain adaptation techniques in medical imaging but also significantly advances the field toward overcoming challenges posed by data privacy and availability. Code: https://github.com/Ruixxxx/SFUDA.",
+    "link": "https://arxiv.org/abs/2304.01085",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Ruixxxx/SFUDA."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MARS: Mask Attention Refinement with Sequential Quadtree Nodes for Car Damage Instance Segmentation",
+    "summary": "arXiv:2305.04743v5 Announce Type: replace \nAbstract: Evaluating car damages from misfortune is critical to the car insurance industry. However, the accuracy is still insufficient for real-world applications since the deep learning network is not designed for car damage images as inputs, and its segmented masks are still very coarse. This paper presents MARS (Mask Attention Refinement with Sequential quadtree nodes) for car damage instance segmentation. Our MARS represents self-attention mechanisms to draw global dependencies between the sequential quadtree nodes layer and quadtree transformer to recalibrate channel weights and predict highly accurate instance masks. Our extensive experiments demonstrate that MARS outperforms state-of-the-art (SOTA) instance segmentation methods on three popular benchmarks such as Mask R-CNN [9], PointRend [13], and Mask Transfiner [12], by a large margin of +1.3 maskAP-based R50-FPN backbone and +2.3 maskAP-based R101-FPN backbone on Thai car-damage dataset. Our demos are available at https://github.com/kaopanboonyuen/MARS.",
+    "link": "https://arxiv.org/abs/2305.04743",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/kaopanboonyuen/MARS."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Multiscale Feature Learning Using Co-Tuplet Loss for Offline Handwritten Signature Verification",
+    "summary": "arXiv:2308.00428v4 Announce Type: replace \nAbstract: Handwritten signature verification, crucial for legal and financial institutions, faces challenges including inter-writer similarity, intra-writer variations, and limited signature samples. To address these, we introduce the MultiScale Signature feature learning Network (MS-SigNet) with the co-tuplet loss, a novel metric learning loss designed for offline handwritten signature verification. MS-SigNet learns both global and regional signature features from multiple spatial scales, enhancing feature discrimination. This approach effectively distinguishes genuine signatures from skilled forgeries by capturing overall strokes and detailed local differences. The co-tuplet loss, focusing on multiple positive and negative examples, overcomes the limitations of typical metric learning losses by addressing inter-writer similarity and intra-writer variations and emphasizing informative examples. We also present HanSig, a large-scale Chinese signature dataset to support robust system development for this language. The dataset is accessible at \\url{https://github.com/hsinmin/HanSig}. Experimental results on four benchmark datasets in different languages demonstrate the promising performance of our method in comparison to state-of-the-art approaches.",
+    "link": "https://arxiv.org/abs/2308.00428",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/hsinmin/HanSig}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Adaptive Semantic Consistency for Cross-domain Few-shot Classification",
+    "summary": "arXiv:2308.00727v2 Announce Type: replace \nAbstract: Cross-domain few-shot classification (CD-FSC) aims to identify novel target classes with a few samples, assuming that there exists a domain shift between source and target domains. Existing state-of-the-art practices typically pre-train on source domain and then finetune on the few-shot target data to yield task-adaptive representations. Despite promising progress, these methods are prone to overfitting the limited target distribution since data-scarcity and ignore the transferable knowledge learned in the source domain. To alleviate this problem, we propose a simple plug-and-play Adaptive Semantic Consistency (ASC) framework, which improves cross-domain robustness by preserving source transfer capability during the finetuning stage. Concretely, we reuse the source images in the pretraining phase and design an adaptive weight assignment strategy to highlight the samples similar to target domain, aiming to aggregate informative target-related knowledge from source domain. Subsequently, a semantic consistency regularization is applied to constrain the consistency between the semantic features of the source images output by the source model and target model. In this way, the proposed ASC enables explicit transfer of source domain knowledge to prevent the model from overfitting the target domain. Extensive experiments on multiple benchmarks demonstrate the effectiveness of the proposed ASC, and ASC provides consistent improvements over the baselines. The source code is released at https://github.com/luhc666/ASC-CDFSL.",
+    "link": "https://arxiv.org/abs/2308.00727",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/luhc666/ASC-CDFSL."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "High-Resolution Maps of Left Atrial Displacements and Strains Estimated with 3D Cine MRI using Online Learning Neural Networks",
+    "summary": "arXiv:2312.09387v2 Announce Type: replace \nAbstract: The functional analysis of the left atrium (LA) is important for evaluating cardiac health and understanding diseases like atrial fibrillation. Cine MRI is ideally placed for the detailed 3D characterization of LA motion and deformation but is lacking appropriate acquisition and analysis tools. Here, we propose tools for the Analysis for Left Atrial Displacements and DeformatIons using online learning neural Networks (Aladdin) and present a technical feasibility study on how Aladdin can characterize 3D LA function globally and regionally. Aladdin includes an online segmentation and image registration network, and a strain calculation pipeline tailored to the LA. We create maps of LA Displacement Vector Field (DVF) magnitude and LA principal strain values from images of 10 healthy volunteers and 8 patients with cardiovascular disease (CVD), of which 2 had large left ventricular ejection fraction (LVEF) impairment. We additionally create an atlas of these biomarkers using the data from the healthy volunteers. Results showed that Aladdin can accurately track the LA wall across the cardiac cycle and characterize its motion and deformation. Global LA function markers assessed with Aladdin agree well with estimates from 2D Cine MRI. A more marked active contraction phase was observed in the healthy cohort, while the CVD LVEF group showed overall reduced LA function. Aladdin is uniquely able to identify LA regions with abnormal deformation metrics that may indicate focal pathology. We expect Aladdin to have important clinical applications as it can non-invasively characterize atrial pathophysiology. All source code and data are available at: https://github.com/cgalaz01/aladdin_cmr_la.",
+    "link": "https://arxiv.org/abs/2312.09387",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/cgalaz01/aladdin_cmr_la."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "QNCD: Quantization Noise Correction for Diffusion Models",
+    "summary": "arXiv:2403.19140v2 Announce Type: replace \nAbstract: Diffusion models have revolutionized image synthesis, setting new benchmarks in quality and creativity. However, their widespread adoption is hindered by the intensive computation required during the iterative denoising process. Post-training quantization (PTQ) presents a solution to accelerate sampling, aibeit at the expense of sample quality, extremely in low-bit settings. Addressing this, our study introduces a unified Quantization Noise Correction Scheme (QNCD), aimed at minishing quantization noise throughout the sampling process. We identify two primary quantization challenges: intra and inter quantization noise. Intra quantization noise, mainly exacerbated by embeddings in the resblock module, extends activation quantization ranges, increasing disturbances in each single denosing step. Besides, inter quantization noise stems from cumulative quantization deviations across the entire denoising process, altering data distributions step-by-step. QNCD combats these through embedding-derived feature smoothing for eliminating intra quantization noise and an effective runtime noise estimatiation module for dynamicly filtering inter quantization noise. Extensive experiments demonstrate that our method outperforms previous quantization methods for diffusion models, achieving lossless results in W4A8 and W8A8 quantization settings on ImageNet (LDM-4). Code is available at: https://github.com/huanpengchu/QNCD",
+    "link": "https://arxiv.org/abs/2403.19140",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/huanpengchu/QNCD"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "HENet: Hybrid Encoding for End-to-end Multi-task 3D Perception from Multi-view Cameras",
+    "summary": "arXiv:2404.02517v3 Announce Type: replace \nAbstract: Three-dimensional perception from multi-view cameras is a crucial component in autonomous driving systems, which involves multiple tasks like 3D object detection and bird's-eye-view (BEV) semantic segmentation. To improve perception precision, large image encoders, high-resolution images, and long-term temporal inputs have been adopted in recent 3D perception models, bringing remarkable performance gains. However, these techniques are often incompatible in training and inference scenarios due to computational resource constraints. Besides, modern autonomous driving systems prefer to adopt an end-to-end framework for multi-task 3D perception, which can simplify the overall system architecture and reduce the implementation complexity. However, conflict between tasks often arises when optimizing multiple tasks jointly within an end-to-end 3D perception model. To alleviate these issues, we present an end-to-end framework named HENet for multi-task 3D perception in this paper. Specifically, we propose a hybrid image encoding network, using a large image encoder for short-term frames and a small image encoder for long-term temporal frames. Then, we introduce a temporal feature integration module based on the attention mechanism to fuse the features of different frames extracted by the two aforementioned hybrid image encoders. Finally, according to the characteristics of each perception task, we utilize BEV features of different grid sizes, independent BEV encoders, and task decoders for different tasks. Experimental results show that HENet achieves state-of-the-art end-to-end multi-task 3D perception results on the nuScenes benchmark, including 3D object detection and BEV semantic segmentation. The source code and models will be released at https://github.com/VDIGPKU/HENet.",
+    "link": "https://arxiv.org/abs/2404.02517",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/VDIGPKU/HENet."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "SEDMamba: Enhancing Selective State Space Modelling with Bottleneck Mechanism and Fine-to-Coarse Temporal Fusion for Efficient Error Detection in Robot-Assisted Surgery",
+    "summary": "arXiv:2406.15920v3 Announce Type: replace \nAbstract: Automated detection of surgical errors can improve robotic-assisted surgery. Despite promising progress, existing methods still face challenges in capturing rich temporal context to establish long-term dependencies while maintaining computational efficiency. In this paper, we propose a novel hierarchical model named SEDMamba, which incorporates the selective state space model (SSM) into surgical error detection, facilitating efficient long sequence modelling with linear complexity. SEDMamba enhances selective SSM with a bottleneck mechanism and fine-to-coarse temporal fusion (FCTF) to detect and temporally localize surgical errors in long videos. The bottleneck mechanism compresses and restores features within their spatial dimension, thereby reducing computational complexity. FCTF utilizes multiple dilated 1D convolutional layers to merge temporal information across diverse scale ranges, accommodating errors of varying duration. Our work also contributes the first-of-its-kind, frame-level, in-vivo surgical error dataset to support error detection in real surgical cases. Specifically, we deploy the clinically validated observational clinical human reliability assessment tool (OCHRA) to annotate the errors during suturing tasks in an open-source radical prostatectomy dataset (SAR-RARP50). Experimental results demonstrate that our SEDMamba outperforms state-of-the-art methods with at least 1.82% AUC and 3.80% AP performance gains with significantly reduced computational complexity. The corresponding error annotations, code and models will be released at https://github.com/wzjialang/SEDMamba.",
+    "link": "https://arxiv.org/abs/2406.15920",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/wzjialang/SEDMamba."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "V2I-Calib: A Novel Calibration Approach for Collaborative Vehicle and Infrastructure LiDAR Systems",
+    "summary": "arXiv:2407.10195v2 Announce Type: replace \nAbstract: Cooperative LiDAR systems integrating vehicles and road infrastructure, termed V2I calibration, exhibit substantial potential, yet their deployment encounters numerous challenges. A pivotal aspect of ensuring data accuracy and consistency across such systems involves the calibration of LiDAR units across heterogeneous vehicular and infrastructural endpoints. This necessitates the development of calibration methods that are both real-time and robust, particularly those that can ensure robust performance in urban canyon scenarios without relying on initial positioning values. Accordingly, this paper introduces a novel approach to V2I calibration, leveraging spatial association information among perceived objects. Central to this method is the innovative Overall Intersection over Union (oIoU) metric, which quantifies the correlation between targets identified by vehicle and infrastructure systems, thereby facilitating the real-time monitoring of calibration results. Our approach involves identifying common targets within the perception results of vehicle and infrastructure LiDAR systems through the construction of an affinity matrix. These common targets then form the basis for the calculation and optimization of extrinsic parameters. Comparative and ablation studies conducted using the DAIR-V2X dataset substantiate the superiority of our approach. For further insights and resources, our project repository is accessible at https://github.com/MassimoQu/v2i-calib.",
+    "link": "https://arxiv.org/abs/2407.10195",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/MassimoQu/v2i-calib."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Accelerating Point Cloud Ground Segmentation: From Mechanical to Solid-State Lidars",
+    "summary": "arXiv:2408.10404v2 Announce Type: replace \nAbstract: In this study, we propose a novel parallel processing method for point cloud ground segmentation, aimed at the technology evolution from mechanical to solid-state Lidar (SSL). We first benchmark point-based, grid-based, and range image-based ground segmentation algorithms using the SemanticKITTI dataset. Our results indicate that the range image-based method offers superior performance and robustness, particularly in resilience to frame slicing. Implementing the proposed algorithm on an FPGA demonstrates significant improvements in processing speed and scalability of resource usage. Additionally, we develop a custom dataset using camera-SSL equipment on our test vehicle to validate the effectiveness of the parallel processing approach for SSL frames in real world, achieving processing rates up to 30.9 times faster than CPU implementations. These findings underscore the potential of parallel processing strategies to enhance Lidar technologies for advanced perception tasks in autonomous vehicles and robotics. The data and code will be available post-publication on our GitHub repository: \\url{https://github.com/WPI-APA-Lab/GroundSeg-Solid-State-Lidar-Parallel-Processing}",
+    "link": "https://arxiv.org/abs/2408.10404",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/WPI-APA-Lab/GroundSeg-Solid-State-Lidar-Parallel-Processing}"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "How to Determine the Preferred Image Distribution of a Black-Box Vision-Language Model?",
+    "summary": "arXiv:2409.02253v2 Announce Type: replace \nAbstract: Large foundation models have revolutionized the field, yet challenges remain in optimizing multi-modal models for specialized visual tasks. We propose a novel, generalizable methodology to identify preferred image distributions for black-box Vision-Language Models (VLMs) by measuring output consistency across varied input prompts. Applying this to different rendering types of 3D objects, we demonstrate its efficacy across various domains requiring precise interpretation of complex structures, with a focus on Computer-Aided Design (CAD) as an exemplar field. We further refine VLM outputs using in-context learning with human feedback, significantly enhancing explanation quality. To address the lack of benchmarks in specialized domains, we introduce CAD-VQA, a new dataset for evaluating VLMs on CAD-related visual question answering tasks. Our evaluation of state-of-the-art VLMs on CAD-VQA establishes baseline performance levels, providing a framework for advancing VLM capabilities in complex visual reasoning tasks across various fields requiring expert-level visual interpretation. We release the dataset and evaluation codes at \\url{https://github.com/asgsaeid/cad_vqa}.",
+    "link": "https://arxiv.org/abs/2409.02253",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/asgsaeid/cad_vqa}."
     ],
     "huggingface_urls": [],
     "source": "arXiv"
   },
   {
     "title": "High-Order Evolving Graphs for Enhanced Representation of Traffic Dynamics",
-    "summary": "arXiv:2409.11206v1 Announce Type: new \nAbstract: We present an innovative framework for traffic dynamics analysis using High-Order Evolving Graphs, designed to improve spatio-temporal representations in autonomous driving contexts. Our approach constructs temporal bidirectional bipartite graphs that effectively model the complex interactions within traffic scenes in real-time. By integrating Graph Neural Networks (GNNs) with high-order multi-aggregation strategies, we significantly enhance the modeling of traffic scene dynamics, providing a more accurate and detailed analysis of these interactions. Additionally, we incorporate inductive learning techniques inspired by the GraphSAGE framework, enabling our model to adapt to new and unseen traffic scenarios without the need for retraining, thus ensuring robust generalization. Through extensive experiments on the ROAD and ROAD Waymo datasets, we establish a comprehensive baseline for further developments, demonstrating the potential of our method in accurately capturing traffic behavior. Our results emphasize the value of high-order statistical moments and feature-gated attention mechanisms in improving traffic behavior analysis, laying the groundwork for advancing autonomous driving technologies. Our source code is available at: https://github.com/Addy-1998/High\\_Order\\_Graphs",
+    "summary": "arXiv:2409.11206v2 Announce Type: replace \nAbstract: We present an innovative framework for traffic dynamics analysis using High-Order Evolving Graphs, designed to improve spatio-temporal representations in autonomous driving contexts. Our approach constructs temporal bidirectional bipartite graphs that effectively model the complex interactions within traffic scenes in real-time. By integrating Graph Neural Networks (GNNs) with high-order multi-aggregation strategies, we significantly enhance the modeling of traffic scene dynamics, providing a more accurate and detailed analysis of these interactions. Additionally, we incorporate inductive learning techniques inspired by the GraphSAGE framework, enabling our model to adapt to new and unseen traffic scenarios without the need for retraining, thus ensuring robust generalization. Through extensive experiments on the ROAD and ROAD Waymo datasets, we establish a comprehensive baseline for further developments, demonstrating the potential of our method in accurately capturing traffic behavior. Our results emphasize the value of high-order statistical moments and feature-gated attention mechanisms in improving traffic behavior analysis, laying the groundwork for advancing autonomous driving technologies. Our source code is available at: https://github.com/Addy-1998/High_Order_Graphs",
     "link": "https://arxiv.org/abs/2409.11206",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
-      "https://github.com/Addy-1998/High\\_Order\\_Graphs"
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "STCMOT: Spatio-Temporal Cohesion Learning for UAV-Based Multiple Object Tracking",
-    "summary": "arXiv:2409.11234v1 Announce Type: new \nAbstract: Multiple object tracking (MOT) in Unmanned Aerial Vehicle (UAV) videos is important for diverse applications in computer vision. Current MOT trackers rely on accurate object detection results and precise matching of target reidentification (ReID). These methods focus on optimizing target spatial attributes while overlooking temporal cues in modelling object relationships, especially for challenging tracking conditions such as object deformation and blurring, etc. To address the above-mentioned issues, we propose a novel Spatio-Temporal Cohesion Multiple Object Tracking framework (STCMOT), which utilizes historical embedding features to model the representation of ReID and detection features in a sequential order. Concretely, a temporal embedding boosting module is introduced to enhance the discriminability of individual embedding based on adjacent frame cooperation. While the trajectory embedding is then propagated by a temporal detection refinement module to mine salient target locations in the temporal field. Extensive experiments on the VisDrone2019 and UAVDT datasets demonstrate our STCMOT sets a new state-of-the-art performance in MOTA and IDF1 metrics. The source codes are released at https://github.com/ydhcg-BoBo/STCMOT.",
-    "link": "https://arxiv.org/abs/2409.11234",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/ydhcg-BoBo/STCMOT."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "SLAck: Semantic, Location, and Appearance Aware Open-Vocabulary Tracking",
-    "summary": "arXiv:2409.11235v1 Announce Type: new \nAbstract: Open-vocabulary Multiple Object Tracking (MOT) aims to generalize trackers to novel categories not in the training set. Currently, the best-performing methods are mainly based on pure appearance matching. Due to the complexity of motion patterns in the large-vocabulary scenarios and unstable classification of the novel objects, the motion and semantics cues are either ignored or applied based on heuristics in the final matching steps by existing methods. In this paper, we present a unified framework SLAck that jointly considers semantics, location, and appearance priors in the early steps of association and learns how to integrate all valuable information through a lightweight spatial and temporal object graph. Our method eliminates complex post-processing heuristics for fusing different cues and boosts the association performance significantly for large-scale open-vocabulary tracking. Without bells and whistles, we outperform previous state-of-the-art methods for novel classes tracking on the open-vocabulary MOT and TAO TETA benchmarks. Our code is available at \\href{https://github.com/siyuanliii/SLAck}{github.com/siyuanliii/SLAck}.",
-    "link": "https://arxiv.org/abs/2409.11235",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/siyuanliii/SLAck}{github.com/siyuanliii/SLAck}."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "fMRI-3D: A Comprehensive Dataset for Enhancing fMRI-based 3D Reconstruction",
-    "summary": "arXiv:2409.11315v1 Announce Type: new \nAbstract: Reconstructing 3D visuals from functional Magnetic Resonance Imaging (fMRI) data, introduced as Recon3DMind in our conference work, is of significant interest to both cognitive neuroscience and computer vision. To advance this task, we present the fMRI-3D dataset, which includes data from 15 participants and showcases a total of 4768 3D objects. The dataset comprises two components: fMRI-Shape, previously introduced and accessible at https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape, and fMRI-Objaverse, proposed in this paper and available at https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse. fMRI-Objaverse includes data from 5 subjects, 4 of whom are also part of the Core set in fMRI-Shape, with each subject viewing 3142 3D objects across 117 categories, all accompanied by text captions. This significantly enhances the diversity and potential applications of the dataset. Additionally, we propose MinD-3D, a novel framework designed to decode 3D visual information from fMRI signals. The framework first extracts and aggregates features from fMRI data using a neuro-fusion encoder, then employs a feature-bridge diffusion model to generate visual features, and finally reconstructs the 3D object using a generative transformer decoder. We establish new benchmarks by designing metrics at both semantic and structural levels to evaluate model performance. Furthermore, we assess our model's effectiveness in an Out-of-Distribution setting and analyze the attribution of the extracted features and the visual ROIs in fMRI signals. Our experiments demonstrate that MinD-3D not only reconstructs 3D objects with high semantic and spatial accuracy but also deepens our understanding of how human brain processes 3D visual information. Project page at: https://jianxgao.github.io/MinD-3D.",
-    "link": "https://arxiv.org/abs/2409.11315",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [],
-    "huggingface_urls": [
-      "https://huggingface.co/datasets/Fudan-fMRI/fMRI-Shape,",
-      "https://huggingface.co/datasets/Fudan-fMRI/fMRI-Objaverse."
-    ],
-    "source": "arXiv"
-  },
-  {
-    "title": "MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping",
-    "summary": "arXiv:2409.11316v1 Announce Type: new \nAbstract: Few-shot Semantic Segmentation addresses the challenge of segmenting objects in query images with only a handful of annotated examples. However, many previous state-of-the-art methods either have to discard intricate local semantic features or suffer from high computational complexity. To address these challenges, we propose a new Few-shot Semantic Segmentation framework based on the transformer architecture. Our approach introduces the spatial transformer decoder and the contextual mask generation module to improve the relational understanding between support and query images. Moreover, we introduce a multi-scale decoder to refine the segmentation mask by incorporating features from different resolutions in a hierarchical manner. Additionally, our approach integrates global features from intermediate encoder stages to improve contextual understanding, while maintaining a lightweight structure to reduce complexity. This balance between performance and efficiency enables our method to achieve state-of-the-art results on benchmark datasets such as $PASCAL-5^i$ and $COCO-20^i$ in both 1-shot and 5-shot settings. Notably, our model with only 1.5 million parameters demonstrates competitive performance while overcoming limitations of existing methodologies. https://github.com/amirrezafateh/MSDNet",
-    "link": "https://arxiv.org/abs/2409.11316",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/amirrezafateh/MSDNet"
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "OmniGen: Unified Image Generation",
-    "summary": "arXiv:2409.11340v1 Announce Type: new \nAbstract: In this work, we introduce OmniGen, a new diffusion model for unified image generation. Unlike popular diffusion models (e.g., Stable Diffusion), OmniGen no longer requires additional modules such as ControlNet or IP-Adapter to process diverse control conditions. OmniGenis characterized by the following features: 1) Unification: OmniGen not only demonstrates text-to-image generation capabilities but also inherently supports other downstream tasks, such as image editing, subject-driven generation, and visual-conditional generation. Additionally, OmniGen can handle classical computer vision tasks by transforming them into image generation tasks, such as edge detection and human pose recognition. 2) Simplicity: The architecture of OmniGen is highly simplified, eliminating the need for additional text encoders. Moreover, it is more user-friendly compared to existing diffusion models, enabling complex tasks to be accomplished through instructions without the need for extra preprocessing steps (e.g., human pose estimation), thereby significantly simplifying the workflow of image generation. 3) Knowledge Transfer: Through learning in a unified format, OmniGen effectively transfers knowledge across different tasks, manages unseen tasks and domains, and exhibits novel capabilities. We also explore the model's reasoning capabilities and potential applications of chain-of-thought mechanism. This work represents the first attempt at a general-purpose image generation model, and there remain several unresolved issues. We will open-source the related resources at https://github.com/VectorSpaceLab/OmniGen to foster advancements in this field.",
-    "link": "https://arxiv.org/abs/2409.11340",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/VectorSpaceLab/OmniGen"
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "Ultrasound Image Enhancement with the Variance of Diffusion Models",
-    "summary": "arXiv:2409.11380v1 Announce Type: new \nAbstract: Ultrasound imaging, despite its widespread use in medicine, often suffers from various sources of noise and artifacts that impact the signal-to-noise ratio and overall image quality. Enhancing ultrasound images requires a delicate balance between contrast, resolution, and speckle preservation. This paper introduces a novel approach that integrates adaptive beamforming with denoising diffusion-based variance imaging to address this challenge. By applying Eigenspace-Based Minimum Variance (EBMV) beamforming and employing a denoising diffusion model fine-tuned on ultrasound data, our method computes the variance across multiple diffusion-denoised samples to produce high-quality despeckled images. This approach leverages both the inherent multiplicative noise of ultrasound and the stochastic nature of diffusion models. Experimental results on a publicly available dataset demonstrate the effectiveness of our method in achieving superior image reconstructions from single plane-wave acquisitions. The code is available at: https://github.com/Yuxin-Zhang-Jasmine/IUS2024_Diffusion.",
-    "link": "https://arxiv.org/abs/2409.11380",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/Yuxin-Zhang-Jasmine/IUS2024_Diffusion."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "WaveMixSR-V2: Enhancing Super-resolution with Higher Efficiency",
-    "summary": "arXiv:2409.10582v1 Announce Type: cross \nAbstract: Recent advancements in single image super-resolution have been predominantly driven by token mixers and transformer architectures. WaveMixSR utilized the WaveMix architecture, employing a two-dimensional discrete wavelet transform for spatial token mixing, achieving superior performance in super-resolution tasks with remarkable resource efficiency. In this work, we present an enhanced version of the WaveMixSR architecture by (1) replacing the traditional transpose convolution layer with a pixel shuffle operation and (2) implementing a multistage design for higher resolution tasks ($4\\times$). Our experiments demonstrate that our enhanced model -- WaveMixSR-V2 -- outperforms other architectures in multiple super-resolution tasks, achieving state-of-the-art for the BSD100 dataset, while also consuming fewer resources, exhibits higher parameter efficiency, lower latency and higher throughput. Our code is available at https://github.com/pranavphoenix/WaveMixSR.",
-    "link": "https://arxiv.org/abs/2409.10582",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/pranavphoenix/WaveMixSR."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "BAD: Bidirectional Auto-regressive Diffusion for Text-to-Motion Generation",
-    "summary": "arXiv:2409.10847v1 Announce Type: cross \nAbstract: Autoregressive models excel in modeling sequential dependencies by enforcing causal constraints, yet they struggle to capture complex bidirectional patterns due to their unidirectional nature. In contrast, mask-based models leverage bidirectional context, enabling richer dependency modeling. However, they often assume token independence during prediction, which undermines the modeling of sequential dependencies. Additionally, the corruption of sequences through masking or absorption can introduce unnatural distortions, complicating the learning process. To address these issues, we propose Bidirectional Autoregressive Diffusion (BAD), a novel approach that unifies the strengths of autoregressive and mask-based generative models. BAD utilizes a permutation-based corruption technique that preserves the natural sequence structure while enforcing causal dependencies through randomized ordering, enabling the effective capture of both sequential and bidirectional relationships. Comprehensive experiments show that BAD outperforms autoregressive and mask-based models in text-to-motion generation, suggesting a novel pre-training strategy for sequence modeling. The codebase for BAD is available on https://github.com/RohollahHS/BAD.",
-    "link": "https://arxiv.org/abs/2409.10847",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/RohollahHS/BAD."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "Neural Fields for Adaptive Photoacoustic Computed Tomography",
-    "summary": "arXiv:2409.10876v1 Announce Type: cross \nAbstract: Photoacoustic computed tomography (PACT) is a non-invasive imaging modality with wide medical applications. Conventional PACT image reconstruction algorithms suffer from wavefront distortion caused by the heterogeneous speed of sound (SOS) in tissue, which leads to image degradation. Accounting for these effects improves image quality, but measuring the SOS distribution is experimentally expensive. An alternative approach is to perform joint reconstruction of the initial pressure image and SOS using only the PA signals. Existing joint reconstruction methods come with limitations: high computational cost, inability to directly recover SOS, and reliance on inaccurate simplifying assumptions. Implicit neural representation, or neural fields, is an emerging technique in computer vision to learn an efficient and continuous representation of physical fields with a coordinate-based neural network. In this work, we introduce NF-APACT, an efficient self-supervised framework utilizing neural fields to estimate the SOS in service of an accurate and robust multi-channel deconvolution. Our method removes SOS aberrations an order of magnitude faster and more accurately than existing methods. We demonstrate the success of our method on a novel numerical phantom as well as an experimentally collected phantom and in vivo data. Our code and numerical phantom are available at https://github.com/Lukeli0425/NF-APACT.",
-    "link": "https://arxiv.org/abs/2409.10876",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/Lukeli0425/NF-APACT."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "SkinMamba: A Precision Skin Lesion Segmentation Architecture with Cross-Scale Global State Modeling and Frequency Boundary Guidance",
-    "summary": "arXiv:2409.10890v1 Announce Type: cross \nAbstract: Skin lesion segmentation is a crucial method for identifying early skin cancer. In recent years, both convolutional neural network (CNN) and Transformer-based methods have been widely applied. Moreover, combining CNN and Transformer effectively integrates global and local relationships, but remains limited by the quadratic complexity of Transformer. To address this, we propose a hybrid architecture based on Mamba and CNN, called SkinMamba. It maintains linear complexity while offering powerful long-range dependency modeling and local feature extraction capabilities. Specifically, we introduce the Scale Residual State Space Block (SRSSB), which captures global contextual relationships and cross-scale information exchange at a macro level, enabling expert communication in a global state. This effectively addresses challenges in skin lesion segmentation related to varying lesion sizes and inconspicuous target areas. Additionally, to mitigate boundary blurring and information loss during model downsampling, we introduce the Frequency Boundary Guided Module (FBGM), providing sufficient boundary priors to guide precise boundary segmentation, while also using the retained information to assist the decoder in the decoding process. Finally, we conducted comparative and ablation experiments on two public lesion segmentation datasets (ISIC2017 and ISIC2018), and the results demonstrate the strong competitiveness of SkinMamba in skin lesion segmentation tasks. The code is available at https://github.com/zs1314/SkinMamba.",
-    "link": "https://arxiv.org/abs/2409.10890",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/zs1314/SkinMamba."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "CUNSB-RFIE: Context-aware Unpaired Neural Schr\"{o}dinger Bridge in Retinal Fundus Image Enhancement",
-    "summary": "arXiv:2409.10966v1 Announce Type: cross \nAbstract: Retinal fundus photography is significant in diagnosing and monitoring retinal diseases. However, systemic imperfections and operator/patient-related factors can hinder the acquisition of high-quality retinal images. Previous efforts in retinal image enhancement primarily relied on GANs, which are limited by the trade-off between training stability and output diversity. In contrast, the Schr\\\"{o}dinger Bridge (SB), offers a more stable solution by utilizing Optimal Transport (OT) theory to model a stochastic differential equation (SDE) between two arbitrary distributions. This allows SB to effectively transform low-quality retinal images into their high-quality counterparts. In this work, we leverage the SB framework to propose an image-to-image translation pipeline for retinal image enhancement. Additionally, previous methods often fail to capture fine structural details, such as blood vessels. To address this, we enhance our pipeline by introducing Dynamic Snake Convolution, whose tortuous receptive field can better preserve tubular structures. We name the resulting retinal fundus image enhancement framework the Context-aware Unpaired Neural Schr\\\"{o}dinger Bridge (CUNSB-RFIE). To the best of our knowledge, this is the first endeavor to use the SB approach for retinal image enhancement. Experimental results on a large-scale dataset demonstrate the advantage of the proposed method compared to several state-of-the-art supervised and unsupervised methods in terms of image quality and performance on downstream tasks.The code is available at \\url{https://github.com/Retinal-Research/CUNSB-RFIE}.",
-    "link": "https://arxiv.org/abs/2409.10966",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/Retinal-Research/CUNSB-RFIE}."
+      "https://github.com/Addy-1998/High_Order_Graphs"
     ],
     "huggingface_urls": [],
     "source": "arXiv"
   },
   {
     "title": "Annealed Winner-Takes-All for Motion Forecasting",
-    "summary": "arXiv:2409.11172v1 Announce Type: cross \nAbstract: In autonomous driving, motion prediction aims at forecasting the future trajectories of nearby agents, helping the ego vehicle to anticipate behaviors and drive safely. A key challenge is generating a diverse set of future predictions, commonly addressed using data-driven models with Multiple Choice Learning (MCL) architectures and Winner-Takes-All (WTA) training objectives. However, these methods face initialization sensitivity and training instabilities. Additionally, to compensate for limited performance, some approaches rely on training with a large set of hypotheses, requiring a post-selection step during inference to significantly reduce the number of predictions. To tackle these issues, we take inspiration from annealed MCL, a recently introduced technique that improves the convergence properties of MCL methods through an annealed Winner-Takes-All loss (aWTA). In this paper, we demonstrate how the aWTA loss can be integrated with state-of-the-art motion forecasting models to enhance their performance using only a minimal set of hypotheses, eliminating the need for the cumbersome post-selection step. Our approach can be easily incorporated into any trajectory prediction model normally trained using WTA and yields significant improvements. To facilitate the application of our approach to future motion forecasting models, the code will be made publicly available upon acceptance: https://github.com/valeoai/MF_aWTA.",
+    "summary": "arXiv:2409.11172v2 Announce Type: replace-cross \nAbstract: In autonomous driving, motion prediction aims at forecasting the future trajectories of nearby agents, helping the ego vehicle to anticipate behaviors and drive safely. A key challenge is generating a diverse set of future predictions, commonly addressed using data-driven models with Multiple Choice Learning (MCL) architectures and Winner-Takes-All (WTA) training objectives. However, these methods face initialization sensitivity and training instabilities. Additionally, to compensate for limited performance, some approaches rely on training with a large set of hypotheses, requiring a post-selection step during inference to significantly reduce the number of predictions. To tackle these issues, we take inspiration from annealed MCL, a recently introduced technique that improves the convergence properties of MCL methods through an annealed Winner-Takes-All loss (aWTA). In this paper, we demonstrate how the aWTA loss can be integrated with state-of-the-art motion forecasting models to enhance their performance using only a minimal set of hypotheses, eliminating the need for the cumbersome post-selection step. Our approach can be easily incorporated into any trajectory prediction model normally trained using WTA and yields significant improvements. To facilitate the application of our approach to future motion forecasting models, the code will be made publicly available upon acceptance: https://github.com/valeoai/MF_aWTA.",
     "link": "https://arxiv.org/abs/2409.11172",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
+    "published": "Thu, 19 Sep 2024 00:00:00 -0400",
     "github_urls": [
       "https://github.com/valeoai/MF_aWTA."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "TTT-Unet: Enhancing U-Net with Test-Time Training Layers for biomedical image segmentation",
-    "summary": "arXiv:2409.11299v1 Announce Type: cross \nAbstract: Biomedical image segmentation is crucial for accurately diagnosing and analyzing various diseases. However, Convolutional Neural Networks (CNNs) and Transformers, the most commonly used architectures for this task, struggle to effectively capture long-range dependencies due to the inherent locality of CNNs and the computational complexity of Transformers. To address this limitation, we introduce TTT-Unet, a novel framework that integrates Test-Time Training (TTT) layers into the traditional U-Net architecture for biomedical image segmentation. TTT-Unet dynamically adjusts model parameters during the testing time, enhancing the model's ability to capture both local and long-range features. We evaluate TTT-Unet on multiple medical imaging datasets, including 3D abdominal organ segmentation in CT and MR images, instrument segmentation in endoscopy images, and cell segmentation in microscopy images. The results demonstrate that TTT-Unet consistently outperforms state-of-the-art CNN-based and Transformer-based segmentation models across all tasks. The code is available at https://github.com/rongzhou7/TTT-Unet.",
-    "link": "https://arxiv.org/abs/2409.11299",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/rongzhou7/TTT-Unet."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "Sparkles: Unlocking Chats Across Multiple Images for Multimodal Instruction-Following Models",
-    "summary": "arXiv:2308.16463v3 Announce Type: replace \nAbstract: Large language models exhibit enhanced zero-shot performance on various tasks when fine-tuned with instruction-following data. Multimodal instruction-following models extend these capabilities by integrating both text and images. However, existing models such as MiniGPT-4 and LLaVA face challenges in maintaining dialogue coherence in scenarios involving multiple images. A primary reason is the lack of a specialized dataset for this critical application. To bridge these gaps, we introduce SparklesDialogue, the first machine-generated dialogue dataset tailored for word-level interleaved multi-image and text interactions. Furthermore, we construct SparklesEval, a GPT-assisted benchmark for quantitatively assessing a model's conversational competence across multiple images and dialogue turns. We then present SparklesChat, a multimodal instruction-following model for open-ended dialogues across multiple images. Our experiments validate the effectiveness of training SparklesChat with SparklesDialogue based on MiniGPT-4 and LLaVA-v1.5, which enhances comprehension across multiple images and dialogue turns, and does not compromise single-image understanding capabilities. Qualitative evaluations further demonstrate SparklesChat's generality in handling real-world applications. All resources related to this study are publicly available at https://github.com/HYPJUDY/Sparkles.",
-    "link": "https://arxiv.org/abs/2308.16463",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/HYPJUDY/Sparkles."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "GenQ: Quantization in Low Data Regimes with Generative Synthetic Data",
-    "summary": "arXiv:2312.05272v3 Announce Type: replace \nAbstract: In the realm of deep neural network deployment, low-bit quantization presents a promising avenue for enhancing computational efficiency. However, it often hinges on the availability of training data to mitigate quantization errors, a significant challenge when data availability is scarce or restricted due to privacy or copyright concerns. Addressing this, we introduce GenQ, a novel approach employing an advanced Generative AI model to generate photorealistic, high-resolution synthetic data, overcoming the limitations of traditional methods that struggle to accurately mimic complex objects in extensive datasets like ImageNet. Our methodology is underscored by two robust filtering mechanisms designed to ensure the synthetic data closely aligns with the intrinsic characteristics of the actual training data. In case of limited data availability, the actual data is used to guide the synthetic data generation process, enhancing fidelity through the inversion of learnable token embeddings. Through rigorous experimentation, GenQ establishes new benchmarks in data-free and data-scarce quantization, significantly outperforming existing methods in accuracy and efficiency, thereby setting a new standard for quantization in low data regimes. Code is released at \\url{https://github.com/Intelligent-Computing-Lab-Yale/GenQ}.",
-    "link": "https://arxiv.org/abs/2312.05272",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/Intelligent-Computing-Lab-Yale/GenQ}."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "AgileFormer: Spatially Agile Transformer UNet for Medical Image Segmentation",
-    "summary": "arXiv:2404.00122v2 Announce Type: replace \nAbstract: In the past decades, deep neural networks, particularly convolutional neural networks, have achieved state-of-the-art performance in a variety of medical image segmentation tasks. Recently, the introduction of the vision transformer (ViT) has significantly altered the landscape of deep segmentation models. There has been a growing focus on ViTs, driven by their excellent performance and scalability. However, we argue that the current design of the vision transformer-based UNet (ViT-UNet) segmentation models may not effectively handle the heterogeneous appearance (e.g., varying shapes and sizes) of objects of interest in medical image segmentation tasks. To tackle this challenge, we present a structured approach to introduce spatially dynamic components to the ViT-UNet. This adaptation enables the model to effectively capture features of target objects with diverse appearances. This is achieved by three main components: \\textbf{(i)} deformable patch embedding; \\textbf{(ii)} spatially dynamic multi-head attention; \\textbf{(iii)} deformable positional encoding. These components were integrated into a novel architecture, termed AgileFormer. AgileFormer is a spatially agile ViT-UNet designed for medical image segmentation. Experiments in three segmentation tasks using publicly available datasets demonstrated the effectiveness of the proposed method. The code is available at \\href{https://github.com/sotiraslab/AgileFormer}{https://github.com/sotiraslab/AgileFormer}.",
-    "link": "https://arxiv.org/abs/2404.00122",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/sotiraslab/AgileFormer}{https://github.com/sotiraslab/AgileFormer}."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "Transferable and Principled Efficiency for Open-Vocabulary Segmentation",
-    "summary": "arXiv:2404.07448v3 Announce Type: replace \nAbstract: Recent success of pre-trained foundation vision-language models makes Open-Vocabulary Segmentation (OVS) possible. Despite the promising performance, this approach introduces heavy computational overheads for two challenges: 1) large model sizes of the backbone; 2) expensive costs during the fine-tuning. These challenges hinder this OVS strategy from being widely applicable and affordable in real-world scenarios. Although traditional methods such as model compression and efficient fine-tuning can address these challenges, they often rely on heuristics. This means that their solutions cannot be easily transferred and necessitate re-training on different models, which comes at a cost. In the context of efficient OVS, we target achieving performance that is comparable to or even better than prior OVS works based on large vision-language foundation models, by utilizing smaller models that incur lower training costs. The core strategy is to make our efficiency principled and thus seamlessly transferable from one OVS framework to others without further customization. Comprehensive experiments on diverse OVS benchmarks demonstrate our superior trade-off between segmentation accuracy and computation costs over previous works. Our code is available on https://github.com/Xujxyang/OpenTrans",
-    "link": "https://arxiv.org/abs/2404.07448",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/Xujxyang/OpenTrans"
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "Pay Attention to Your Neighbours: Training-Free Open-Vocabulary Semantic Segmentation",
-    "summary": "arXiv:2404.08181v2 Announce Type: replace \nAbstract: Despite the significant progress in deep learning for dense visual recognition problems, such as semantic segmentation, traditional methods are constrained by fixed class sets. Meanwhile, vision-language foundation models, such as CLIP, have showcased remarkable effectiveness in numerous zero-shot image-level tasks, owing to their robust generalizability. Recently, a body of work has investigated utilizing these models in open-vocabulary semantic segmentation (OVSS). However, existing approaches often rely on impractical supervised pre-training or access to additional pre-trained networks. In this work, we propose a strong baseline for training-free OVSS, termed Neighbour-Aware CLIP (NACLIP), representing a straightforward adaptation of CLIP tailored for this scenario. Our method enforces localization of patches in the self-attention of CLIP's vision transformer which, despite being crucial for dense prediction tasks, has been overlooked in the OVSS literature. By incorporating design choices favouring segmentation, our approach significantly improves performance without requiring additional data, auxiliary pre-trained networks, or extensive hyperparameter tuning, making it highly practical for real-world applications. Experiments are performed on 8 popular semantic segmentation benchmarks, yielding state-of-the-art performance on most scenarios. Our code is publicly available at https://github.com/sinahmr/NACLIP.",
-    "link": "https://arxiv.org/abs/2404.08181",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/sinahmr/NACLIP."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "Transferable-guided Attention Is All You Need for Video Domain Adaptation",
-    "summary": "arXiv:2407.01375v2 Announce Type: replace \nAbstract: Unsupervised domain adaptation (UDA) in videos is a challenging task that remains not well explored compared to image-based UDA techniques. Although vision transformers (ViT) achieve state-of-the-art performance in many computer vision tasks, their use in video UDA has been little explored. Our key idea is to use transformer layers as a feature encoder and incorporate spatial and temporal transferability relationships into the attention mechanism. A Transferable-guided Attention (TransferAttn) framework is then developed to exploit the capacity of the transformer to adapt cross-domain knowledge across different backbones. To improve the transferability of ViT, we introduce a novel and effective module, named Domain Transferable-guided Attention Block (DTAB). DTAB compels ViT to focus on the spatio-temporal transferability relationship among video frames by changing the self-attention mechanism to a transferability attention mechanism. Extensive experiments were conducted on UCF-HMDB, Kinetics-Gameplay, and Kinetics-NEC Drone datasets, with different backbones, like ResNet101, I3D, and STAM, to verify the effectiveness of TransferAttn compared with state-of-the-art approaches. Also, we demonstrate that DTAB yields performance gains when applied to other state-of-the-art transformer-based UDA methods from both video and image domains. Our code is available at https://github.com/Andre-Sacilotti/transferattn-project-code.",
-    "link": "https://arxiv.org/abs/2407.01375",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/Andre-Sacilotti/transferattn-project-code."
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "SeFlow: A Self-Supervised Scene Flow Method in Autonomous Driving",
-    "summary": "arXiv:2407.01702v2 Announce Type: replace \nAbstract: Scene flow estimation predicts the 3D motion at each point in successive LiDAR scans. This detailed, point-level, information can help autonomous vehicles to accurately predict and understand dynamic changes in their surroundings. Current state-of-the-art methods require annotated data to train scene flow networks and the expense of labeling inherently limits their scalability. Self-supervised approaches can overcome the above limitations, yet face two principal challenges that hinder optimal performance: point distribution imbalance and disregard for object-level motion constraints. In this paper, we propose SeFlow, a self-supervised method that integrates efficient dynamic classification into a learning-based scene flow pipeline. We demonstrate that classifying static and dynamic points helps design targeted objective functions for different motion patterns. We also emphasize the importance of internal cluster consistency and correct object point association to refine the scene flow estimation, in particular on object details. Our real-time capable method achieves state-of-the-art performance on the self-supervised scene flow task on Argoverse 2 and Waymo datasets. The code is open-sourced at https://github.com/KTH-RPL/SeFlow along with trained model weights.",
-    "link": "https://arxiv.org/abs/2407.01702",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/KTH-RPL/SeFlow"
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "Vision Mamba for Classification of Breast Ultrasound Images",
-    "summary": "arXiv:2407.03552v2 Announce Type: replace \nAbstract: Mamba-based models, VMamba and Vim, are a recent family of vision encoders that offer promising performance improvements in many computer vision tasks. This paper compares Mamba-based models with traditional Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) using the breast ultrasound BUSI dataset and Breast Ultrasound B dataset. Our evaluation, which includes multiple runs of experiments and statistical significance analysis, demonstrates that some of the Mamba-based architectures often outperform CNN and ViT models with statistically significant results. For example, in the B dataset, the best Mamba-based models have a 1.98\\% average AUC and a 5.0\\% average Accuracy improvement compared to the best non-Mamba-based model in this study. These Mamba-based models effectively capture long-range dependencies while maintaining some inductive biases, making them suitable for applications with limited data. The code is available at \\url{https://github.com/anasiri/BU-Mamba}",
-    "link": "https://arxiv.org/abs/2407.03552",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/anasiri/BU-Mamba}"
-    ],
-    "huggingface_urls": [],
-    "source": "arXiv"
-  },
-  {
-    "title": "Fine-Grained Representation Learning via Multi-Level Contrastive Learning without Class Priors",
-    "summary": "arXiv:2409.04867v2 Announce Type: replace \nAbstract: Recent advances in unsupervised representation learning frequently leverage class information to improve the extraction and clustering of features. However, this dependence on class priors limits the applicability of such methods in real-world scenarios where class information is unavailable or ambiguous. In this paper, we propose \\textit{Contrastive Disentangling (CD)}, a simple yet effective framework that learns representations without any relying on class priors. CD employs a multi-level contrastive learning strategy, integrating instance-level and feature-level losses with a normalized entropy loss to learn semantically rich and fine-grained representations. Specifically, (1) the instance-level contrastive loss encourages the separation of feature representations between different samples; (2) the feature-level contrastive loss promotes independence among feature prediction heads; and (3) the normalized entropy loss ensures that the feature heads capture meaningful and prevalent attributes from the data. These components together enable CD to outperform existing methods in scenarios lacking class priors, as demonstrated by extensive experiments on benchmark datasets including CIFAR-10, CIFAR-100, STL-10, and ImageNet-10. The code is available at https://github.com/Hoper-J/Contrastive-Disentangling.",
-    "link": "https://arxiv.org/abs/2409.04867",
-    "published": "Wed, 18 Sep 2024 00:00:00 -0400",
-    "github_urls": [
-      "https://github.com/Hoper-J/Contrastive-Disentangling."
     ],
     "huggingface_urls": [],
     "source": "arXiv"
