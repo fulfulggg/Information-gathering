@@ -1,1 +1,244 @@
-[]
+[
+  {
+    "title": "TACE: Tumor-Aware Counterfactual Explanations",
+    "summary": "arXiv:2409.13045v1 Announce Type: new \nAbstract: The application of deep learning in medical imaging has significantly advanced diagnostic capabilities, enhancing both accuracy and efficiency. Despite these benefits, the lack of transparency in these AI models, often termed \"black boxes,\" raises concerns about their reliability in clinical settings. Explainable AI (XAI) aims to mitigate these concerns by developing methods that make AI decisions understandable and trustworthy. In this study, we propose Tumor Aware Counterfactual Explanations (TACE), a framework designed to generate reliable counterfactual explanations for medical images. Unlike existing methods, TACE focuses on modifying tumor-specific features without altering the overall organ structure, ensuring the faithfulness of the counterfactuals. We achieve this by including an additional step in the generation process which allows to modify only the region of interest (ROI), thus yielding more reliable counterfactuals as the rest of the organ remains unchanged. We evaluate our method on mammography images and brain MRI. We find that our method far exceeds existing state-of-the-art techniques in quality, faithfulness, and generation speed of counterfactuals. Indeed, more faithful explanations lead to a significant improvement in classification success rates, with a 10.69% increase for breast cancer and a 98.02% increase for brain tumors. The code of our work is available at https://github.com/ispamm/TACE.",
+    "link": "https://arxiv.org/abs/2409.13045",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ispamm/TACE."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Towards Zero-shot Point Cloud Anomaly Detection: A Multi-View Projection Framework",
+    "summary": "arXiv:2409.13162v1 Announce Type: new \nAbstract: Detecting anomalies within point clouds is crucial for various industrial applications, but traditional unsupervised methods face challenges due to data acquisition costs, early-stage production constraints, and limited generalization across product categories. To overcome these challenges, we introduce the Multi-View Projection (MVP) framework, leveraging pre-trained Vision-Language Models (VLMs) to detect anomalies. Specifically, MVP projects point cloud data into multi-view depth images, thereby translating point cloud anomaly detection into image anomaly detection. Following zero-shot image anomaly detection methods, pre-trained VLMs are utilized to detect anomalies on these depth images. Given that pre-trained VLMs are not inherently tailored for zero-shot point cloud anomaly detection and may lack specificity, we propose the integration of learnable visual and adaptive text prompting techniques to fine-tune these VLMs, thereby enhancing their detection performance. Extensive experiments on the MVTec 3D-AD and Real3D-AD demonstrate our proposed MVP framework's superior zero-shot anomaly detection performance and the prompting techniques' effectiveness. Real-world evaluations on automotive plastic part inspection further showcase that the proposed method can also be generalized to practical unseen scenarios. The code is available at https://github.com/hustCYQ/MVP-PCLIP.",
+    "link": "https://arxiv.org/abs/2409.13162",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/hustCYQ/MVP-PCLIP."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Bilateral Sharpness-Aware Minimization for Flatter Minima",
+    "summary": "arXiv:2409.13173v1 Announce Type: new \nAbstract: Sharpness-Aware Minimization (SAM) enhances generalization by reducing a Max-Sharpness (MaxS). Despite the practical success, we empirically found that the MAxS behind SAM's generalization enhancements face the \"Flatness Indicator Problem\" (FIP), where SAM only considers the flatness in the direction of gradient ascent, resulting in a next minimization region that is not sufficiently flat. A better Flatness Indicator (FI) would bring a better generalization of neural networks. Because SAM is a greedy search method in nature. In this paper, we propose to utilize the difference between the training loss and the minimum loss over the neighborhood surrounding the current weight, which we denote as Min-Sharpness (MinS). By merging MaxS and MinS, we created a better FI that indicates a flatter direction during the optimization. Specially, we combine this FI with SAM into the proposed Bilateral SAM (BSAM) which finds a more flatter minimum than that of SAM. The theoretical analysis proves that BSAM converges to local minima. Extensive experiments demonstrate that BSAM offers superior generalization performance and robustness compared to vanilla SAM across various tasks, i.e., classification, transfer learning, human pose estimation, and network quantization. Code is publicly available at: https://github.com/ajiaaa/BSAM.",
+    "link": "https://arxiv.org/abs/2409.13173",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ajiaaa/BSAM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "PointSAM: Pointly-Supervised Segment Anything Model for Remote Sensing Images",
+    "summary": "arXiv:2409.13401v1 Announce Type: new \nAbstract: Segment Anything Model (SAM) is an advanced foundational model for image segmentation, widely applied to remote sensing images (RSIs). Due to the domain gap between RSIs and natural images, traditional methods typically use SAM as a source pre-trained model and fine-tune it with fully supervised masks. Unlike these methods, our work focuses on fine-tuning SAM using more convenient and challenging point annotations. Leveraging SAM's zero-shot capabilities, we adopt a self-training framework that iteratively generates pseudo-labels for training. However, if the pseudo-labels contain noisy labels, there is a risk of error accumulation. To address this issue, we extract target prototypes from the target dataset and use the Hungarian algorithm to match them with prediction prototypes, preventing the model from learning in the wrong direction. Additionally, due to the complex backgrounds and dense distribution of objects in RSI, using point prompts may result in multiple objects being recognized as one. To solve this problem, we propose a negative prompt calibration method based on the non-overlapping nature of instance masks. In brief, we use the prompts of overlapping masks as corresponding negative signals, resulting in refined masks. Combining the above methods, we propose a novel Pointly-supervised Segment Anything Model named PointSAM. We conduct experiments on RSI datasets, including WHU, HRSID, and NWPU VHR-10, and the results show that our method significantly outperforms direct testing with SAM, SAM2, and other comparison methods. Furthermore, we introduce PointSAM as a point-to-box converter and achieve encouraging results, suggesting that this method can be extended to other point-supervised tasks. The code is available at https://github.com/Lans1ng/PointSAM.",
+    "link": "https://arxiv.org/abs/2409.13401",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Lans1ng/PointSAM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Sine Wave Normalization for Deep Learning-Based Tumor Segmentation in CT/PET Imaging",
+    "summary": "arXiv:2409.13410v1 Announce Type: new \nAbstract: This report presents a normalization block for automated tumor segmentation in CT/PET scans, developed for the autoPET III Challenge. The key innovation is the introduction of the SineNormal, which applies periodic sine transformations to PET data to enhance lesion detection. By highlighting intensity variations and producing concentric ring patterns in PET highlighted regions, the model aims to improve segmentation accuracy, particularly for challenging multitracer PET datasets. The code for this project is available on GitHub (https://github.com/BBQtime/Sine-Wave-Normalization-for-Deep-Learning-Based-Tumor-Segmentation-in-CT-PET).",
+    "link": "https://arxiv.org/abs/2409.13410",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/BBQtime/Sine-Wave-Normalization-for-Deep-Learning-Based-Tumor-Segmentation-in-CT-PET)."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CVT-Occ: Cost Volume Temporal Fusion for 3D Occupancy Prediction",
+    "summary": "arXiv:2409.13430v1 Announce Type: new \nAbstract: Vision-based 3D occupancy prediction is significantly challenged by the inherent limitations of monocular vision in depth estimation. This paper introduces CVT-Occ, a novel approach that leverages temporal fusion through the geometric correspondence of voxels over time to improve the accuracy of 3D occupancy predictions. By sampling points along the line of sight of each voxel and integrating the features of these points from historical frames, we construct a cost volume feature map that refines current volume features for improved prediction outcomes. Our method takes advantage of parallax cues from historical observations and employs a data-driven approach to learn the cost volume. We validate the effectiveness of CVT-Occ through rigorous experiments on the Occ3D-Waymo dataset, where it outperforms state-of-the-art methods in 3D occupancy prediction with minimal additional computational cost. The code is released at \\url{https://github.com/Tsinghua-MARS-Lab/CVT-Occ}.",
+    "link": "https://arxiv.org/abs/2409.13430",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Tsinghua-MARS-Lab/CVT-Occ}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Leveraging Text Localization for Scene Text Removal via Text-aware Masked Image Modeling",
+    "summary": "arXiv:2409.13431v1 Announce Type: new \nAbstract: Existing scene text removal (STR) task suffers from insufficient training data due to the expensive pixel-level labeling. In this paper, we aim to address this issue by introducing a Text-aware Masked Image Modeling algorithm (TMIM), which can pretrain STR models with low-cost text detection labels (e.g., text bounding box). Different from previous pretraining methods that use indirect auxiliary tasks only to enhance the implicit feature extraction ability, our TMIM first enables the STR task to be directly trained in a weakly supervised manner, which explores the STR knowledge explicitly and efficiently. In TMIM, first, a Background Modeling stream is built to learn background generation rules by recovering the masked non-text region. Meanwhile, it provides pseudo STR labels on the masked text region. Second, a Text Erasing stream is proposed to learn from the pseudo labels and equip the model with end-to-end STR ability. Benefiting from the two collaborative streams, our STR model can achieve impressive performance only with the public text detection datasets, which greatly alleviates the limitation of the high-cost STR labels. Experiments demonstrate that our method outperforms other pretrain methods and achieves state-of-the-art performance (37.35 PSNR on SCUT-EnsText). Code will be available at https://github.com/wzx99/TMIM.",
+    "link": "https://arxiv.org/abs/2409.13431",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/wzx99/TMIM."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Efficient and Discriminative Image Feature Extraction for Universal Image Retrieval",
+    "summary": "arXiv:2409.13513v1 Announce Type: new \nAbstract: Current image retrieval systems often face domain specificity and generalization issues. This study aims to overcome these limitations by developing a computationally efficient training framework for a universal feature extractor that provides strong semantic image representations across various domains. To this end, we curated a multi-domain training dataset, called M4D-35k, which allows for resource-efficient training. Additionally, we conduct an extensive evaluation and comparison of various state-of-the-art visual-semantic foundation models and margin-based metric learning loss functions regarding their suitability for efficient universal feature extraction. Despite constrained computational resources, we achieve near state-of-the-art results on the Google Universal Image Embedding Challenge, with a mMP@5 of 0.721. This places our method at the second rank on the leaderboard, just 0.7 percentage points behind the best performing method. However, our model has 32% fewer overall parameters and 289 times fewer trainable parameters. Compared to methods with similar computational requirements, we outperform the previous state of the art by 3.3 percentage points. We release our code and M4D-35k training set annotations at https://github.com/morrisfl/UniFEx.",
+    "link": "https://arxiv.org/abs/2409.13513",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/morrisfl/UniFEx."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "A preliminary study on continual learning in computer vision using Kolmogorov-Arnold Networks",
+    "summary": "arXiv:2409.13550v1 Announce Type: new \nAbstract: Deep learning has long been dominated by multi-layer perceptrons (MLPs), which have demonstrated superiority over other optimizable models in various domains. Recently, a new alternative to MLPs has emerged - Kolmogorov-Arnold Networks (KAN)- which are based on a fundamentally different mathematical framework. According to their authors, KANs address several major issues in MLPs, such as catastrophic forgetting in continual learning scenarios. However, this claim has only been supported by results from a regression task on a toy 1D dataset. In this paper, we extend the investigation by evaluating the performance of KANs in continual learning tasks within computer vision, specifically using the MNIST datasets. To this end, we conduct a structured analysis of the behavior of MLPs and two KAN-based models in a class-incremental learning scenario, ensuring that the architectures involved have the same number of trainable parameters. Our results demonstrate that an efficient version of KAN outperforms both traditional MLPs and the original KAN implementation. We further analyze the influence of hyperparameters in MLPs and KANs, as well as the impact of certain trainable parameters in KANs, such as bias and scale weights. Additionally, we provide a preliminary investigation of recent KAN-based convolutional networks and compare their performance with that of traditional convolutional neural networks. Our codes can be found at https://github.com/MrPio/KAN-Continual_Learning_tests.",
+    "link": "https://arxiv.org/abs/2409.13550",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/MrPio/KAN-Continual_Learning_tests."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Tackling fluffy clouds: field boundaries detection using time series of S2 and/or S1 imagery",
+    "summary": "arXiv:2409.13568v1 Announce Type: new \nAbstract: Accurate field boundary delineation is a critical challenge in digital agriculture, impacting everything from crop monitoring to resource management. Existing methods often struggle with noise and fail to generalize across varied landscapes, particularly when dealing with cloud cover in optical remote sensing. In response, this study presents a new approach that leverages time series data from Sentinel-2 (S2) and Sentinel-1 (S1) imagery to improve performance under diverse cloud conditions, without the need for manual cloud filtering. We introduce a 3D Vision Transformer architecture specifically designed for satellite image time series, incorporating a memory-efficient attention mechanism. Two models are proposed: PTAViT3D, which handles either S2 or S1 data independently, and PTAViT3D-CA, which fuses both datasets to enhance accuracy. Both models are evaluated under sparse and dense cloud coverage by exploiting spatio-temporal correlations. Our results demonstrate that the models can effectively delineate field boundaries, even with partial (S2 or S2 and S1 data fusion) or dense cloud cover (S1), with the S1-based model providing performance comparable to S2 imagery in terms of spatial resolution. A key strength of this approach lies in its capacity to directly process cloud-contaminated imagery by leveraging spatio-temporal correlations in a memory-efficient manner. This methodology, used in the ePaddocks product to map Australia's national field boundaries, offers a robust, scalable solution adaptable to varying agricultural environments, delivering precision and reliability where existing methods falter. Our code is available at https://github.com/feevos/tfcl.",
+    "link": "https://arxiv.org/abs/2409.13568",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/feevos/tfcl."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "YesBut: A High-Quality Annotated Multimodal Dataset for evaluating Satire Comprehension capability of Vision-Language Models",
+    "summary": "arXiv:2409.13592v1 Announce Type: new \nAbstract: Understanding satire and humor is a challenging task for even current Vision-Language models. In this paper, we propose the challenging tasks of Satirical Image Detection (detecting whether an image is satirical), Understanding (generating the reason behind the image being satirical), and Completion (given one half of the image, selecting the other half from 2 given options, such that the complete image is satirical) and release a high-quality dataset YesBut, consisting of 2547 images, 1084 satirical and 1463 non-satirical, containing different artistic styles, to evaluate those tasks. Each satirical image in the dataset depicts a normal scenario, along with a conflicting scenario which is funny or ironic. Despite the success of current Vision-Language Models on multimodal tasks such as Visual QA and Image Captioning, our benchmarking experiments show that such models perform poorly on the proposed tasks on the YesBut Dataset in Zero-Shot Settings w.r.t both automated as well as human evaluation. Additionally, we release a dataset of 119 real, satirical photographs for further research. The dataset and code are available at https://github.com/abhi1nandy2/yesbut_dataset.",
+    "link": "https://arxiv.org/abs/2409.13592",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/abhi1nandy2/yesbut_dataset."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Federated Learning with Label-Masking Distillation",
+    "summary": "arXiv:2409.13136v1 Announce Type: cross \nAbstract: Federated learning provides a privacy-preserving manner to collaboratively train models on data distributed over multiple local clients via the coordination of a global server. In this paper, we focus on label distribution skew in federated learning, where due to the different user behavior of the client, label distributions between different clients are significantly different. When faced with such cases, most existing methods will lead to a suboptimal optimization due to the inadequate utilization of label distribution information in clients. Inspired by this, we propose a label-masking distillation approach termed FedLMD to facilitate federated learning via perceiving the various label distributions of each client. We classify the labels into majority and minority labels based on the number of examples per class during training. The client model learns the knowledge of majority labels from local data. The process of distillation masks out the predictions of majority labels from the global model, so that it can focus more on preserving the minority label knowledge of the client. A series of experiments show that the proposed approach can achieve state-of-the-art performance in various cases. Moreover, considering the limited resources of the clients, we propose a variant FedLMD-Tf that does not require an additional teacher, which outperforms previous lightweight approaches without increasing computational costs. Our code is available at https://github.com/wnma3mz/FedLMD.",
+    "link": "https://arxiv.org/abs/2409.13136",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/wnma3mz/FedLMD."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Towards Efficient SDRTV-to-HDRTV by Learning from Image Formation",
+    "summary": "arXiv:2309.04084v2 Announce Type: replace \nAbstract: Modern displays can render video content with high dynamic range (HDR) and wide color gamut (WCG). However, most resources are still in standard dynamic range (SDR). Therefore, transforming existing SDR content into the HDRTV standard holds significant value. This paper defines and analyzes the SDRTV-to-HDRTV task by modeling the formation of SDRTV/HDRTV content. Our findings reveal that a naive endto-end supervised training approach suffers from severe gamut transition errors. To address this, we propose a new three-step solution called HDRTVNet++, which includes adaptive global color mapping, local enhancement, and highlight refinement. The adaptive global color mapping step utilizes global statistics for image-adaptive color adjustments. A local enhancement network further enhances details, and the two sub-networks are combined as a generator to achieve highlight consistency through GANbased joint training. Designed for ultra-high-definition TV content, our method is both effective and lightweight for processing 4K resolution images. We also constructed a dataset using HDR videos in the HDR10 standard, named HDRTV1K, containing 1235 training and 117 testing images, all in 4K resolution. Additionally, we employ five metrics to evaluate SDRTV-to-HDRTV performance. Our results demonstrate state-of-the-art performance both quantitatively and visually. The codes and models are available at https://github.com/xiaom233/HDRTVNet-plus.",
+    "link": "https://arxiv.org/abs/2309.04084",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/xiaom233/HDRTVNet-plus."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Towards Efficient and Effective Deep Clustering with Dynamic Grouping and Prototype Aggregation",
+    "summary": "arXiv:2401.13581v2 Announce Type: replace \nAbstract: Previous contrastive deep clustering methods mostly focus on instance-level information while overlooking the member relationship within groups/clusters, which may significantly undermine their representation learning and clustering capability. Recently, some group-contrastive methods have been developed, which, however, typically rely on the samples of the entire dataset to obtain pseudo labels and lack the ability to efficiently update the group assignments in a batch-wise manner. To tackle these critical issues, we present a novel end-to-end deep clustering framework with dynamic grouping and prototype aggregation, termed as DigPro. Specifically, the proposed dynamic grouping extends contrastive learning from instance-level to group-level, which is effective and efficient for timely updating groups. Meanwhile, we perform contrastive learning on prototypes in a spherical feature space, termed as prototype aggregation, which aims to maximize the inter-cluster distance. Notably, with an expectation-maximization framework, DigPro simultaneously takes advantage of compact intra-cluster connections, well-separated clusters, and efficient group updating during the self-supervised training. Extensive experiments on six image benchmarks demonstrate the superior performance of our approach over the state-of-the-art. Code is available at https://github.com/Regan-Zhang/DigPro.",
+    "link": "https://arxiv.org/abs/2401.13581",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Regan-Zhang/DigPro."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Deep Clustering with Diffused Sampling and Hardness-aware Self-distillation",
+    "summary": "arXiv:2401.14038v2 Announce Type: replace \nAbstract: Deep clustering has gained significant attention due to its capability in learning clustering-friendly representations without labeled data. However, previous deep clustering methods tend to treat all samples equally, which neglect the variance in the latent distribution and the varying difficulty in classifying or clustering different samples. To address this, this paper proposes a novel end-to-end deep clustering method with diffused sampling and hardness-aware self-distillation (HaDis). Specifically, we first align one view of instances with another view via diffused sampling alignment (DSA), which helps improve the intra-cluster compactness. To alleviate the sampling bias, we present the hardness-aware self-distillation (HSD) mechanism to mine the hardest positive and negative samples and adaptively adjust their weights in a self-distillation fashion, which is able to deal with the potential imbalance in sample contributions during optimization. Further, the prototypical contrastive learning is incorporated to simultaneously enhance the inter-cluster separability and intra-cluster compactness. Experimental results on five challenging image datasets demonstrate the superior clustering performance of our HaDis method over the state-of-the-art. Source code is available at https://github.com/Regan-Zhang/HaDis.",
+    "link": "https://arxiv.org/abs/2401.14038",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Regan-Zhang/HaDis."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Disentangling representations of retinal images with generative models",
+    "summary": "arXiv:2402.19186v2 Announce Type: replace \nAbstract: Retinal fundus images play a crucial role in the early detection of eye diseases. However, the impact of technical factors on these images can pose challenges for reliable AI applications in ophthalmology. For example, large fundus cohorts are often confounded by factors like camera type, bearing the risk of learning shortcuts rather than the causal relationships behind the image generation process. Here, we introduce a population model for retinal fundus images that effectively disentangles patient attributes from camera effects, enabling controllable and highly realistic image generation. To achieve this, we propose a disentanglement loss based on distance correlation. Through qualitative and quantitative analyses, we show that our models encode desired information in disentangled subspaces and enable controllable image generation based on the learned subspaces, demonstrating the effectiveness of our disentanglement loss. The project's code is publicly available: https://github.com/berenslab/disentangling-retinal-images.",
+    "link": "https://arxiv.org/abs/2402.19186",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/berenslab/disentangling-retinal-images."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+    "summary": "arXiv:2406.11271v4 Announce Type: replace \nAbstract: Multimodal interleaved datasets featuring free-form interleaved sequences of images and text are crucial for training frontier large multimodal models (LMMs). Despite the rapid progression of open-source LMMs, there remains a pronounced scarcity of large-scale, diverse open-source multimodal interleaved datasets. In response, we introduce MINT-1T, the most extensive and diverse open-source Multimodal INTerleaved dataset to date. MINT-1T comprises one trillion text tokens and 3.4 billion images, a 10x scale-up from existing open-source datasets. Additionally, we include previously untapped sources such as PDFs and ArXiv papers. As scaling multimodal interleaved datasets requires substantial engineering effort, sharing the data curation process and releasing the dataset greatly benefits the community. Our experiments show that LMMs trained on MINT-1T rival the performance of models trained on the previous leading dataset, OBELICS. Our data and code will be released at https://github.com/mlfoundations/MINT-1T.",
+    "link": "https://arxiv.org/abs/2406.11271",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/mlfoundations/MINT-1T."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "White Matter Geometry-Guided Score-Based Diffusion Model for Tissue Microstructure Imputation in Tractography Imaging",
+    "summary": "arXiv:2407.19460v3 Announce Type: replace \nAbstract: Parcellation of white matter tractography provides anatomical features for disease prediction, anatomical tract segmentation, surgical brain mapping, and non-imaging phenotype classifications. However, parcellation does not always reach 100\\% accuracy due to various factors, including inter-individual anatomical variability and the quality of neuroimaging scan data. The failure to identify parcels causes a problem of missing microstructure data values, which is especially challenging for downstream tasks that analyze large brain datasets. In this work, we propose a novel deep-learning model to impute tissue microstructure: the White Matter Geometry-guided Diffusion (WMG-Diff) model. Specifically, we first propose a deep score-based guided diffusion model to impute tissue microstructure for diffusion magnetic resonance imaging (dMRI) tractography fiber clusters. Second, we propose a white matter atlas geometric relationship-guided denoising function to guide the reverse denoising process at the subject-specific level. Third, we train and evaluate our model on a large dataset with 9342 subjects. Comprehensive experiments for tissue microstructure imputation and a downstream non-imaging phenotype prediction task demonstrate that our proposed WMG-Diff outperforms the compared state-of-the-art methods in both error and accuracy metrics. Our code will be available at: https://github.com/SlicerDMRI/WMG-Diff.",
+    "link": "https://arxiv.org/abs/2407.19460",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/SlicerDMRI/WMG-Diff."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "EPRecon: An Efficient Framework for Real-Time Panoptic 3D Reconstruction from Monocular Video",
+    "summary": "arXiv:2409.01807v2 Announce Type: replace \nAbstract: Panoptic 3D reconstruction from a monocular video is a fundamental perceptual task in robotic scene understanding. However, existing efforts suffer from inefficiency in terms of inference speed and accuracy, limiting their practical applicability. We present EPRecon, an efficient real-time panoptic 3D reconstruction framework. Current volumetric-based reconstruction methods usually utilize multi-view depth map fusion to obtain scene depth priors, which is time-consuming and poses challenges to real-time scene reconstruction. To address this issue, we propose a lightweight module to directly estimate scene depth priors in a 3D volume for reconstruction quality improvement by generating occupancy probabilities of all voxels. In addition, compared with existing panoptic segmentation methods, EPRecon extracts panoptic features from both voxel features and corresponding image features, obtaining more detailed and comprehensive instance-level semantic information and achieving more accurate segmentation results. Experimental results on the ScanNetV2 dataset demonstrate the superiority of EPRecon over current state-of-the-art methods in terms of both panoptic 3D reconstruction quality and real-time inference. Code is available at https://github.com/zhen6618/EPRecon.",
+    "link": "https://arxiv.org/abs/2409.01807",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/zhen6618/EPRecon."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "LIME: Less Is More for MLLM Evaluation",
+    "summary": "arXiv:2409.06851v2 Announce Type: replace \nAbstract: Multimodal Large Language Models (MLLMs) are measured on numerous benchmarks like image captioning, visual question answering, and reasoning. However, these benchmarks often include overly simple or uninformative samples, making it difficult to effectively distinguish the performance of different MLLMs. Additionally, evaluating models across many benchmarks creates a significant computational burden. To address these issues, we propose LIME (Less Is More for MLLM Evaluation), a refined and efficient benchmark curated using a semi-automated pipeline. This pipeline filters out uninformative samples and eliminates answer leakage by focusing on tasks that require image-based understanding. Our experiments show that LIME reduces the number of samples by 76% and evaluation time by 77%, while more effectively distinguishing between models. Notably, we find that traditional automatic metrics like CIDEr are insufficient for evaluating MLLMs' captioning performance, and excluding the caption task score yields a more accurate reflection of overall model performance. All code and data are available at https://github.com/kangreen0210/LIME",
+    "link": "https://arxiv.org/abs/2409.06851",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/kangreen0210/LIME"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Identifying Light-curve Signals with a Deep Learning Based Object Detection Algorithm. II. A General Light Curve Classification Framework",
+    "summary": "arXiv:2311.08080v2 Announce Type: replace-cross \nAbstract: Vast amounts of astronomical photometric data are generated from various projects, requiring significant effort to identify variable stars and other object classes. In light of this, a general, widely applicable classification framework would simplify the process of designing specific classifiers for various astronomical objects. We present a novel deep learning framework for classifying light curves using a weakly supervised object detection model. Our framework identifies the optimal windows for both light curves and power spectra automatically, and zooms in on their corresponding data. This allows for automatic feature extraction from both time and frequency domains, enabling our model to handle data across different scales and sampling intervals. We train our model on data sets obtained from Kepler, TESS, and Zwicky Transient Facility multiband observations of variable stars and transients. We achieve an accuracy of 87% for combined variables and transient events, which is comparable to the performance of previous feature-based models. Our trained model can be utilized directly for other missions, such as the All-sky Automated Survey for Supernovae, without requiring any retraining or fine-tuning. To address known issues with miscalibrated predictive probabilities, we apply conformal prediction to generate robust predictive sets that guarantee true-label coverage with a given probability. Additionally, we incorporate various anomaly detection algorithms to empower our model with the ability to identify out-of-distribution objects. Our framework is implemented in the Deep-LC toolkit, which is an open-source Python package hosted on Github (https://github.com/ckm3/Deep-LC) and PyPI.",
+    "link": "https://arxiv.org/abs/2311.08080",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ckm3/Deep-LC)"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Explicit-NeRF-QA: A Quality Assessment Database for Explicit NeRF Model Compression",
+    "summary": "arXiv:2407.08165v3 Announce Type: replace-cross \nAbstract: In recent years, Neural Radiance Fields (NeRF) have demonstrated significant advantages in representing and synthesizing 3D scenes. Explicit NeRF models facilitate the practical NeRF applications with faster rendering speed, and also attract considerable attention in NeRF compression due to its huge storage cost. To address the challenge of the NeRF compression study, in this paper, we construct a new dataset, called Explicit-NeRF-QA. We use 22 3D objects with diverse geometries, textures, and material complexities to train four typical explicit NeRF models across five parameter levels. Lossy compression is introduced during the model generation, pivoting the selection of key parameters such as hash table size for InstantNGP and voxel grid resolution for Plenoxels. By rendering NeRF samples to processed video sequences (PVS), a large scale subjective experiment with lab environment is conducted to collect subjective scores from 21 viewers. The diversity of content, accuracy of mean opinion scores (MOS), and characteristics of NeRF distortion are comprehensively presented, establishing the heterogeneity of the proposed dataset. The state-of-the-art objective metrics are tested in the new dataset. Best Person correlation, which is around 0.85, is collected from the full-reference objective metric. All tested no-reference metrics report very poor results with 0.4 to 0.6 correlations, demonstrating the need for further development of more robust no-reference metrics. The dataset, including NeRF samples, source 3D objects, multiview images for NeRF generation, PVSs, MOS, is made publicly available at the following location: https://github.com/YukeXing/Explicit-NeRF-QA.",
+    "link": "https://arxiv.org/abs/2407.08165",
+    "published": "Mon, 23 Sep 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/YukeXing/Explicit-NeRF-QA."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  }
+]
