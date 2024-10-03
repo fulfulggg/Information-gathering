@@ -1,1 +1,299 @@
-[]
+[
+  {
+    "title": "FCE-YOLOv8: YOLOv8 with Feature Context Excitation Modules for Fracture Detection in Pediatric Wrist X-ray Images",
+    "summary": "arXiv:2410.01031v1 Announce Type: new \nAbstract: Children often suffer wrist trauma in daily life, while they usually need radiologists to analyze and interpret X-ray images before surgical treatment by surgeons. The development of deep learning has enabled neural networks to serve as computer-assisted diagnosis (CAD) tools to help doctors and experts in medical image diagnostics. Since the You Only Look Once Version-8 (YOLOv8) model has obtained the satisfactory success in object detection tasks, it has been applied to various fracture detection. This work introduces four variants of Feature Contexts Excitation-YOLOv8 (FCE-YOLOv8) model, each incorporating a different FCE module (i.e., modules of Squeeze-and-Excitation (SE), Global Context (GC), Gather-Excite (GE), and Gaussian Context Transformer (GCT)) to enhance the model performance. Experimental results on GRAZPEDWRI-DX dataset demonstrate that our proposed YOLOv8+GC-M3 model improves the mAP@50 value from 65.78% to 66.32%, outperforming the state-of-the-art (SOTA) model while reducing inference time. Furthermore, our proposed YOLOv8+SE-M3 model achieves the highest mAP@50 value of 67.07%, exceeding the SOTA performance. The implementation of this work is available at https://github.com/RuiyangJu/FCE-YOLOv8.",
+    "link": "https://arxiv.org/abs/2410.01031",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/RuiyangJu/FCE-YOLOv8."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Deep Nets with Subsampling Layers Unwittingly Discard Useful Activations at Test-Time",
+    "summary": "arXiv:2410.01083v1 Announce Type: new \nAbstract: Subsampling layers play a crucial role in deep nets by discarding a portion of an activation map to reduce its spatial dimensions. This encourages the deep net to learn higher-level representations. Contrary to this motivation, we hypothesize that the discarded activations are useful and can be incorporated on the fly to improve models' prediction. To validate our hypothesis, we propose a search and aggregate method to find useful activation maps to be used at test time. We applied our approach to the task of image classification and semantic segmentation. Extensive experiments over nine different architectures on multiple datasets show that our method consistently improves model test-time performance, complementing existing test-time augmentation techniques. Our code is available at https://github.com/ca-joe-yang/discard-in-subsampling.",
+    "link": "https://arxiv.org/abs/2410.01083",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ca-joe-yang/discard-in-subsampling."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "[Re] Network Deconvolution",
+    "summary": "arXiv:2410.01189v1 Announce Type: new \nAbstract: Our work aims to reproduce the set of findings published in \"Network Deconvolution\" by Ye et al. (2020)[1]. That paper proposes an optimization technique for model training in convolutional neural networks. The proposed technique \"network deconvolution\" is used in convolutional neural networks to remove pixel-wise and channel-wise correlations before data is fed into each layer. In particular, we interrogate the validity of the authors' claim that using network deconvolution instead of batch normalization improves deep learning model performance. Our effort confirms the validity of this claim, successfully reproducing the results reported in Tables 1 and 2 of the original paper. Our study involved 367 unique experiments across multiple architectures, datasets, and hyper parameter configurations. For Table 1, while there were some minor deviations in accuracy when compared to the original values (within 10%), the overall trend was consistent with the original study's findings when training the models with epochs 20 and 100. For Table 2, all 14 reproduced values were consistent with the original values. Additionally, we document the training and testing times for each architecture in Table 1 with 1, 20, and 100 epoch settings for both CIFAR-10 and CIFAR-100 datasets. We document the total execution times for Table 2 architectures with the ImageNet dataset. The data and software used for this reproducibility study are publicly available at https://github.com/lamps-lab/rep-network-deconvolution.",
+    "link": "https://arxiv.org/abs/2410.01189",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/lamps-lab/rep-network-deconvolution."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Facial Action Unit Detection by Adaptively Constraining Self-Attention and Causally Deconfounding Sample",
+    "summary": "arXiv:2410.01251v1 Announce Type: new \nAbstract: Facial action unit (AU) detection remains a challenging task, due to the subtlety, dynamics, and diversity of AUs. Recently, the prevailing techniques of self-attention and causal inference have been introduced to AU detection. However, most existing methods directly learn self-attention guided by AU detection, or employ common patterns for all AUs during causal intervention. The former often captures irrelevant information in a global range, and the latter ignores the specific causal characteristic of each AU. In this paper, we propose a novel AU detection framework called AC2D by adaptively constraining self-attention weight distribution and causally deconfounding the sample confounder. Specifically, we explore the mechanism of self-attention weight distribution, in which the self-attention weight distribution of each AU is regarded as spatial distribution and is adaptively learned under the constraint of location-predefined attention and the guidance of AU detection. Moreover, we propose a causal intervention module for each AU, in which the bias caused by training samples and the interference from irrelevant AUs are both suppressed. Extensive experiments show that our method achieves competitive performance compared to state-of-the-art AU detection approaches on challenging benchmarks, including BP4D, DISFA, GFT, and BP4D+ in constrained scenarios and Aff-Wild2 in unconstrained scenarios. The code is available at https://github.com/ZhiwenShao/AC2D.",
+    "link": "https://arxiv.org/abs/2410.01251",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ZhiwenShao/AC2D."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Aggregation of Multi Diffusion Models for Enhancing Learned Representations",
+    "summary": "arXiv:2410.01262v1 Announce Type: new \nAbstract: Diffusion models have achieved remarkable success in image generation, particularly with the various applications of classifier-free guidance conditional diffusion models. While many diffusion models perform well when controlling for particular aspect among style, character, and interaction, they struggle with fine-grained control due to dataset limitations and intricate model architecture design. This paper introduces a novel algorithm, Aggregation of Multi Diffusion Models (AMDM), which synthesizes features from multiple diffusion models into a specified model, enhancing its learned representations to activate specific features for fine-grained control. AMDM consists of two key components: spherical aggregation and manifold optimization. Spherical aggregation merges intermediate variables from different diffusion models with minimal manifold deviation, while manifold optimization refines these variables to align with the intermediate data manifold, enhancing sampling quality. Experimental results demonstrate that AMDM significantly improves fine-grained control without additional training or inference time, proving its effectiveness. Additionally, it reveals that diffusion models initially focus on features such as position, attributes, and style, with later stages improving generation quality and consistency. AMDM offers a new perspective for tackling the challenges of fine-grained conditional control generation in diffusion models: We can fully utilize existing conditional diffusion models that control specific aspects, or develop new ones, and then aggregate them using the AMDM algorithm. This eliminates the need for constructing complex datasets, designing intricate model architectures, and incurring high training costs. Code is available at: https://github.com/Hammour-steak/AMDM",
+    "link": "https://arxiv.org/abs/2410.01262",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Hammour-steak/AMDM"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Cognition Transferring and Decoupling for Text-supervised Egocentric Semantic Segmentation",
+    "summary": "arXiv:2410.01341v1 Announce Type: new \nAbstract: In this paper, we explore a novel Text-supervised Egocentic Semantic Segmentation (TESS) task that aims to assign pixel-level categories to egocentric images weakly supervised by texts from image-level labels. In this task with prospective potential, the egocentric scenes contain dense wearer-object relations and inter-object interference. However, most recent third-view methods leverage the frozen Contrastive Language-Image Pre-training (CLIP) model, which is pre-trained on the semantic-oriented third-view data and lapses in the egocentric view due to the ``relation insensitive\" problem. Hence, we propose a Cognition Transferring and Decoupling Network (CTDN) that first learns the egocentric wearer-object relations via correlating the image and text. Besides, a Cognition Transferring Module (CTM) is developed to distill the cognitive knowledge from the large-scale pre-trained model to our model for recognizing egocentric objects with various semantics. Based on the transferred cognition, the Foreground-background Decoupling Module (FDM) disentangles the visual representations to explicitly discriminate the foreground and background regions to mitigate false activation areas caused by foreground-background interferential objects during egocentric relation learning. Extensive experiments on four TESS benchmarks demonstrate the effectiveness of our approach, which outperforms many recent related methods by a large margin. Code will be available at https://github.com/ZhaofengSHI/CTDN.",
+    "link": "https://arxiv.org/abs/2410.01341",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/ZhaofengSHI/CTDN."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "High-quality Animatable Eyelid Shapes from Lightweight Captures",
+    "summary": "arXiv:2410.01360v1 Announce Type: new \nAbstract: High-quality eyelid reconstruction and animation are challenging for the subtle details and complicated deformations. Previous works usually suffer from the trade-off between the capture costs and the quality of details. In this paper, we propose a novel method that can achieve detailed eyelid reconstruction and animation by only using an RGB video captured by a mobile phone. Our method utilizes both static and dynamic information of eyeballs (e.g., positions and rotations) to assist the eyelid reconstruction, cooperating with an automatic eyeball calibration method to get the required eyeball parameters. Furthermore, we develop a neural eyelid control module to achieve the semantic animation control of eyelids. To the best of our knowledge, we present the first method for high-quality eyelid reconstruction and animation from lightweight captures. Extensive experiments on both synthetic and real data show that our method can provide more detailed and realistic results compared with previous methods based on the same-level capture setups. The code is available at https://github.com/StoryMY/AniEyelid.",
+    "link": "https://arxiv.org/abs/2410.01360",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/StoryMY/AniEyelid."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "AgriCLIP: Adapting CLIP for Agriculture and Livestock via Domain-Specialized Cross-Model Alignment",
+    "summary": "arXiv:2410.01407v1 Announce Type: new \nAbstract: Capitalizing on vast amount of image-text data, large-scale vision-language pre-training has demonstrated remarkable zero-shot capabilities and has been utilized in several applications. However, models trained on general everyday web-crawled data often exhibit sub-optimal performance for specialized domains, likely due to domain shift. Recent works have tackled this problem for some domains (e.g., healthcare) by constructing domain-specialized image-text data. However, constructing a dedicated large-scale image-text dataset for sustainable area of agriculture and livestock is still open to research. Further, this domain desires fine-grained feature learning due to the subtle nature of the downstream tasks (e.g, nutrient deficiency detection, livestock breed classification). To address this we present AgriCLIP, a vision-language foundational model dedicated to the domain of agriculture and livestock. First, we propose a large-scale dataset, named ALive, that leverages customized prompt generation strategy to overcome the scarcity of expert annotations. Our ALive dataset covers crops, livestock, and fishery, with around 600,000 image-text pairs. Second, we propose a training pipeline that integrates both contrastive and self-supervised learning to learn both global semantic and local fine-grained domain-specialized features. Experiments on diverse set of 20 downstream tasks demonstrate the effectiveness of AgriCLIP framework, achieving an absolute gain of 7.8\\% in terms of average zero-shot classification accuracy, over the standard CLIP adaptation via domain-specialized ALive dataset. Our ALive dataset and code can be accessible at \\href{https://github.com/umair1221/AgriCLIP/tree/main}{Github}.",
+    "link": "https://arxiv.org/abs/2410.01407",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/umair1221/AgriCLIP/tree/main}{Github}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "PASS:Test-Time Prompting to Adapt Styles and Semantic Shapes in Medical Image Segmentation",
+    "summary": "arXiv:2410.01573v1 Announce Type: new \nAbstract: Test-time adaptation (TTA) has emerged as a promising paradigm to handle the domain shifts at test time for medical images from different institutions without using extra training data. However, existing TTA solutions for segmentation tasks suffer from (1) dependency on modifying the source training stage and access to source priors or (2) lack of emphasis on shape-related semantic knowledge that is crucial for segmentation tasks.Recent research on visual prompt learning achieves source-relaxed adaptation by extended parameter space but still neglects the full utilization of semantic features, thus motivating our work on knowledge-enriched deep prompt learning. Beyond the general concern of image style shifts, we reveal that shape variability is another crucial factor causing the performance drop. To address this issue, we propose a TTA framework called PASS (Prompting to Adapt Styles and Semantic shapes), which jointly learns two types of prompts: the input-space prompt to reformulate the style of the test image to fit into the pretrained model and the semantic-aware prompts to bridge high-level shape discrepancy across domains. Instead of naively imposing a fixed prompt, we introduce an input decorator to generate the self-regulating visual prompt conditioned on the input data. To retrieve the knowledge representations and customize target-specific shape prompts for each test sample, we propose a cross-attention prompt modulator, which performs interaction between target representations and an enriched shape prompt bank. Extensive experiments demonstrate the superior performance of PASS over state-of-the-art methods on multiple medical image segmentation datasets. The code is available at https://github.com/EndoluminalSurgicalVision-IMR/PASS.",
+    "link": "https://arxiv.org/abs/2410.01573",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/EndoluminalSurgicalVision-IMR/PASS."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "SGBA: Semantic Gaussian Mixture Model-Based LiDAR Bundle Adjustment",
+    "summary": "arXiv:2410.01618v1 Announce Type: new \nAbstract: LiDAR bundle adjustment (BA) is an effective approach to reduce the drifts in pose estimation from the front-end. Existing works on LiDAR BA usually rely on predefined geometric features for landmark representation. This reliance restricts generalizability, as the system will inevitably deteriorate in environments where these specific features are absent. To address this issue, we propose SGBA, a LiDAR BA scheme that models the environment as a semantic Gaussian mixture model (GMM) without predefined feature types. This approach encodes both geometric and semantic information, offering a comprehensive and general representation adaptable to various environments. Additionally, to limit computational complexity while ensuring generalizability, we propose an adaptive semantic selection framework that selects the most informative semantic clusters for optimization by evaluating the condition number of the cost function. Lastly, we introduce a probabilistic feature association scheme that considers the entire probability density of assignments, which can manage uncertainties in measurement and initial pose estimation. We have conducted various experiments and the results demonstrate that SGBA can achieve accurate and robust pose refinement even in challenging scenarios with low-quality initial pose estimation and limited geometric features. We plan to open-source the work for the benefit of the community https://github.com/Ji1Xinyu/SGBA.",
+    "link": "https://arxiv.org/abs/2410.01618",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Ji1Xinyu/SGBA."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Data Extrapolation for Text-to-image Generation on Small Datasets",
+    "summary": "arXiv:2410.01638v1 Announce Type: new \nAbstract: Text-to-image generation requires large amount of training data to synthesizing high-quality images. For augmenting training data, previous methods rely on data interpolations like cropping, flipping, and mixing up, which fail to introduce new information and yield only marginal improvements. In this paper, we propose a new data augmentation method for text-to-image generation using linear extrapolation. Specifically, we apply linear extrapolation only on text feature, and new image data are retrieved from the internet by search engines. For the reliability of new text-image pairs, we design two outlier detectors to purify retrieved images. Based on extrapolation, we construct training samples dozens of times larger than the original dataset, resulting in a significant improvement in text-to-image performance. Moreover, we propose a NULL-guidance to refine score estimation, and apply recurrent affine transformation to fuse text information. Our model achieves FID scores of 7.91, 9.52 and 5.00 on the CUB, Oxford and COCO datasets. The code and data will be available on GitHub (https://github.com/senmaoy/RAT-Diffusion).",
+    "link": "https://arxiv.org/abs/2410.01638",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/senmaoy/RAT-Diffusion)."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "VitaGlyph: Vitalizing Artistic Typography with Flexible Dual-branch Diffusion Models",
+    "summary": "arXiv:2410.01738v1 Announce Type: new \nAbstract: Artistic typography is a technique to visualize the meaning of input character in an imaginable and readable manner. With powerful text-to-image diffusion models, existing methods directly design the overall geometry and texture of input character, making it challenging to ensure both creativity and legibility. In this paper, we introduce a dual-branch and training-free method, namely VitaGlyph, enabling flexible artistic typography along with controllable geometry change to maintain the readability. The key insight of VitaGlyph is to treat input character as a scene composed of Subject and Surrounding, followed by rendering them under varying degrees of geometry transformation. The subject flexibly expresses the essential concept of input character, while the surrounding enriches relevant background without altering the shape. Specifically, we implement VitaGlyph through a three-phase framework: (i) Knowledge Acquisition leverages large language models to design text descriptions of subject and surrounding. (ii) Regional decomposition detects the part that most matches the subject description and divides input glyph image into subject and surrounding regions. (iii) Typography Stylization firstly refines the structure of subject region via Semantic Typography, and then separately renders the textures of Subject and Surrounding regions through Controllable Compositional Generation. Experimental results demonstrate that VitaGlyph not only achieves better artistry and readability, but also manages to depict multiple customize concepts, facilitating more creative and pleasing artistic typography generation. Our code will be made publicly at https://github.com/Carlofkl/VitaGlyph.",
+    "link": "https://arxiv.org/abs/2410.01738",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Carlofkl/VitaGlyph."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "TransResNet: Integrating the Strengths of ViTs and CNNs for High Resolution Medical Image Segmentation via Feature Grafting",
+    "summary": "arXiv:2410.00986v1 Announce Type: cross \nAbstract: High-resolution images are preferable in medical imaging domain as they significantly improve the diagnostic capability of the underlying method. In particular, high resolution helps substantially in improving automatic image segmentation. However, most of the existing deep learning-based techniques for medical image segmentation are optimized for input images having small spatial dimensions and perform poorly on high-resolution images. To address this shortcoming, we propose a parallel-in-branch architecture called TransResNet, which incorporates Transformer and CNN in a parallel manner to extract features from multi-resolution images independently. In TransResNet, we introduce Cross Grafting Module (CGM), which generates the grafted features, enriched in both global semantic and low-level spatial details, by combining the feature maps from Transformer and CNN branches through fusion and self-attention mechanism. Moreover, we use these grafted features in the decoding process, increasing the information flow for better prediction of the segmentation mask. Extensive experiments on ten datasets demonstrate that TransResNet achieves either state-of-the-art or competitive results on several segmentation tasks, including skin lesion, retinal vessel, and polyp segmentation. The source code and pre-trained models are available at https://github.com/Sharifmhamza/TransResNet.",
+    "link": "https://arxiv.org/abs/2410.00986",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Sharifmhamza/TransResNet."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Toward Zero-Shot Learning for Visual Dehazing of Urological Surgical Robots",
+    "summary": "arXiv:2410.01395v1 Announce Type: cross \nAbstract: Robot-assisted surgery has profoundly influenced current forms of minimally invasive surgery. However, in transurethral suburethral urological surgical robots, they need to work in a liquid environment. This causes vaporization of the liquid when shearing and heating is performed, resulting in bubble atomization that affects the visual perception of the robot. This can lead to the need for uninterrupted pauses in the surgical procedure, which makes the surgery take longer. To address the atomization characteristics of liquids under urological surgical robotic vision, we propose an unsupervised zero-shot dehaze method (RSF-Dehaze) for urological surgical robotic vision. Specifically, the proposed Region Similarity Filling Module (RSFM) of RSF-Dehaze significantly improves the recovery of blurred region tissues. In addition, we organize and propose a dehaze dataset for robotic vision in urological surgery (USRobot-Dehaze dataset). In particular, this dataset contains the three most common urological surgical robot operation scenarios. To the best of our knowledge, we are the first to organize and propose a publicly available dehaze dataset for urological surgical robot vision. The proposed RSF-Dehaze proves the effectiveness of our method in three urological surgical robot operation scenarios with extensive comparative experiments with 20 most classical and advanced dehazing and image recovery algorithms. The proposed source code and dataset are available at https://github.com/wurenkai/RSF-Dehaze .",
+    "link": "https://arxiv.org/abs/2410.01395",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/wurenkai/RSF-Dehaze"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "CSIM: A Copula-based similarity index sensitive to local changes for Image quality assessment",
+    "summary": "arXiv:2410.01411v1 Announce Type: cross \nAbstract: Image similarity metrics play an important role in computer vision applications, as they are used in image processing, computer vision and machine learning. Furthermore, those metrics enable tasks such as image retrieval, object recognition and quality assessment, essential in fields like healthcare, astronomy and surveillance. Existing metrics, such as PSNR, MSE, SSIM, ISSM and FSIM, often face limitations in terms of either speed, complexity or sensitivity to small changes in images. To address these challenges, a novel image similarity metric, namely CSIM, that combines real-time while being sensitive to subtle image variations is investigated in this paper. The novel metric uses Gaussian Copula from probability theory to transform an image into vectors of pixel distribution associated to local image patches. These vectors contain, in addition to intensities and pixel positions, information on the dependencies between pixel values, capturing the structural relationships within the image. By leveraging the properties of Copulas, CSIM effectively models the joint distribution of pixel intensities, enabling a more nuanced comparison of image patches making it more sensitive to local changes compared to other metrics. Experimental results demonstrate that CSIM outperforms existing similarity metrics in various image distortion scenarios, including noise, compression artifacts and blur. The metric's ability to detect subtle differences makes it suitable for applications requiring high precision, such as medical imaging, where the detection of minor anomalies can be of a high importance. The results obtained in this work can be reproduced from this Github repository: https://github.com/safouaneelg/copulasimilarity.",
+    "link": "https://arxiv.org/abs/2410.01411",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/safouaneelg/copulasimilarity."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MOREL: Enhancing Adversarial Robustness through Multi-Objective Representation Learning",
+    "summary": "arXiv:2410.01697v1 Announce Type: cross \nAbstract: Extensive research has shown that deep neural networks (DNNs) are vulnerable to slight adversarial perturbations$-$small changes to the input data that appear insignificant but cause the model to produce drastically different outputs. In addition to augmenting training data with adversarial examples generated from a specific attack method, most of the current defense strategies necessitate modifying the original model architecture components to improve robustness or performing test-time data purification to handle adversarial attacks. In this work, we demonstrate that strong feature representation learning during training can significantly enhance the original model's robustness. We propose MOREL, a multi-objective feature representation learning approach, encouraging classification models to produce similar features for inputs within the same class, despite perturbations. Our training method involves an embedding space where cosine similarity loss and multi-positive contrastive loss are used to align natural and adversarial features from the model encoder and ensure tight clustering. Concurrently, the classifier is motivated to achieve accurate predictions. Through extensive experiments, we demonstrate that our approach significantly enhances the robustness of DNNs against white-box and black-box adversarial attacks, outperforming other methods that similarly require no architectural changes or test-time data purification. Our code is available at https://github.com/salomonhotegni/MOREL",
+    "link": "https://arxiv.org/abs/2410.01697",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/salomonhotegni/MOREL"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "KOLOMVERSE: Korea open large-scale image dataset for object detection in the maritime universe",
+    "summary": "arXiv:2206.09885v2 Announce Type: replace \nAbstract: Over the years, datasets have been developed for various object detection tasks. Object detection in the maritime domain is essential for the safety and navigation of ships. However, there is still a lack of publicly available large-scale datasets in the maritime domain. To overcome this challenge, we present KOLOMVERSE, an open large-scale image dataset for object detection in the maritime domain by KRISO (Korea Research Institute of Ships and Ocean Engineering). We collected 5,845 hours of video data captured from 21 territorial waters of South Korea. Through an elaborate data quality assessment process, we gathered around 2,151,470 4K resolution images from the video data. This dataset considers various environments: weather, time, illumination, occlusion, viewpoint, background, wind speed, and visibility. The KOLOMVERSE consists of five classes (ship, buoy, fishnet buoy, lighthouse and wind farm) for maritime object detection. The dataset has images of 3840$\\times$2160 pixels and to our knowledge, it is by far the largest publicly available dataset for object detection in the maritime domain. We performed object detection experiments and evaluated our dataset on several pre-trained state-of-the-art architectures to show the effectiveness and usefulness of our dataset. The dataset is available at: \\url{https://github.com/MaritimeDataset/KOLOMVERSE}.",
+    "link": "https://arxiv.org/abs/2206.09885",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/MaritimeDataset/KOLOMVERSE}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Attack-Augmentation Mixing-Contrastive Skeletal Representation Learning",
+    "summary": "arXiv:2304.04023v2 Announce Type: replace \nAbstract: Contrastive learning, relying on effective positive and negative sample pairs, is beneficial to learn informative skeleton representations in unsupervised skeleton-based action recognition. To achieve these positive and negative pairs, existing weak/strong data augmentation methods have to randomly change the appearance of skeletons for indirectly pursuing semantic perturbations. However, such approaches have two limitations: i) solely perturbing appearance cannot well capture the intrinsic semantic information of skeletons, and ii) randomly perturbation may change the original positive/negative pairs to soft positive/negative ones. To address the above dilemma, we start the first attempt to explore an attack-based augmentation scheme that additionally brings in direct semantic perturbation, for constructing hard positive pairs and further assisting in constructing hard negative pairs. In particular, we propose a novel Attack-Augmentation Mixing-Contrastive skeletal representation learning (A$^2$MC) to contrast hard positive features and hard negative features for learning more robust skeleton representations. In A$^2$MC, Attack-Augmentation (Att-Aug) is designed to collaboratively perform targeted and untargeted perturbations of skeletons via attack and augmentation respectively, for generating high-quality hard positive features. Meanwhile, Positive-Negative Mixer (PNM) is presented to mix hard positive features and negative features for generating hard negative features, which are adopted for updating the mixed memory banks. Extensive experiments on three public datasets demonstrate that A$^2$MC is competitive with the state-of-the-art methods. The code will be accessible on A$^2$MC (https://github.com/1xbq1/A2MC).",
+    "link": "https://arxiv.org/abs/2304.04023",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/1xbq1/A2MC)."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "ControlVAR: Exploring Controllable Visual Autoregressive Modeling",
+    "summary": "arXiv:2406.09750v2 Announce Type: replace \nAbstract: Conditional visual generation has witnessed remarkable progress with the advent of diffusion models (DMs), especially in tasks like control-to-image generation. However, challenges such as expensive computational cost, high inference latency, and difficulties of integration with large language models (LLMs) have necessitated exploring alternatives to DMs. This paper introduces ControlVAR, a novel framework that explores pixel-level controls in visual autoregressive (VAR) modeling for flexible and efficient conditional generation. In contrast to traditional conditional models that learn the conditional distribution, ControlVAR jointly models the distribution of image and pixel-level conditions during training and imposes conditional controls during testing. To enhance the joint modeling, we adopt the next-scale AR prediction paradigm and unify control and image representations. A teacher-forcing guidance strategy is proposed to further facilitate controllable generation with joint modeling. Extensive experiments demonstrate the superior efficacy and flexibility of ControlVAR across various conditional generation tasks against popular conditional DMs, \\eg, ControlNet and T2I-Adaptor. Code: \\url{https://github.com/lxa9867/ControlVAR}.",
+    "link": "https://arxiv.org/abs/2406.09750",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/lxa9867/ControlVAR}."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Exploring Scalability of Self-Training for Open-Vocabulary Temporal Action Localization",
+    "summary": "arXiv:2407.07024v2 Announce Type: replace \nAbstract: The vocabulary size in temporal action localization (TAL) is limited by the scarcity of large-scale annotated datasets. To overcome this, recent works integrate vision-language models (VLMs), such as CLIP, for open-vocabulary TAL (OV-TAL). However, despite the success of VLMs trained on extensive datasets, existing OV-TAL methods still rely on human-labeled TAL datasets of limited size to train action localizers, limiting their generalizability. In this paper, we explore the scalability of self-training with unlabeled YouTube videos for OV-TAL. Our approach consists of two stages: (1) a class-agnostic action localizer is trained on a human-labeled TAL dataset to generate pseudo-labels for unlabeled videos, and (2) the large-scale pseudo-labeled dataset is then used to train the localizer. Extensive experiments demonstrate that leveraging web-scale videos in self-training significantly enhances the generalizability of an action localizer. Additionally, we identify limitations in existing OV-TAL evaluation schemes and propose a new benchmark for thorough assessment. Finally, we showcase the TAL performance of the large multimodal model Gemini-1.5 on our new benchmark. Code is released at https://github.com/HYUNJS/STOV-TAL.",
+    "link": "https://arxiv.org/abs/2407.07024",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/HYUNJS/STOV-TAL."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "More precise edge detections",
+    "summary": "arXiv:2407.19992v3 Announce Type: replace \nAbstract: Image Edge detection (ED) is a base task in computer vision. While the performance of the ED algorithm has been improved greatly by introducing CNN-based models, current models still suffer from unsatisfactory precision rates especially when only a low error toleration distance is allowed. Therefore, model architecture for more precise predictions still needs an investigation. On the other hand, the unavoidable noise training data provided by humans would lead to unsatisfactory model predictions even when inputs are edge maps themselves, which also needs a solution. In this paper, more precise ED models are presented with cascaded skipping density blocks (CSDB). Our models obtain state-of-the-art(SOTA) predictions in several datasets, especially in average precision rate (AP), over a high-standard benchmark, which is confirmed by extensive experiments. Also, a novel modification on data augmentation for training is employed, which allows noiseless data to be employed in model training for the first time, and thus further improves the model performance. The relative Python codes can be found on https://github.com/Hao-B-Shu/SDPED.",
+    "link": "https://arxiv.org/abs/2407.19992",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Hao-B-Shu/SDPED."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "VisionTS: Visual Masked Autoencoders Are Free-Lunch Zero-Shot Time Series Forecasters",
+    "summary": "arXiv:2408.17253v2 Announce Type: replace \nAbstract: Foundation models have emerged as a promising approach in time series forecasting (TSF). Existing approaches either repurpose large language models (LLMs) or build large-scale time series datasets to develop TSF foundation models for universal forecasting. However, these methods face challenges due to the severe cross-domain gap or in-domain heterogeneity. This paper explores a new road to building a TSF foundation model from rich, high-quality natural images. Our key insight is that a visual masked autoencoder, pre-trained on the ImageNet dataset, can naturally be a numeric series forecaster. By reformulating TSF as an image reconstruction task, we bridge the gap between image pre-training and TSF downstream tasks. Surprisingly, without further adaptation in the time-series domain, the proposed VisionTS could achieve superior zero-shot forecasting performance compared to existing TSF foundation models. With fine-tuning for one epoch, VisionTS could further improve the forecasting and achieve state-of-the-art performance in most cases. Extensive experiments reveal intrinsic similarities between images and real-world time series, suggesting visual models may offer a ``free lunch'' for TSF and highlight the potential for future cross-modality research. Our code is publicly available at https://github.com/Keytoyze/VisionTS.",
+    "link": "https://arxiv.org/abs/2408.17253",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Keytoyze/VisionTS."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Pruning then Reweighting: Towards Data-Efficient Training of Diffusion Models",
+    "summary": "arXiv:2409.19128v2 Announce Type: replace \nAbstract: Despite the remarkable generation capabilities of Diffusion Models (DMs), conducting training and inference remains computationally expensive. Previous works have been devoted to accelerating diffusion sampling, but achieving data-efficient diffusion training has often been overlooked. In this work, we investigate efficient diffusion training from the perspective of dataset pruning. Inspired by the principles of data-efficient training for generative models such as generative adversarial networks (GANs), we first extend the data selection scheme used in GANs to DM training, where data features are encoded by a surrogate model, and a score criterion is then applied to select the coreset. To further improve the generation performance, we employ a class-wise reweighting approach, which derives class weights through distributionally robust optimization (DRO) over a pre-trained reference DM. For a pixel-wise DM (DDPM) on CIFAR-10, experiments demonstrate the superiority of our methodology over existing approaches and its effectiveness in image synthesis comparable to that of the original full-data model while achieving the speed-up between 2.34 times and 8.32 times. Additionally, our method could be generalized to latent DMs (LDMs), e.g., Masked Diffusion Transformer (MDT) and Stable Diffusion (SD), and achieves competitive generation capability on ImageNet. Code is available here (https://github.com/Yeez-lee/Data-Selection-and-Reweighting-for-Diffusion-Models).",
+    "link": "https://arxiv.org/abs/2409.19128",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Yeez-lee/Data-Selection-and-Reweighting-for-Diffusion-Models)."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition",
+    "summary": "arXiv:2409.19734v2 Announce Type: replace \nAbstract: To address the risks of encountering inappropriate or harmful content, researchers managed to incorporate several harmful contents datasets with machine learning methods to detect harmful concepts. However, existing harmful datasets are curated by the presence of a narrow range of harmful objects, and only cover real harmful content sources. This hinders the generalizability of methods based on such datasets, potentially leading to misjudgments. Therefore, we propose a comprehensive harmful dataset, Visual Harmful Dataset 11K (VHD11K), consisting of 10,000 images and 1,000 videos, crawled from the Internet and generated by 4 generative models, across a total of 10 harmful categories covering a full spectrum of harmful concepts with nontrivial definition. We also propose a novel annotation framework by formulating the annotation process as a multi-agent Visual Question Answering (VQA) task, having 3 different VLMs \"debate\" about whether the given image/video is harmful, and incorporating the in-context learning strategy in the debating process. Therefore, we can ensure that the VLMs consider the context of the given image/video and both sides of the arguments thoroughly before making decisions, further reducing the likelihood of misjudgments in edge cases. Evaluation and experimental results demonstrate that (1) the great alignment between the annotation from our novel annotation framework and those from human, ensuring the reliability of VHD11K; (2) our full-spectrum harmful dataset successfully identifies the inability of existing harmful content detection methods to detect extensive harmful contents and improves the performance of existing harmfulness recognition methods; (3) VHD11K outperforms the baseline dataset, SMID, as evidenced by the superior improvement in harmfulness recognition methods. The complete dataset and code can be found at https://github.com/nctu-eva-lab/VHD11K.",
+    "link": "https://arxiv.org/abs/2409.19734",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/nctu-eva-lab/VHD11K."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "FastCLIP: A Suite of Optimization Techniques to Accelerate CLIP Training with Limited Resources",
+    "summary": "arXiv:2407.01445v3 Announce Type: replace-cross \nAbstract: Existing studies of training state-of-the-art Contrastive Language-Image Pretraining (CLIP) models on large-scale data involve hundreds of or even thousands of GPUs due to the requirement of a large batch size. However, such a large amount of resources is not accessible to most people. While advanced compositional optimization techniques for optimizing global contrastive losses have been demonstrated effective for removing the requirement of large batch size, their performance on large-scale data remains underexplored and not optimized. To bridge the gap, this paper explores several aspects of CLIP training with limited resources (e.g., up to tens of GPUs). First, we introduce FastCLIP, a general CLIP training framework built on advanced compositional optimization techniques while designed and optimized for the distributed setting. Our framework is equipped with an efficient gradient reduction strategy to reduce communication overhead. Second, to further boost training efficiency, we investigate three components of the framework from an optimization perspective: the schedule of the inner learning rate, the update rules of the temperature parameter and the model parameters, respectively. Experiments on different strategies for each component shed light on how to conduct CLIP training more efficiently. Finally, we benchmark the performance of FastCLIP and the state-of-the-art training baseline (OpenCLIP) on different compute scales up to 32 GPUs on 8 nodes, and three data scales ranging from 2.7 million, 9.1 million to 315 million image-text pairs to demonstrate the significant improvement of FastCLIP in the resource-limited setting. We release the code of FastCLIP at https://github.com/Optimization-AI/fast_clip .",
+    "link": "https://arxiv.org/abs/2407.01445",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Optimization-AI/fast_clip"
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Unleashing the Power of Task-Specific Directions in Parameter Efficient Fine-tuning",
+    "summary": "arXiv:2409.01035v2 Announce Type: replace-cross \nAbstract: Large language models demonstrate impressive performance on downstream tasks, yet requiring extensive resource consumption when fully fine-tuning all parameters. To mitigate this, Parameter Efficient Fine-Tuning (PEFT) strategies, such as LoRA, have been developed. In this paper, we delve into the concept of task-specific directions (TSDs)-critical for transitioning large models from pretrained states to task-specific enhancements in PEFT. We propose a framework to clearly define these directions and explore their properties, and practical utilization challenges. We then introduce a novel approach, LoRA-Dash, which aims to maximize the impact of TSDs during the fine-tuning process, thereby enhancing model performance on targeted tasks. Extensive experiments have conclusively demonstrated the effectiveness of LoRA-Dash, and in-depth analyses further reveal the underlying mechanisms of LoRA-Dash. The code is available at https://github.com/Chongjie-Si/Subspace-Tuning.",
+    "link": "https://arxiv.org/abs/2409.01035",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/Chongjie-Si/Subspace-Tuning."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Fine-Tuning is Fine, if Calibrated",
+    "summary": "arXiv:2409.16223v2 Announce Type: replace-cross \nAbstract: Fine-tuning is arguably the most straightforward way to tailor a pre-trained model (e.g., a foundation model) to downstream applications, but it also comes with the risk of losing valuable knowledge the model had learned in pre-training. For example, fine-tuning a pre-trained classifier capable of recognizing a large number of classes to master a subset of classes at hand is shown to drastically degrade the model's accuracy in the other classes it had previously learned. As such, it is hard to further use the fine-tuned model when it encounters classes beyond the fine-tuning data. In this paper, we systematically dissect the issue, aiming to answer the fundamental question, \"What has been damaged in the fine-tuned model?\" To our surprise, we find that the fine-tuned model neither forgets the relationship among the other classes nor degrades the features to recognize these classes. Instead, the fine-tuned model often produces more discriminative features for these other classes, even if they were missing during fine-tuning! {What really hurts the accuracy is the discrepant logit scales between the fine-tuning classes and the other classes}, implying that a simple post-processing calibration would bring back the pre-trained model's capability and at the same time unveil the feature improvement over all classes. We conduct an extensive empirical study to demonstrate the robustness of our findings and provide preliminary explanations underlying them, suggesting new directions for future theoretical analysis. Our code is available at https://github.com/OSU-MLB/Fine-Tuning-Is-Fine-If-Calibrated.",
+    "link": "https://arxiv.org/abs/2409.16223",
+    "published": "Thu, 03 Oct 2024 00:00:00 -0400",
+    "github_urls": [
+      "https://github.com/OSU-MLB/Fine-Tuning-Is-Fine-If-Calibrated."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  }
+]
