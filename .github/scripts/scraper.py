@@ -53,7 +53,7 @@ class PaperScraper:
                 if len(papers) >= 30:
                     break
             except AttributeError as e:
-                logger.error(f"エントリーの処理中にエラーが発生しました: {str(e)}")
+                logger.error(f"arXivエントリーの処理中にエラーが発生しました: {str(e)}")
                 continue
 
         logger.success(f"arXivから{len(papers)}件の論文を取得しました")
@@ -61,37 +61,47 @@ class PaperScraper:
 
     def scrape_huggingface(self):
         logger.info("Hugging Faceからの論文スクレイピングを開始します")
-        url = 'https://rsshub.app/huggingface/daily-papers'
+        url = 'http://rsshub.app/huggingface/daily-papers'
         
+        # RSSフィードのリクエストを実行
         response = requests.get(url, headers=self.headers)
-        logger.debug(f"ステータスコード: {response.status_code}")
+        logger.debug(f"ステータスコード: {response.status_code}")  # ステータスコードをデバッグ出力
         
+        # BeautifulSoupでRSSフィードを解析
         soup = BeautifulSoup(response.content, 'lxml-xml')
+        logger.debug(f"RSSフィードの内容: {soup.prettify()}")  # フィード内容をデバッグ出力
+        
+        # <item>タグを取得
         items = soup.find_all('item')
         logger.info(f"見つかったアイテム数: {len(items)}")
 
         papers = []
         for item in items:
-            title = item.find('title').text if item.find('title') else 'タイトルなし'
-            description = item.find('description').text if item.find('description') else '説明なし'
-            link = item.find('link').text if item.find('link') else 'リンクなし'
-            published = item.find('pubDate').text if item.find('pubDate') else '日付なし'
-            authors = item.find('author').text if item.find('author') else '著者なし'
+            try:
+                title = item.find('title').text if item.find('title') else 'タイトルなし'
+                description = item.find('description').text if item.find('description') else '説明なし'
+                link = item.find('link').text if item.find('link') else 'リンクなし'
+                published = item.find('pubDate').text if item.find('pubDate') else '日付なし'
+                authors = item.find('author').text if item.find('author') else '著者なし'
 
-            full_text = title + ' ' + description
-            github_urls, huggingface_urls = self.extract_urls(full_text)
-            paper = {
-                'title': title,
-                'summary': description,
-                'link': link,
-                'published': published,
-                'authors': authors,
-                'github_urls': github_urls,
-                'huggingface_urls': huggingface_urls,
-                'source': 'Hugging Face'
-            }
-            papers.append(paper)
-            logger.debug(f"論文を追加しました: {title}")
+                full_text = title + ' ' + description
+                github_urls, huggingface_urls = self.extract_urls(full_text)
+                paper = {
+                    'title': title,
+                    'summary': description,
+                    'link': link,
+                    'published': published,
+                    'authors': authors,
+                    'github_urls': github_urls,
+                    'huggingface_urls': huggingface_urls,
+                    'source': 'Hugging Face'
+                }
+                papers.append(paper)
+                logger.debug(f"論文を追加しました: {title}")
+
+            except Exception as e:
+                logger.error(f"Hugging Faceの論文取得中にエラーが発生しました: {str(e)}")
+                continue
 
         logger.success(f"Hugging Faceから{len(papers)}件の論文を取得しました")
         return papers
@@ -103,7 +113,6 @@ class PaperScraper:
         huggingface_papers = self.scrape_huggingface()
 
         all_papers = arxiv_papers + huggingface_papers
-        # all_papers = huggingface_papers
 
         with open(self.output_path, 'w', encoding='utf-8') as f:
             json.dump(all_papers, f, ensure_ascii=False, indent=2)
