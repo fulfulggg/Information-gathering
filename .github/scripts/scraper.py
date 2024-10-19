@@ -14,9 +14,6 @@ logger.add(lambda msg: print(msg, end=""), colorize=True, format="<green>{time:Y
 class PaperScraper:
     def __init__(self, output_path='./papers.json'):
         self.output_path = output_path
-        # self.headers = {
-        #     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        # }
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
             'Referer': 'https://www.google.com/',
@@ -46,11 +43,9 @@ class PaperScraper:
             logger.error(f"arXivへのリクエストが失敗しました: {response.status_code}")
             return []
 
-        # BeautifulSoupでRSSフィードを解析
         soup = BeautifulSoup(response.content, 'lxml-xml')
         logger.debug(f"arXivのRSSフィードの内容: {soup.prettify()}")
 
-        # <item>タグを取得
         items = soup.find_all('item')
         logger.info(f"見つかったアイテム数: {len(items)}")
 
@@ -88,15 +83,16 @@ class PaperScraper:
         logger.info("Hugging Faceからの論文スクレイピングを開始します")
         url = 'http://rsshub.app/huggingface/daily-papers'
         
-        # RSSフィードのリクエストを実行
         response = requests.get(url, headers=self.headers)
-        logger.debug(f"ステータスコード: {response.status_code}")  # ステータスコードをデバッグ出力
+        logger.debug(f"ステータスコード: {response.status_code}")
         
-        # BeautifulSoupでRSSフィードを解析
+        if response.status_code != 200:
+            logger.error(f"Hugging Faceへのリクエストが失敗しました: {response.status_code}")
+            return []
+
         soup = BeautifulSoup(response.content, 'lxml-xml')
-        logger.debug(f"RSSフィードの内容: {soup.prettify()}")  # フィード内容をデバッグ出力
+        logger.debug(f"RSSフィードの内容: {soup.prettify()}")
         
-        # <item>タグを取得
         items = soup.find_all('item')
         logger.info(f"見つかったアイテム数: {len(items)}")
 
@@ -109,8 +105,15 @@ class PaperScraper:
                 published = item.find('pubDate').text if item.find('pubDate') else '日付なし'
                 authors = item.find('author').text if item.find('author') else '著者なし'
 
+                # arXivからのリンクかどうかでソースを区別
+                if "arxiv.org" in link:
+                    source = "arXiv"
+                else:
+                    source = "Hugging Face"
+
                 full_text = title + ' ' + description
                 github_urls, huggingface_urls = self.extract_urls(full_text)
+                
                 paper = {
                     'title': title,
                     'summary': description,
@@ -119,7 +122,7 @@ class PaperScraper:
                     'authors': authors,
                     'github_urls': github_urls,
                     'huggingface_urls': huggingface_urls,
-                    'source': 'Hugging Face'
+                    'source': source  # ソースを明示的に設定
                 }
                 papers.append(paper)
                 logger.debug(f"論文を追加しました: {title}")
