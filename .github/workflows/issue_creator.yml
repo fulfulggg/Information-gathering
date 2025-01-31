@@ -18,7 +18,8 @@ jobs:
     - name: Pythonのセットアップ
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: '3.12'
+        # ↑ Python 3.12 に固定
 
     - name: 依存関係のインストール
       run: |
