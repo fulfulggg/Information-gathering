@@ -5,6 +5,7 @@ on:
     branches:
       - main  # または適切なブランチ名
     paths:
+      - '.github/workflows/issue_creator.yml'
       - 'papers.json'
   workflow_dispatch:
 
