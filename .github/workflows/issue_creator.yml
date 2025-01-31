@@ -16,7 +16,8 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Pythonのセットアップ
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
+      # ↑ v2->v4
       with:
         python-version: '3.12'
         # ↑ Python 3.12 に固定
