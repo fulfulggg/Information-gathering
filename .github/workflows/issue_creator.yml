@@ -35,6 +35,7 @@ jobs:
 
     - name: Issue作成スクリプトの実行
       env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
