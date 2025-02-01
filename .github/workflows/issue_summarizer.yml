@@ -16,8 +16,8 @@ jobs:
       - name: Pythonのセットアップ
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
-          # 3.11に固定.cgi issueのため
+          python-version: '3.12'
+          # 3.12に固定.cgi issueのため
 
       # 依存関係のインストール
       - name: 依存関係のインストール
