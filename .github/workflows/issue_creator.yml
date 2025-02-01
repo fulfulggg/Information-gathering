@@ -20,8 +20,8 @@ jobs:
       uses: actions/setup-python@v4
       # ↑ v2->v4
       with:
-        python-version: '3.11'
-        # ↑ Python 3.11 に固定
+        python-version: '3.12'
+        # ↑ Python 3.12 に固定
 
     - name: Check Python version  
       run: |
