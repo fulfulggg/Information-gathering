@@ -1864,6 +1864,112 @@
     "source": "arXiv"
   },
   {
+    "title": "Preference Learning Unlocks LLMs' Psycho-Counseling Skills",
+    "summary": "Applying large language models (LLMs) to assist in psycho-counseling is an emerging and meaningful approach, driven by the significant gap between patient needs and the availability of mental health support. However, current LLMs struggle to consistently provide effective responses to client speeches, largely due to the lack of supervision from high-quality real psycho-counseling data, whose content is typically inaccessible due to client privacy concerns. Furthermore, the quality of therapists' responses in available sessions can vary significantly based on their professional training and experience. Assessing the quality of therapists' responses remains an open challenge. In this work, we address these challenges by first proposing a set of professional and comprehensive principles to evaluate therapists' responses to client speeches. Using these principles, we create a preference dataset, PsychoCounsel-Preference, which contains 36k high-quality preference comparison pairs. This dataset aligns with the preferences of professional psychotherapists, providing a robust foundation for evaluating and improving LLMs in psycho-counseling. Experiments on reward modeling and preference learning demonstrate that PsychoCounsel-Preference is an excellent resource for LLMs to acquire essential skills for responding to clients in a counseling session. Our best-aligned model, PsychoCounsel-Llama3-8B, achieves an impressive win rate of 87% against GPT-4o. We release PsychoCounsel-Preference, PsychoCounsel-Llama3-8B and the reward model PsychoCounsel Llama3-8B-Reward to facilitate the research of psycho-counseling with LLMs at: https://hf.co/Psychotherapy-LLM.",
+    "link": "https://arxiv.org/abs/2502.19731",
+    "published": "Mon, 03 Mar 2025 10:56:33 GMT",
+    "authors": "Mian Zhang, Shaun M. Eack, Zhiyu Zoey Chen",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "EgoNormia: Benchmarking Physical Social Norm Understanding",
+    "summary": "Human activity is moderated by norms. When performing actions in the real world, humans not only follow norms, but also consider the trade-off between different norms However, machines are often trained without explicit supervision on norm understanding and reasoning, especially when the norms are grounded in a physical and social context. To improve and evaluate the normative reasoning capability of vision-language models (VLMs), we present EgoNormia |epsilon|, consisting of 1,853 ego-centric videos of human interactions, each of which has two related questions evaluating both the prediction and justification of normative actions. The normative actions encompass seven categories: safety, privacy, proxemics, politeness, cooperation, coordination/proactivity, and communication/legibility. To compile this dataset at scale, we propose a novel pipeline leveraging video sampling, automatic answer generation, filtering, and human validation. Our work demonstrates that current state-of-the-art vision-language models lack robust norm understanding, scoring a maximum of 45% on EgoNormia (versus a human bench of 92%). Our analysis of performance in each dimension highlights the significant risks of safety, privacy, and the lack of collaboration and communication capability when applied to real-world agents. We additionally show that through a retrieval-based generation method, it is possible to use EgoNomia to enhance normative reasoning in VLMs.",
+    "link": "https://arxiv.org/abs/2502.20490",
+    "published": "Mon, 03 Mar 2025 10:26:31 GMT",
+    "authors": "MohammadHossein Rezaei, Yicheng Fu, Phil Cuvin, Caleb Ziems, Yanzhe Zhang, Hao Zhu, Diyi Yang",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "How far can we go with ImageNet for Text-to-Image generation?",
+    "summary": "Recent text-to-image (T2I) generation models have achieved remarkable results by training on billion-scale datasets, following a `bigger is better' paradigm that prioritizes data quantity over quality. We challenge this established paradigm by demonstrating that strategic data augmentation of small, well-curated datasets can match or outperform models trained on massive web-scraped collections. Using only ImageNet enhanced with well-designed text and image augmentations, we achieve a +2 overall score over SD-XL on GenEval and +5 on DPGBench while using just 1/10th the parameters and 1/1000th the training images. Our results suggest that strategic data augmentation, rather than massive datasets, could offer a more sustainable path forward for T2I generation.",
+    "link": "https://arxiv.org/abs/2502.21318",
+    "published": "Mon, 03 Mar 2025 09:49:10 GMT",
+    "authors": "L. Degeorge, A. Ghosh, N. Dufour, D. Picard, V. Kalogeiton",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping",
+    "summary": "Dexterous grasping remains a fundamental yet challenging problem in robotics. A general-purpose robot must be capable of grasping diverse objects in arbitrary scenarios. However, existing research typically relies on specific assumptions, such as single-object settings or limited environments, leading to constrained generalization. Our solution is DexGraspVLA, a hierarchical framework that utilizes a pre-trained Vision-Language model as the high-level task planner and learns a diffusion-based policy as the low-level Action controller. The key insight lies in iteratively transforming diverse language and visual inputs into domain-invariant representations, where imitation learning can be effectively applied due to the alleviation of domain shift. Thus, it enables robust generalization across a wide range of real-world scenarios. Notably, our method achieves a 90+% success rate under thousands of unseen object, lighting, and background combinations in a ``zero-shot'' environment. Empirical analysis further confirms the consistency of internal model behavior across environmental variations, thereby validating our design and explaining its generalization performance. We hope our work can be a step forward in achieving general dexterous grasping. Our demo and code can be found at https://dexgraspvla.github.io/.",
+    "link": "https://arxiv.org/abs/2502.20900",
+    "published": "Mon, 03 Mar 2025 09:44:46 GMT",
+    "authors": "Yifan Zhong, Xuchuan Huang, Ruochong Li, Ceyao Zhang, Yitao Liang, Yaodong Yang, Yuanpei Chen",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "TeleRAG: Efficient Retrieval-Augmented Generation Inference with Lookahead Retrieval",
+    "summary": "Retrieval-augmented generation (RAG) extends large language models (LLMs) with external data sources to enhance factual correctness and domain coverage. Modern RAG pipelines rely on large datastores, leading to system challenges in latency-sensitive deployments, especially when limited GPU memory is available. To address these challenges, we propose TeleRAG, an efficient inference system that reduces RAG latency with minimal GPU memory requirements. The core innovation of TeleRAG is lookahead retrieval, a prefetching mechanism that anticipates required data and transfers it from CPU to GPU in parallel with LLM generation. By leveraging the modularity of RAG pipelines, the inverted file index (IVF) search algorithm and similarities between queries, TeleRAG optimally overlaps data movement and computation. Experimental results show that TeleRAG reduces end-to-end RAG inference latency by up to 1.72x on average compared to state-of-the-art systems, enabling faster, more memory-efficient deployments of advanced RAG applications.",
+    "link": "https://arxiv.org/abs/2502.20969",
+    "published": "Mon, 03 Mar 2025 09:33:49 GMT",
+    "authors": "Chien-Yu Lin, Keisuke Kamahori, Yiyu Liu, Xiaoxiang Shi, Madhav Kashyap, Yile Gu, Rulin Shao, Zihao Ye, Kan Zhu, Stephanie Wang, Arvind Krishnamurthy, Rohan Kadekodi, Luis Ceze, Baris Kasikci",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "MIGE: A Unified Framework for Multimodal Instruction-Based Image Generation and Editing",
+    "summary": "Despite significant progress in diffusion-based image generation, subject-driven generation and instruction-based editing remain challenging. Existing methods typically treat them separately, struggling with limited high-quality data and poor generalization. However, both tasks require capturing complex visual variations while maintaining consistency between inputs and outputs. Therefore, we propose MIGE, a unified framework that standardizes task representations using multimodal instructions. It treats subject-driven generation as creation on a blank canvas and instruction-based editing as modification of an existing image, establishing a shared input-output formulation. MIGE introduces a novel multimodal encoder that maps free-form multimodal instructions into a unified vision-language space, integrating visual and semantic features through a feature fusion mechanism.This unification enables joint training of both tasks, providing two key advantages: (1) Cross-Task Enhancement: By leveraging shared visual and semantic representations, joint training improves instruction adherence and visual consistency in both subject-driven generation and instruction-based editing. (2) Generalization: Learning in a unified format facilitates cross-task knowledge transfer, enabling MIGE to generalize to novel compositional tasks, including instruction-based subject-driven editing. Experiments show that MIGE excels in both subject-driven generation and instruction-based editing while setting a state-of-the-art in the new task of instruction-based subject-driven editing. Code and model have been publicly available at https://github.com/Eureka-Maggie/MIGE.",
+    "link": "https://arxiv.org/abs/2502.21291",
+    "published": "Mon, 03 Mar 2025 08:13:06 GMT",
+    "authors": "Xueyun Tian, Wei Li, Bingbing Xu, Yige Yuan, Yuanzhuo Wang, Huawei Shen",
+    "github_urls": [
+      "https://github.com/Eureka-Maggie/MIGE."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "LettuceDetect: A Hallucination Detection Framework for RAG Applications",
+    "summary": "Retrieval Augmented Generation (RAG) systems remain vulnerable to hallucinated answers despite incorporating external knowledge sources. We present LettuceDetect a framework that addresses two critical limitations in existing hallucination detection methods: (1) the context window constraints of traditional encoder-based methods, and (2) the computational inefficiency of LLM based approaches. Building on ModernBERT's extended context capabilities (up to 8k tokens) and trained on the RAGTruth benchmark dataset, our approach outperforms all previous encoder-based models and most prompt-based models, while being approximately 30 times smaller than the best models. LettuceDetect is a token-classification model that processes context-question-answer triples, allowing for the identification of unsupported claims at the token level. Evaluations on the RAGTruth corpus demonstrate an F1 score of 79.22% for example-level detection, which is a 14.8% improvement over Luna, the previous state-of-the-art encoder-based architecture. Additionally, the system can process 30 to 60 examples per second on a single GPU, making it more practical for real-world RAG applications.",
+    "link": "https://arxiv.org/abs/2502.17125",
+    "published": "Mon, 03 Mar 2025 07:33:14 GMT",
+    "authors": "Ádám Kovács, Gábor Recski",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Optimal Brain Apoptosis",
+    "summary": "The increasing complexity and parameter count of Convolutional Neural Networks (CNNs) and Transformers pose challenges in terms of computational efficiency and resource demands. Pruning has been identified as an effective strategy to address these challenges by removing redundant elements such as neurons, channels, or connections, thereby enhancing computational efficiency without heavily compromising performance. This paper builds on the foundational work of Optimal Brain Damage (OBD) by advancing the methodology of parameter importance estimation using the Hessian matrix. Unlike previous approaches that rely on approximations, we introduce Optimal Brain Apoptosis (OBA), a novel pruning method that calculates the Hessian-vector product value directly for each parameter. By decomposing the Hessian matrix across network layers and identifying conditions under which inter-layer Hessian submatrices are non-zero, we propose a highly efficient technique for computing the second-order Taylor expansion of parameters. This approach allows for a more precise pruning process, particularly in the context of CNNs and Transformers, as validated in our experiments including VGG19, ResNet32, ResNet50, and ViT-B/16 on CIFAR10, CIFAR100 and Imagenet datasets. Our code is available at https://github.com/NEU-REAL/OBA.",
+    "link": "https://arxiv.org/abs/2502.17941",
+    "published": "Mon, 03 Mar 2025 07:04:47 GMT",
+    "authors": "Mingyuan Sun, Zheng Fang, Jiaxu Wang, Junjie Jiang, Delei Kong, Chenming Hu, Yuetong Fang, Renjing Xu",
+    "github_urls": [
+      "https://github.com/NEU-REAL/OBA."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Tell me why: Visual foundation models as self-explainable classifiers",
+    "summary": "Visual foundation models (VFMs) have become increasingly popular due to their state-of-the-art performance. However, interpretability remains crucial for critical applications. In this sense, self-explainable models (SEM) aim to provide interpretable classifiers that decompose predictions into a weighted sum of interpretable concepts. Despite their promise, recent studies have shown that these explanations often lack faithfulness. In this work, we combine VFMs with a novel prototypical architecture and specialized training objectives. By training only a lightweight head (approximately 1M parameters) on top of frozen VFMs, our approach (ProtoFM) offers an efficient and interpretable solution. Evaluations demonstrate that our approach achieves competitive classification performance while outperforming existing models across a range of interpretability metrics derived from the literature. Code is available at https://github.com/hturbe/proto-fm.",
+    "link": "https://arxiv.org/abs/2502.19577",
+    "published": "Mon, 03 Mar 2025 04:21:42 GMT",
+    "authors": "Hugues Turbé, Mina Bjelogrlic, Gianmarco Mengaldo, Christian Lovis",
+    "github_urls": [
+      "https://github.com/hturbe/proto-fm."
+    ],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
+    "title": "Chain of Draft: Thinking Faster by Writing Less",
+    "summary": "Large Language Models (LLMs) have demonstrated remarkable performance in solving complex reasoning tasks through mechanisms like Chain-of-Thought (CoT) prompting, which emphasizes verbose, step-by-step reasoning. However, humans typically employ a more efficient strategy: drafting concise intermediate thoughts that capture only essential information. In this work, we propose Chain of Draft (CoD), a novel paradigm inspired by human cognitive processes, where LLMs generate minimalistic yet informative intermediate reasoning outputs while solving tasks. By reducing verbosity and focusing on critical insights, CoD matches or surpasses CoT in accuracy while using as little as only 7.6% of the tokens, significantly reducing cost and latency across various reasoning tasks.",
+    "link": "https://arxiv.org/abs/2502.18600",
+    "published": "Mon, 03 Mar 2025 02:35:09 GMT",
+    "authors": "Silei Xu, Wenhao Xie, Lingxiao Zhao, Pengcheng He",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "arXiv"
+  },
+  {
     "title": "ViDoRAG: Visual Document Retrieval-Augmented Generation via Dynamic Iterative Reasoning Agents",
     "summary": "Understanding information from visually rich documents remains a significant challenge for traditional Retrieval-Augmented Generation (RAG) methods. Existing benchmarks predominantly focus on image-based question answering (QA), overlooking the fundamental challenges of efficient retrieval, comprehension, and reasoning within dense visual documents. To bridge this gap, we introduce ViDoSeek, a novel dataset designed to evaluate RAG performance on visually rich documents requiring complex reasoning. Based on it, we identify key limitations in current RAG approaches: (i) purely visual retrieval methods struggle to effectively integrate both textual and visual features, and (ii) previous approaches often allocate insufficient reasoning tokens, limiting their effectiveness. To address these challenges, we propose ViDoRAG, a novel multi-agent RAG framework tailored for complex reasoning across visual documents. ViDoRAG employs a Gaussian Mixture Model (GMM)-based hybrid strategy to effectively handle multi-modal retrieval. To further elicit the model's reasoning capabilities, we introduce an iterative agent workflow incorporating exploration, summarization, and reflection, providing a framework for investigating test-time scaling in RAG domains. Extensive experiments on ViDoSeek validate the effectiveness and generalization of our approach. Notably, ViDoRAG outperforms existing methods by over 10% on the competitive ViDoSeek benchmark.",
     "link": "https://arxiv.org/abs/2502.18017",
