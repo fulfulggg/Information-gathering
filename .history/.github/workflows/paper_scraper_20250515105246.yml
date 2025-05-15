@@ -62,19 +62,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
         run: |
-          echo "Waiting for 30 seconds before attempting to merge..."
-          sleep 30
           if [ -n "$PR_URL" ]; then
-            pr_number=$(echo "$PR_URL" | awk -F'/' '{print $NF}')
-            echo "Attempting to merge PR #$pr_number with URL: $PR_URL"
-            # エラー出力をキャプチャするために 2>&1 を追加し、実行結果を判定
-            if gh pr merge "$pr_number" --auto --squash --delete-branch 2>&1; then
-              echo "PR #$pr_number merged successfully."
-            else
-              echo "Failed to merge PR #$pr_number. See logs above for details."
-              # 必要に応じて exit 1 を追加してワークフローを失敗させることも検討
-              # exit 1
-            fi
+            pr_number=$(echo $PR_URL | awk -F'/' '{print $NF}')
+            gh pr merge $pr_number --auto --squash --delete-branch
           else
             echo "プルリクエストのURLが見つかりません。マージをスキップします。"
           fi
