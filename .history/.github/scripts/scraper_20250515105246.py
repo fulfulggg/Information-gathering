@@ -35,7 +35,7 @@ class PaperScraper:
 
     def scrape_arxiv(self):
         logger.info("arXivからの論文スクレイピングを開始します")
-        url = 'http://export.arxiv.org/rss/cs.AI'
+        url = 'http://export.arxiv.org/rss/cs.CV'
         response = requests.get(url, headers=self.headers)
         logger.debug(f"arXivのステータスコード: {response.status_code}")
         
