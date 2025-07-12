@@ -9,6 +9,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 jobs:
   scrape-and-update:
@@ -56,25 +57,56 @@ jobs:
           git push -u origin $branch_name
           pr_url=$(gh pr create --title "📖 論文データの更新" --body "このプルリクエストは自動的に作成されました。スクレイピングされた最新の論文データが含まれています。" --base main --head $branch_name)
           echo "PR_URL=$pr_url" >> $GITHUB_ENV
+          echo "PR_NUMBER=${pr_url##*/}" >> $GITHUB_ENV
 
       - name: プルリクエストの自動マージ
         if: steps.check_changes.outputs.changes == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
+          GH_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
         run: |
-          echo "Waiting for 30 seconds before attempting to merge..."
+          echo "Waiting for checks to complete..."
           sleep 30
-          if [ -n "$PR_URL" ]; then
-            pr_number=$(echo "$PR_URL" | awk -F'/' '{print $NF}')
-            echo "Attempting to merge PR #$pr_number with URL: $PR_URL"
-            # エラー出力をキャプチャするために 2>&1 を追加し、実行結果を判定
-            if gh pr merge "$pr_number" --auto --squash --delete-branch 2>&1; then
-              echo "PR #$pr_number merged successfully."
+          
+          if [ -n "$PR_NUMBER" ]; then
+            echo "Attempting to merge PR #$PR_NUMBER"
+            
+            # PRの状態を確認
+            pr_state=$(gh pr view $PR_NUMBER --json state -q .state)
+            if [ "$pr_state" != "OPEN" ]; then
+              echo "PR is not open (state: $pr_state). Skipping merge."
+              exit 0
+            fi
+            
+            # マージ可能性を確認
+            mergeable=$(gh pr view $PR_NUMBER --json mergeable -q .mergeable)
+            if [ "$mergeable" = "false" ]; then
+              echo "PR is not mergeable. Manual intervention required."
+              exit 1
+            fi
+            
+            # 直接マージを試みる
+            echo "Attempting direct merge..."
+            if gh pr merge "$PR_NUMBER" --squash --delete-branch; then
+              echo "PR #$PR_NUMBER merged successfully."
             else
-              echo "Failed to merge PR #$pr_number. See logs above for details."
-              # 必要に応じて exit 1 を追加してワークフローを失敗させることも検討
-              # exit 1
+              echo "Direct merge failed. Checking error details..."
+              
+              # エラーの詳細を取得
+              gh pr view $PR_NUMBER --json mergeable,mergeStateStatus
+              
+              # 自動マージを有効にする代替手段
+              echo "Attempting to enable auto-merge..."
+              if gh pr merge "$PR_NUMBER" --auto --squash --delete-branch; then
+                echo "Auto-merge enabled for PR #$PR_NUMBER."
+                echo "PR will be merged automatically when all requirements are met."
+              else
+                echo "Failed to enable auto-merge. The PR may require manual review."
+                echo "Please check: https://github.com/fulfulggg/Information-gathering/pull/$PR_NUMBER"
+                # ワークフローは成功として扱う（PRは作成されている）
+                exit 0
+              fi
             fi
           else
-            echo "プルリクエストのURLが見つかりません。マージをスキップします。"
+            echo "プルリクエスト番号が見つかりません。マージをスキップします。"
           fi
