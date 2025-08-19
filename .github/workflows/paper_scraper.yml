@@ -9,7 +9,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  actions: write
 
 jobs:
   scrape-and-update:
@@ -57,56 +56,61 @@ jobs:
           git push -u origin $branch_name
           pr_url=$(gh pr create --title "📖 論文データの更新" --body "このプルリクエストは自動的に作成されました。スクレイピングされた最新の論文データが含まれています。" --base main --head $branch_name)
           echo "PR_URL=$pr_url" >> $GITHUB_ENV
-          echo "PR_NUMBER=${pr_url##*/}" >> $GITHUB_ENV
 
       - name: プルリクエストの自動マージ
         if: steps.check_changes.outputs.changes == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
-          GH_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
         run: |
-          echo "Waiting for checks to complete..."
-          sleep 30
-          
-          if [ -n "$PR_NUMBER" ]; then
-            echo "Attempting to merge PR #$PR_NUMBER"
+          if [ -n "$PR_URL" ]; then
+            pr_number=$(echo $PR_URL | awk -F'/' '{print $NF}')
             
-            # PRの状態を確認
-            pr_state=$(gh pr view $PR_NUMBER --json state -q .state)
-            if [ "$pr_state" != "OPEN" ]; then
-              echo "PR is not open (state: $pr_state). Skipping merge."
-              exit 0
-            fi
+            # PRのマージ可能状態を確認（最大30秒待機）
+            echo "PRのマージ可能状態を確認中..."
+            max_attempts=6
+            attempt=0
             
-            # マージ可能性を確認
-            mergeable=$(gh pr view $PR_NUMBER --json mergeable -q .mergeable)
-            if [ "$mergeable" = "false" ]; then
-              echo "PR is not mergeable. Manual intervention required."
-              exit 1
-            fi
-            
-            # 直接マージを試みる
-            echo "Attempting direct merge..."
-            if gh pr merge "$PR_NUMBER" --squash --delete-branch; then
-              echo "PR #$PR_NUMBER merged successfully."
-            else
-              echo "Direct merge failed. Checking error details..."
+            while [ $attempt -lt $max_attempts ]; do
+              # PRの状態を取得
+              pr_status=$(gh pr view $pr_number --json mergeable,mergeStateStatus --jq '.mergeable')
+              merge_state=$(gh pr view $pr_number --json mergeStateStatus --jq '.mergeStateStatus')
               
-              # エラーの詳細を取得
-              gh pr view $PR_NUMBER --json mergeable,mergeStateStatus
+              echo "PR状態 - マージ可能: $pr_status, マージ状態: $merge_state"
               
-              # 自動マージを有効にする代替手段
-              echo "Attempting to enable auto-merge..."
-              if gh pr merge "$PR_NUMBER" --auto --squash --delete-branch; then
-                echo "Auto-merge enabled for PR #$PR_NUMBER."
-                echo "PR will be merged automatically when all requirements are met."
-              else
-                echo "Failed to enable auto-merge. The PR may require manual review."
-                echo "Please check: https://github.com/fulfulggg/Information-gathering/pull/$PR_NUMBER"
-                # ワークフローは成功として扱う（PRは作成されている）
-                exit 0
+              # マージ可能な状態になったら処理を進める
+              if [ "$pr_status" = "MERGEABLE" ] && [ "$merge_state" = "CLEAN" ]; then
+                echo "PRはマージ可能な状態です。マージを実行します。"
+                # 直接マージを試行（既にCLEAN状態の場合）
+                if gh pr merge $pr_number --squash --delete-branch; then
+                  echo "PRを正常にマージしました。"
+                else
+                  # 失敗した場合は自動マージを有効化
+                  echo "直接マージに失敗しました。自動マージを設定します。"
+                  gh pr merge $pr_number --auto --squash --delete-branch || {
+                    echo "警告: 自動マージの設定に失敗しましたが、PRは後でマージされる可能性があります。"
+                  }
+                fi
+                break
+              elif [ "$merge_state" = "BLOCKED" ] || [ "$merge_state" = "BEHIND" ]; then
+                echo "PRはまだマージできません。自動マージを有効化します。"
+                gh pr merge $pr_number --auto --squash --delete-branch || {
+                  echo "警告: 自動マージの設定に失敗しました。"
+                }
+                break
               fi
+              
+              attempt=$((attempt + 1))
+              if [ $attempt -lt $max_attempts ]; then
+                echo "5秒後に再試行します... (試行 $attempt/$max_attempts)"
+                sleep 5
+              fi
+            done
+            
+            if [ $attempt -eq $max_attempts ]; then
+              echo "警告: タイムアウトしました。PRは手動でマージする必要があるかもしれません。"
+              # 最後の手段として自動マージを試行
+              gh pr merge $pr_number --auto --squash --delete-branch || true
             fi
           else
-            echo "プルリクエスト番号が見つかりません。マージをスキップします。"
+            echo "プルリクエストのURLが見つかりません。マージをスキップします。"
           fi
