@@ -1,0 +1,80 @@
+name: 論文スクレイパーの実行
+
+on:
+  schedule:
+    # - cron: '00 11 * * 1-5'  # 月曜日から金曜日の19:30 JST（10:30 UTC）に実行
+    - cron: '00 20 * * *'  # 毎日JST朝5時（20:00 UTC）に実行
+  workflow_dispatch:  # 手動実行のオプション
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape-and-update:
+    name: スクレイプと更新
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 全履歴をフェッチ
+
+      - name: Pythonのセットアップ
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: 依存パッケージのインストール
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser requests beautifulsoup4 loguru art lxml
+
+      - name: 論文スクレイパーの実行
+        run: python .github/scripts/scraper.py
+
+      - name: 変更の確認とコミット
+        id: check_changes
+        run: |
+          git config --local user.email "hiroshi.nakamura@fulgram.com"
+          git config --local user.name "hiroshi-nakamura"
+          git add papers.json
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "📚 [paper] スクレイピングした論文データを更新"
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 変更をプッシュしてプルリクエストを作成
+        if: steps.check_changes.outputs.changes == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
+        run: |
+          branch_name="update-papers-data-$(date +'%Y%m%d%H%M%S')"
+          git checkout -b $branch_name
+          git push -u origin $branch_name
+          pr_url=$(gh pr create --title "📖 論文データの更新" --body "このプルリクエストは自動的に作成されました。スクレイピングされた最新の論文データが含まれています。" --base main --head $branch_name)
+          echo "PR_URL=$pr_url" >> $GITHUB_ENV
+
+      - name: プルリクエストの自動マージ
+        if: steps.check_changes.outputs.changes == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
+        run: |
+          echo "Waiting for 30 seconds before attempting to merge..."
+          sleep 30
+          if [ -n "$PR_URL" ]; then
+            pr_number=$(echo "$PR_URL" | awk -F'/' '{print $NF}')
+            echo "Attempting to merge PR #$pr_number with URL: $PR_URL"
+            # エラー出力をキャプチャするために 2>&1 を追加し、実行結果を判定
+            if gh pr merge "$pr_number" --auto --squash --delete-branch 2>&1; then
+              echo "PR #$pr_number merged successfully."
+            else
+              echo "Failed to merge PR #$pr_number. See logs above for details."
+              # 必要に応じて exit 1 を追加してワークフローを失敗させることも検討
+              # exit 1
+            fi
+          else
+            echo "プルリクエストのURLが見つかりません。マージをスキップします。"
+          fi
