@@ -64,7 +64,53 @@ jobs:
         run: |
           if [ -n "$PR_URL" ]; then
             pr_number=$(echo $PR_URL | awk -F'/' '{print $NF}')
-            gh pr merge $pr_number --auto --squash --delete-branch
+            
+            # PRのマージ可能状態を確認（最大30秒待機）
+            echo "PRのマージ可能状態を確認中..."
+            max_attempts=6
+            attempt=0
+            
+            while [ $attempt -lt $max_attempts ]; do
+              # PRの状態を取得
+              pr_status=$(gh pr view $pr_number --json mergeable,mergeStateStatus --jq '.mergeable')
+              merge_state=$(gh pr view $pr_number --json mergeStateStatus --jq '.mergeStateStatus')
+              
+              echo "PR状態 - マージ可能: $pr_status, マージ状態: $merge_state"
+              
+              # マージ可能な状態になったら処理を進める
+              if [ "$pr_status" = "MERGEABLE" ] && [ "$merge_state" = "CLEAN" ]; then
+                echo "PRはマージ可能な状態です。マージを実行します。"
+                # 直接マージを試行（既にCLEAN状態の場合）
+                if gh pr merge $pr_number --squash --delete-branch; then
+                  echo "PRを正常にマージしました。"
+                else
+                  # 失敗した場合は自動マージを有効化
+                  echo "直接マージに失敗しました。自動マージを設定します。"
+                  gh pr merge $pr_number --auto --squash --delete-branch || {
+                    echo "警告: 自動マージの設定に失敗しましたが、PRは後でマージされる可能性があります。"
+                  }
+                fi
+                break
+              elif [ "$merge_state" = "BLOCKED" ] || [ "$merge_state" = "BEHIND" ]; then
+                echo "PRはまだマージできません。自動マージを有効化します。"
+                gh pr merge $pr_number --auto --squash --delete-branch || {
+                  echo "警告: 自動マージの設定に失敗しました。"
+                }
+                break
+              fi
+              
+              attempt=$((attempt + 1))
+              if [ $attempt -lt $max_attempts ]; then
+                echo "5秒後に再試行します... (試行 $attempt/$max_attempts)"
+                sleep 5
+              fi
+            done
+            
+            if [ $attempt -eq $max_attempts ]; then
+              echo "警告: タイムアウトしました。PRは手動でマージする必要があるかもしれません。"
+              # 最後の手段として自動マージを試行
+              gh pr merge $pr_number --auto --squash --delete-branch || true
+            fi
           else
             echo "プルリクエストのURLが見つかりません。マージをスキップします。"
           fi
